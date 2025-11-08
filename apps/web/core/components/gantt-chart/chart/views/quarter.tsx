@@ -35,7 +35,7 @@ export const QuarterChartView: FC<any> = observer(() => {
                 <div
                   className="sticky flex items-center font-normal z-[1] my-1 whitespace-nowrap px-3 py-1 text-base capitalize bg-custom-background-100 text-custom-text-200"
                   style={{
-                    left: `${SIDEBAR_WIDTH}px`,
+                    insetInlineStart: `${SIDEBAR_WIDTH}px`,
                   }}
                 >
                   {quarterBlock?.title}

@@ -58,7 +58,7 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "text",
             key: "text",
-            title: "Text",
+            title: "editor.text",
             description: "Just start typing with plain text.",
             searchTerms: ["p", "paragraph"],
             icon: <CaseSensitive className="size-3.5" />,
@@ -67,7 +67,7 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "h1",
             key: "h1",
-            title: "Heading 1",
+            title: "editor.heading_1",
             description: "Big section heading.",
             searchTerms: ["title", "big", "large"],
             icon: <Heading1 className="size-3.5" />,
@@ -76,7 +76,7 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "h2",
             key: "h2",
-            title: "Heading 2",
+            title: "editor.heading_2",
             description: "Medium section heading.",
             searchTerms: ["subtitle", "medium"],
             icon: <Heading2 className="size-3.5" />,
@@ -85,7 +85,7 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "h3",
             key: "h3",
-            title: "Heading 3",
+            title: "editor.heading_3",
             description: "Small section heading.",
             searchTerms: ["subtitle", "small"],
             icon: <Heading3 className="size-3.5" />,
@@ -94,7 +94,7 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "h4",
             key: "h4",
-            title: "Heading 4",
+            title: "editor.heading_4",
             description: "Small section heading.",
             searchTerms: ["subtitle", "small"],
             icon: <Heading4 className="size-3.5" />,
@@ -103,7 +103,7 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "h5",
             key: "h5",
-            title: "Heading 5",
+            title: "editor.heading_5",
             description: "Small section heading.",
             searchTerms: ["subtitle", "small"],
             icon: <Heading5 className="size-3.5" />,
@@ -112,7 +112,7 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "h6",
             key: "h6",
-            title: "Heading 6",
+            title: "editor.heading_6",
             description: "Small section heading.",
             searchTerms: ["subtitle", "small"],
             icon: <Heading6 className="size-3.5" />,
@@ -121,7 +121,7 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "to-do-list",
             key: "to-do-list",
-            title: "To do",
+            title: "editor.todo",
             description: "Track tasks with a to-do list.",
             searchTerms: ["todo", "task", "list", "check", "checkbox"],
             icon: <ListTodo className="size-3.5" />,
@@ -130,7 +130,7 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "bulleted-list",
             key: "bulleted-list",
-            title: "Bullet list",
+            title: "editor.bullet_list",
             description: "Create a simple bullet list.",
             searchTerms: ["unordered", "point"],
             icon: <List className="size-3.5" />,
@@ -139,7 +139,7 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "numbered-list",
             key: "numbered-list",
-            title: "Numbered list",
+            title: "editor.numbered_list",
             description: "Create a list with numbering.",
             searchTerms: ["ordered"],
             icon: <ListOrdered className="size-3.5" />,
@@ -148,7 +148,7 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "table",
             key: "table",
-            title: "Table",
+            title: "editor.table",
             description: "Create a table",
             searchTerms: ["table", "cell", "db", "data", "tabular"],
             icon: <Table className="size-3.5" />,
@@ -157,7 +157,7 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "quote",
             key: "quote",
-            title: "Quote",
+            title: "editor.quote",
             description: "Capture a quote.",
             searchTerms: ["blockquote"],
             icon: <TextQuote className="size-3.5" />,
@@ -166,7 +166,7 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "code",
             key: "code",
-            title: "Code",
+            title: "editor.code",
             description: "Capture a code snippet.",
             searchTerms: ["codeblock"],
             icon: <Code2 className="size-3.5" />,
@@ -175,7 +175,7 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "callout",
             key: "callout",
-            title: "Callout",
+            title: "editor.callout",
             icon: <MessageSquareText className="size-3.5" />,
             description: "Insert callout",
             searchTerms: ["callout", "comment", "message", "info", "alert"],
@@ -184,7 +184,7 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "divider",
             key: "divider",
-            title: "Divider",
+            title: "editor.divider",
             description: "Visually divide blocks.",
             searchTerms: ["line", "divider", "horizontal", "rule", "separate"],
             icon: <MinusSquare className="size-3.5" />,
@@ -193,7 +193,7 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "emoji",
             key: "emoji",
-            title: "Emoji",
+            title: "editor.emoji",
             description: "Insert an emoji",
             searchTerms: ["emoji", "icons", "reaction", "emoticon", "emotags"],
             icon: <Smile className="size-3.5" />,
@@ -205,12 +205,12 @@ export const getSlashCommandFilteredSections =
       },
       {
         key: "text-colors",
-        title: "Colors",
+        title: "editor.colors",
         items: [
           {
             commandKey: "text-color",
             key: "text-color-default",
-            title: "Default",
+            title: "editor.default",
             description: "Change text color",
             searchTerms: ["color", "text", "default"],
             icon: (
@@ -246,7 +246,7 @@ export const getSlashCommandFilteredSections =
       },
       {
         key: "background-colors",
-        title: "Background colors",
+        title: "editor.background_colors",
         items: [
           {
             commandKey: "background-color",
@@ -287,7 +287,7 @@ export const getSlashCommandFilteredSections =
       internalAdditionalOptions.push({
         commandKey: "image",
         key: "image",
-        title: "Image",
+        title: "editor.image",
         icon: <ImageIcon className="size-3.5" />,
         description: "Insert an image",
         searchTerms: ["img", "photo", "picture", "media", "upload"],

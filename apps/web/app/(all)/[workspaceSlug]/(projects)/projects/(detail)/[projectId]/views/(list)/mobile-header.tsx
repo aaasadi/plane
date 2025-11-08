@@ -22,7 +22,7 @@ export const ViewMobileHeader = observer(() => {
   return (
     <>
       <div className="md:hidden flex justify-evenly border-b border-custom-border-200 py-2 z-[13] bg-custom-background-100">
-        <Row className="flex flex-grow items-center justify-center border-l border-custom-border-200 text-sm text-custom-text-200">
+        <Row className="flex flex-grow items-center justify-center border-s border-custom-border-200 text-sm text-custom-text-200">
           <ViewOrderByDropdown
             sortBy={filters.sortBy}
             sortKey={filters.sortKey}

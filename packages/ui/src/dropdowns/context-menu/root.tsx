@@ -209,7 +209,7 @@ const ContextMenuWithoutPortal: React.FC<ContextMenuProps> = (props) => {
         className="fixed border-[0.5px] border-custom-border-300 bg-custom-background-100 shadow-custom-shadow-rg rounded-md px-2 py-2.5 max-h-72 min-w-[12rem] overflow-y-scroll vertical-scrollbar scrollbar-sm"
         style={{
           top: position.y,
-          left: position.x,
+          insetInlineStart: position.x,
         }}
         data-context-menu="true"
       >

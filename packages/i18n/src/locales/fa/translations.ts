@@ -1,4 +1,26 @@
 export default {
+  editor: {
+    text: "متن",
+    heading_1: "عنوان ۱",
+    heading_2: "عنوان ۲",
+    heading_3: "عنوان ۳",
+    heading_4: "عنوان ۴",
+    heading_5: "عنوان ۵",
+    heading_6: "عنوان ۶",
+    todo: "فهرست کار",
+    bullet_list: "لیست معمولی",
+    numbered_list: "لیست شماره‌دار",
+    table: "جدول",
+    quote: "نقل‌قول",
+    code: "کد",
+    image: "تصویر",
+    callout: "یادداشت برجسته",
+    divider: "خط جداکننده",
+    emoji: "ایموجی",
+    colors: "رنگ‌ها",
+    background_colors: "رنگ‌های پس‌زمینه",
+    default: "پیش‌فرض"
+  },
   sidebar: {
     projects: "پروژه‌ها",
     pages: "صفحات",

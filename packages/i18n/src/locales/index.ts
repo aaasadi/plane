@@ -4,23 +4,21 @@ export { default as enTranslations } from "./en/translations";
 export { default as enAccessibility } from "./en/accessibility";
 export { default as enEditor } from "./en/editor";
 export { default as enEmptyState } from "./en/empty-state";
-// export { default as faCore } from "./fa/core";
 
 // Export locale data for all supported languages
 export const locales = {
-  fa: {
-    core: () => import("./fa/core"),
-    translations: () => import("./fa/translations"),
-    accessibility: () => import("./fa/accessibility"),
-    editor: () => import("./fa/editor"),
-    "empty-state": () => import("./fa/empty-state"),
-  },
   en: {
     core: () => import("./en/core"),
     translations: () => import("./en/translations"),
     accessibility: () => import("./en/accessibility"),
     editor: () => import("./en/editor"),
     "empty-state": () => import("./en/empty-state"),
+  },
+  fa: {
+    translations: () => import("./fa/translations"),
+    accessibility: () => import("./fa/accessibility"),
+    editor: () => import("./fa/editor"),
+    "empty-state": () => import("./fa/empty-state"),
   },
   fr: {
     translations: () => import("./fr/translations"),

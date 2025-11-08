@@ -25,7 +25,7 @@ export const PageNavigationPaneTabsList = () => {
           <div
             className="absolute top-1/2 -translate-y-1/2 bg-custom-background-90 rounded-sm transition-all duration-500 ease-in-out pointer-events-none"
             style={{
-              left: `calc(${(selectedIndex / ORDERED_PAGE_NAVIGATION_TABS_LIST.length) * 100}% + 2px)`,
+              insetInlineStart: `calc(${(selectedIndex / ORDERED_PAGE_NAVIGATION_TABS_LIST.length) * 100}% + 2px)`,
               height: "calc(100% - 4px)",
               width: `calc(${100 / ORDERED_PAGE_NAVIGATION_TABS_LIST.length}% - 4px)`,
             }}

@@ -113,16 +113,16 @@
   /* end font sizes and line heights */
 
   /* font styles */
-  --font-style: "Inter", sans-serif;
+  --font-style: IranSansX, "Inter", sans-serif;
 
   &.sans-serif {
-    --font-style: "Inter", sans-serif;
+    --font-style: IranSansX, "Inter", sans-serif;
   }
   &.serif {
-    --font-style: serif;
+    --font-style: IranSansX, serif;
   }
   &.monospace {
-    --font-style: monospace;
+    --font-style: IranSansX, monospace;
   }
   /* end font styles */
 
@@ -205,7 +205,7 @@
       --header-width: var(--wide-content-width);
     }
 
-    padding-left: calc(((100% - var(--header-width)) / 2) - 10px);
+    padding-inline-start: calc(((100% - var(--header-width)) / 2) - 10px);
   }
 }
 
@@ -230,8 +230,8 @@
     .editor-container.document-editor .ProseMirror {
       & > *:not(.editor-full-width-block) {
         max-width: var(--editor-content-width);
-        margin-left: auto !important;
-        margin-right: auto !important;
+        margin-inline-start: auto !important;
+        margin-inline-end: auto !important;
         transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
       }
 
@@ -247,14 +247,14 @@
 /* keep a static padding of 96px for wide layouts for container width >912px and <1344px */
 @container page-toolbar-container (min-width: 912px) and (max-width: 1344px) {
   .page-toolbar-content.wide-layout {
-    padding-left: var(--wide-content-margin) !important;
+    padding-inline-start: var(--wide-content-margin) !important;
   }
 }
 
 /* keep a static padding of 96px for wide layouts for container width <912px */
 @container page-toolbar-container (max-width: 912) {
   .page-toolbar-content.wide-layout {
-    padding-left: var(--wide-content-margin) !important;
+    padding-inline-start: var(--wide-content-margin) !important;
   }
 }
 /* end layout config */
@@ -262,7 +262,7 @@
 /* keep a static padding of 20px for wide layouts for container width <760px */
 @container page-toolbar-container (max-width: 760px) {
   .page-toolbar-content {
-    padding-left: var(--normal-content-margin) !important;
+    padding-inline-start: var(--normal-content-margin) !important;
   }
 }
 /* end layout config */
@@ -272,8 +272,8 @@
   #page-content-container .frame-renderer.wide-layout .editor-container,
   #page-content-container .frame-renderer.wide-layout .document-editor-loader,
   .page-header-container {
-    padding-left: var(--wide-content-margin);
-    padding-right: var(--wide-content-margin);
+    padding-inline-start: var(--wide-content-margin);
+    padding-inline-end: var(--wide-content-margin);
   }
 }
 
@@ -282,8 +282,8 @@
   #page-content-container .frame-renderer.wide-layout .editor-container,
   #page-content-container .frame-renderer.wide-layout .document-editor-loader,
   .page-header-container {
-    padding-left: var(--normal-content-margin);
-    padding-right: var(--normal-content-margin);
+    padding-inline-start: var(--normal-content-margin);
+    padding-inline-end: var(--normal-content-margin);
   }
 }
 
@@ -292,8 +292,8 @@
   #page-content-container .frame-renderer:not(.wide-layout) .editor-container,
   #page-content-container .frame-renderer:not(.wide-layout) .document-editor-loader,
   .page-header-container {
-    padding-left: var(--normal-content-margin);
-    padding-right: var(--normal-content-margin);
+    padding-inline-start: var(--normal-content-margin);
+    padding-inline-end: var(--normal-content-margin);
   }
 }
 

@@ -75,7 +75,7 @@ export const IssueGanttBlock: React.FC<Props> = observer((props) => {
         <div className="absolute start-0 top-0 h-full w-full bg-custom-background-100/50 " />
         <div
           className="sticky w-auto overflow-hidden truncate px-2.5 py-1 text-sm text-custom-text-100 flex-1"
-          style={{ left: `${SIDEBAR_WIDTH}px` }}
+          style={{ insetInlineStart: `${SIDEBAR_WIDTH}px` }}
         >
           {issueDetails?.name}
         </div>
