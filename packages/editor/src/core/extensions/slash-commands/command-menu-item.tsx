@@ -18,7 +18,7 @@ type Props = {
 // Utility to highlight matched text in a string
 const highlightMatch = (text: string, query: string): ReactNode => {
   const {t} = useTranslation();
-  if (!query || query.trim() === "") return text;
+  if (!query || query.trim() === "") return t(text);
 
   const queryLower = query.toLowerCase().trim();
   const textLower = text.toLowerCase();
@@ -40,7 +40,7 @@ const highlightMatch = (text: string, query: string): ReactNode => {
   }
 
   // Otherwise just return the text
-  return text;
+  return t(text);
 };
 
 export const CommandMenuItem: FC<Props> = (props) => {
@@ -63,7 +63,8 @@ export const CommandMenuItem: FC<Props> = (props) => {
       <span className="size-5 grid place-items-center flex-shrink-0" style={item.iconContainerStyle}>
         {item.icon}
       </span>
-      <p className="flex-grow truncate">{query ? highlightMatch(item.title, query) : t(item.title)}</p>
+      {/*<p className="flex-grow truncate">{query ? highlightMatch(item.title, query) : t(item.title)}</p>*/}
+      <p className="flex-grow truncate">{t(item.title)}</p>
       {item.badge}
     </button>
   );

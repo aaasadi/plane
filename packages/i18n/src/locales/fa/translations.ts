@@ -19,7 +19,18 @@ export default {
     emoji: "ایموجی",
     colors: "رنگ‌ها",
     background_colors: "رنگ‌های پس‌زمینه",
-    default: "پیش‌فرض"
+    default_background: "پیش‌فرض",
+    default: "پیش‌فرض",
+    color: {
+      gray: "خاکستری",
+      peach: "گلبهی",
+      pink: "صورتی",
+      orange: "نارنجی",
+      green: "سبز",
+      light_blue: "آبی روشن",
+      dark_blue: "آبی تیره",
+      purple: "بنفش",
+    }
   },
   sidebar: {
     projects: "پروژه‌ها",

@@ -3,6 +3,7 @@ import type { SuggestionProps } from "@tiptap/suggestion";
 import { forwardRef, useCallback, useEffect, useImperativeHandle, useLayoutEffect, useRef, useState } from "react";
 // plane imports
 import { useOutsideClickDetector } from "@plane/hooks";
+import { useTranslation } from "@plane/i18n";
 // helpers
 import { DROPDOWN_NAVIGATION_KEYS, getNextValidIndex } from "@/helpers/tippy";
 // types
@@ -16,6 +17,7 @@ export type SlashCommandsMenuProps = SuggestionProps<TSlashCommandSection, ISlas
 };
 
 export const SlashCommandsMenu = forwardRef((props: SlashCommandsMenuProps, ref) => {
+  const {t} = useTranslation();
   const { items: sections, command, query, onClose } = props;
   // states
   const [selectedIndex, setSelectedIndex] = useState({
@@ -144,7 +146,7 @@ export const SlashCommandsMenu = forwardRef((props: SlashCommandsMenuProps, ref)
       >
         {sections.map((section, sectionIndex) => (
           <div key={section.key} className="space-y-2">
-            {section.title && <h6 className="text-xs font-semibold text-custom-text-300">{section.title}</h6>}
+            {section.title && <h6 className="text-xs font-semibold text-custom-text-300">{t(section.title)}</h6>}
             <div>
               {section.items?.map((item, itemIndex) => (
                 <CommandMenuItem

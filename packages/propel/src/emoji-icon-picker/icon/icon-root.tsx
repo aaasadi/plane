@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { InfoIcon, Search } from "lucide-react";
-import { cn } from "../../utils/classname";
+import { cn } from "../../utils";
 import { adjustColorForContrast, DEFAULT_COLORS } from "../helper";
 import { LucideIconsList } from "./lucide-root";
 import { MaterialIconList } from "./material-root";

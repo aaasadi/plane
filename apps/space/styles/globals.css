@@ -1,7 +1,9 @@
 @import "@plane/propel/styles/fonts";
 @import "@plane/editor/styles";
 
-@import "@plane/tailwind-config/global.css";
+@config "../tailwind.config.js";
+
+@reference "@plane/tailwind-config/global.css";
 
 @layer base {
     * {

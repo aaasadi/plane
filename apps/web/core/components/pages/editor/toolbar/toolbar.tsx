@@ -4,6 +4,7 @@ import React, { useEffect, useState, useCallback } from "react";
 import { Check, ChevronDown } from "lucide-react";
 // plane imports
 import type { EditorRefApi } from "@plane/editor";
+import { useTranslation } from "@plane/i18n";
 import { Tooltip } from "@plane/propel/tooltip";
 import { CustomMenu } from "@plane/ui";
 import { cn } from "@plane/utils";
@@ -64,6 +65,7 @@ ToolbarButton.displayName = "ToolbarButton";
 const toolbarItems = TOOLBAR_ITEMS.document;
 
 export const PageToolbar: React.FC<Props> = (props) => {
+  const {t} = useTranslation();
   const { editorRef } = props;
   // states
   const [activeStates, setActiveStates] = useState<Record<string, boolean>>({});
@@ -101,7 +103,7 @@ export const PageToolbar: React.FC<Props> = (props) => {
       <CustomMenu
         customButton={
           <span className="text-custom-text-300 text-sm border-[0.5px] border-custom-border-300 hover:bg-custom-background-80 h-7 w-24 rounded-sm px-2 flex items-center justify-between gap-2 whitespace-nowrap text-start">
-            {activeTypography?.name || "Text"}
+            {t(activeTypography?.name || "editor.text")}
             <ChevronDown className="flex-shrink-0 size-3" />
           </span>
         }
@@ -123,7 +125,7 @@ export const PageToolbar: React.FC<Props> = (props) => {
           >
             <span className="flex items-center gap-2">
               <item.icon className="size-3" />
-              {item.name}
+              {t(item.name)}
             </span>
             {activeTypography?.itemKey === item.itemKey && (
               <Check className="size-3 text-custom-text-300 flex-shrink-0" />

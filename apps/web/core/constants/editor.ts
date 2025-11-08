@@ -47,13 +47,13 @@ export type ToolbarMenuItem<T extends TEditorCommands = TEditorCommands> = {
 };
 
 export const TYPOGRAPHY_ITEMS: ToolbarMenuItem<"text" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6">[] = [
-  { itemKey: "text", renderKey: "text", name: "Text", icon: CaseSensitive, editors: ["document"] },
-  { itemKey: "h1", renderKey: "h1", name: "Heading 1", icon: Heading1, editors: ["document"] },
-  { itemKey: "h2", renderKey: "h2", name: "Heading 2", icon: Heading2, editors: ["document"] },
-  { itemKey: "h3", renderKey: "h3", name: "Heading 3", icon: Heading3, editors: ["document"] },
-  { itemKey: "h4", renderKey: "h4", name: "Heading 4", icon: Heading4, editors: ["document"] },
-  { itemKey: "h5", renderKey: "h5", name: "Heading 5", icon: Heading5, editors: ["document"] },
-  { itemKey: "h6", renderKey: "h6", name: "Heading 6", icon: Heading6, editors: ["document"] },
+  { itemKey: "text", renderKey: "text", name: "editor.text", icon: CaseSensitive, editors: ["document"] },
+  { itemKey: "h1", renderKey: "h1", name: "editor.heading_1", icon: Heading1, editors: ["document"] },
+  { itemKey: "h2", renderKey: "h2", name: "editor.heading_2", icon: Heading2, editors: ["document"] },
+  { itemKey: "h3", renderKey: "h3", name: "editor.heading_3", icon: Heading3, editors: ["document"] },
+  { itemKey: "h4", renderKey: "h4", name: "editor.heading_4", icon: Heading4, editors: ["document"] },
+  { itemKey: "h5", renderKey: "h5", name: "editor.heading_5", icon: Heading5, editors: ["document"] },
+  { itemKey: "h6", renderKey: "h6", name: "editor.heading_6", icon: Heading6, editors: ["document"] },
 ];
 
 export const TEXT_ALIGNMENT_ITEMS: ToolbarMenuItem<"text-align">[] = [

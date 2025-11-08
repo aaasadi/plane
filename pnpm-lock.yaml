@@ -639,9 +639,6 @@ importers:
       prettier:
         specifier: ^3.2.5
         version: 3.6.2
-      tailwindcss:
-        specifier: ^4.1.17
-        version: 4.1.17
       typescript:
         specifier: 5.8.3
         version: 5.8.3

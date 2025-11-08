@@ -1,185 +1,172 @@
 @import "tailwindcss";
 
-@theme {
-    /* Primary */
-    --color-custom-primary-10: rgb(var(--color-primary-10));
-    --color-custom-primary-20: rgb(var(--color-primary-20));
-    --color-custom-primary-30: rgb(var(--color-primary-30));
-    --color-custom-primary-40: rgb(var(--color-primary-40));
-    --color-custom-primary-50: rgb(var(--color-primary-50));
-    --color-custom-primary-60: rgb(var(--color-primary-60));
-    --color-custom-primary-70: rgb(var(--color-primary-70));
-    --color-custom-primary-80: rgb(var(--color-primary-80));
-    --color-custom-primary-90: rgb(var(--color-primary-90));
-    --color-custom-primary-100: rgb(var(--color-primary-100));
-    --color-custom-primary-200: rgb(var(--color-primary-200));
-    --color-custom-primary-300: rgb(var(--color-primary-300));
-    --color-custom-primary-400: rgb(var(--color-primary-400));
-    --color-custom-primary-500: rgb(var(--color-primary-500));
-    --color-custom-primary-600: rgb(var(--color-primary-600));
-    --color-custom-primary-700: rgb(var(--color-primary-700));
-    --color-custom-primary-800: rgb(var(--color-primary-800));
-    --color-custom-primary-900: rgb(var(--color-primary-900));
+@config "./tailwind.config.js";
 
-    /* Background */
-    --color-custom-background-80: rgb(var(--color-background-80));
-    --color-custom-background-90: rgb(var(--color-background-90));
-    --color-custom-background-100: rgb(var(--color-background-100));
-    --color-custom-background-primary: rgb(var(--color-background-primary));
-    --color-custom-background-error: rgb(var(--color-background-error));
+/*@theme {*/
+/*    !* Primary *!*/
+/*    --color-custom-primary-10: rgb(var(--color-primary-10));*/
+/*    --color-custom-primary-20: rgb(var(--color-primary-20));*/
+/*    --color-custom-primary-30: rgb(var(--color-primary-30));*/
+/*    --color-custom-primary-40: rgb(var(--color-primary-40));*/
+/*    --color-custom-primary-50: rgb(var(--color-primary-50));*/
+/*    --color-custom-primary-60: rgb(var(--color-primary-60));*/
+/*    --color-custom-primary-70: rgb(var(--color-primary-70));*/
+/*    --color-custom-primary-80: rgb(var(--color-primary-80));*/
+/*    --color-custom-primary-90: rgb(var(--color-primary-90));*/
+/*    --color-custom-primary-100: rgb(var(--color-primary-100));*/
+/*    --color-custom-primary-200: rgb(var(--color-primary-200));*/
+/*    --color-custom-primary-300: rgb(var(--color-primary-300));*/
+/*    --color-custom-primary-400: rgb(var(--color-primary-400));*/
+/*    --color-custom-primary-500: rgb(var(--color-primary-500));*/
+/*    --color-custom-primary-600: rgb(var(--color-primary-600));*/
+/*    --color-custom-primary-700: rgb(var(--color-primary-700));*/
+/*    --color-custom-primary-800: rgb(var(--color-primary-800));*/
+/*    --color-custom-primary-900: rgb(var(--color-primary-900));*/
 
-    /* Text */
-    --color-custom-text-100: rgb(var(--color-text-100));
-    --color-custom-text-200: rgb(var(--color-text-200));
-    --color-custom-text-300: rgb(var(--color-text-300));
-    --color-custom-text-350: rgb(var(--color-text-350));
-    --color-custom-text-400: rgb(var(--color-text-400));
-    --color-custom-text-primary: rgb(var(--color-text-primary));
-    --color-custom-text-error: rgb(var(--color-text-error));
+/*    !* Background *!*/
+/*    --color-custom-background-80: rgb(var(--color-background-80));*/
+/*    --color-custom-background-90: rgb(var(--color-background-90));*/
+/*    --color-custom-background-100: rgb(var(--color-background-100));*/
+/*    --color-custom-background-primary: rgb(var(--color-background-primary));*/
+/*    --color-custom-background-error: rgb(var(--color-background-error));*/
 
-    /* Border */
-    --color-custom-border-100: rgb(var(--color-border-100));
-    --color-custom-border-200: rgb(var(--color-border-200));
-    --color-custom-border-300: rgb(var(--color-border-300));
-    --color-custom-border-400: rgb(var(--color-border-400));
-    --color-custom-border-primary: rgb(var(--color-border-primary));
-    --color-custom-border-error: rgb(var(--color-border-error));
+/*    !* Text *!*/
+/*    --color-custom-text-100: rgb(var(--color-text-100));*/
+/*    --color-custom-text-200: rgb(var(--color-text-200));*/
+/*    --color-custom-text-300: rgb(var(--color-text-300));*/
+/*    --color-custom-text-350: rgb(var(--color-text-350));*/
+/*    --color-custom-text-400: rgb(var(--color-text-400));*/
+/*    --color-custom-text-primary: rgb(var(--color-text-primary));*/
+/*    --color-custom-text-error: rgb(var(--color-text-error));*/
 
-    /* Error */
-    --color-custom-error-10: rgb(var(--color-error-10));
-    --color-custom-error-20: rgb(var(--color-error-20));
-    --color-custom-error-30: rgb(var(--color-error-30));
-    --color-custom-error-100: rgb(var(--color-error-100));
-    --color-custom-error-200: rgb(var(--color-error-200));
-    --color-custom-error-500: rgb(var(--color-error-500));
+/*    !* Border *!*/
+/*    --color-custom-border-100: rgb(var(--color-border-100));*/
+/*    --color-custom-border-200: rgb(var(--color-border-200));*/
+/*    --color-custom-border-300: rgb(var(--color-border-300));*/
+/*    --color-custom-border-400: rgb(var(--color-border-400));*/
+/*    --color-custom-border-primary: rgb(var(--color-border-primary));*/
+/*    --color-custom-border-error: rgb(var(--color-border-error));*/
 
-    /* Sidebar Background */
-    --color-custom-sidebar-background-80: rgb(var(--color-sidebar-background-80));
-    --color-custom-sidebar-background-90: rgb(var(--color-sidebar-background-90));
-    --color-custom-sidebar-background-100: rgb(var(--color-sidebar-background-100));
+/*    !* Error *!*/
+/*    --color-custom-error-10: rgb(var(--color-error-10));*/
+/*    --color-custom-error-20: rgb(var(--color-error-20));*/
+/*    --color-custom-error-30: rgb(var(--color-error-30));*/
+/*    --color-custom-error-100: rgb(var(--color-error-100));*/
+/*    --color-custom-error-200: rgb(var(--color-error-200));*/
+/*    --color-custom-error-500: rgb(var(--color-error-500));*/
 
-    /* Sidebar Text */
-    --color-custom-sidebar-text-100: rgb(var(--color-sidebar-text-100));
-    --color-custom-sidebar-text-200: rgb(var(--color-sidebar-text-200));
-    --color-custom-sidebar-text-300: rgb(var(--color-sidebar-text-300));
-    --color-custom-sidebar-text-400: rgb(var(--color-sidebar-text-400));
+/*    !* Sidebar Background *!*/
+/*    --color-custom-sidebar-background-80: rgb(var(--color-sidebar-background-80));*/
+/*    --color-custom-sidebar-background-90: rgb(var(--color-sidebar-background-90));*/
+/*    --color-custom-sidebar-background-100: rgb(var(--color-sidebar-background-100));*/
 
-    /* Sidebar Border */
-    --color-custom-sidebar-border-100: rgb(var(--color-sidebar-border-100));
-    --color-custom-sidebar-border-200: rgb(var(--color-sidebar-border-200));
-    --color-custom-sidebar-border-300: rgb(var(--color-sidebar-border-300));
-    --color-custom-sidebar-border-400: rgb(var(--color-sidebar-border-400));
+/*    !* Sidebar Text *!*/
+/*    --color-custom-sidebar-text-100: rgb(var(--color-sidebar-text-100));*/
+/*    --color-custom-sidebar-text-200: rgb(var(--color-sidebar-text-200));*/
+/*    --color-custom-sidebar-text-300: rgb(var(--color-sidebar-text-300));*/
+/*    --color-custom-sidebar-text-400: rgb(var(--color-sidebar-text-400));*/
 
-    /* Backdrop */
-    --color-custom-backdrop: rgba(0, 0, 0, 0.25);
+/*    !* Sidebar Border *!*/
+/*    --color-custom-sidebar-border-100: rgb(var(--color-sidebar-border-100));*/
+/*    --color-custom-sidebar-border-200: rgb(var(--color-sidebar-border-200));*/
+/*    --color-custom-sidebar-border-300: rgb(var(--color-sidebar-border-300));*/
+/*    --color-custom-sidebar-border-400: rgb(var(--color-sidebar-border-400));*/
 
-    /* Scrollbar */
-    --color-custom-scrollbar-neutral: rgba(96, 100, 108, 0.1);
-    --color-custom-scrollbar-hover: rgba(96, 100, 108, 0.25);
-    --color-custom-scrollbar-active: rgba(96, 100, 108, 0.7);
+/*    !* Backdrop *!*/
+/*    --color-custom-backdrop: rgba(0, 0, 0, 0.25);*/
 
-    /* Subscription */
-    --color-custom-subscription-free-200: rgb(var(--color-subscription-free-200));
-    --color-custom-subscription-free-400: rgb(var(--color-subscription-free-400));
-    --color-custom-subscription-one-200: rgb(var(--color-subscription-one-200));
-    --color-custom-subscription-one-400: rgb(var(--color-subscription-one-400));
-    --color-custom-subscription-pro-200: rgb(var(--color-subscription-pro-200));
-    --color-custom-subscription-pro-400: rgb(var(--color-subscription-pro-400));
-    --color-custom-subscription-business-200: rgba(var(--color-subscription-business-200));
-    --color-custom-subscription-business-400: rgba(var(--color-subscription-business-400));
-    --color-custom-subscription-enterprise-200: rgba(var(--color-subscription-enterprise-200));
-    --color-custom-subscription-enterprise-400: rgba(var(--color-subscription-enterprise-400));
+/*    !* Scrollbar *!*/
+/*    --color-custom-scrollbar-neutral: rgba(96, 100, 108, 0.1);*/
+/*    --color-custom-scrollbar-hover: rgba(96, 100, 108, 0.25);*/
+/*    --color-custom-scrollbar-active: rgba(96, 100, 108, 0.7);*/
 
-    /* Toast Text */
-    --color-toast-text-success: rgb(var(--color-toast-success-text));
-    --color-toast-text-error: rgb(var(--color-toast-error-text));
-    --color-toast-text-warning: rgb(var(--color-toast-warning-text));
-    --color-toast-text-info: rgb(var(--color-toast-info-text));
-    --color-toast-text-loading: rgb(var(--color-toast-loading-text));
-    --color-toast-text-secondary: rgb(var(--color-toast-secondary-text));
-    --color-toast-text-tertiary: rgb(var(--color-toast-tertiary-text));
+/*    !* Subscription *!*/
+/*    --color-custom-subscription-free-200: rgb(var(--color-subscription-free-200));*/
+/*    --color-custom-subscription-free-400: rgb(var(--color-subscription-free-400));*/
+/*    --color-custom-subscription-one-200: rgb(var(--color-subscription-one-200));*/
+/*    --color-custom-subscription-one-400: rgb(var(--color-subscription-one-400));*/
+/*    --color-custom-subscription-pro-200: rgb(var(--color-subscription-pro-200));*/
+/*    --color-custom-subscription-pro-400: rgb(var(--color-subscription-pro-400));*/
+/*    --color-custom-subscription-business-200: rgba(var(--color-subscription-business-200));*/
+/*    --color-custom-subscription-business-400: rgba(var(--color-subscription-business-400));*/
+/*    --color-custom-subscription-enterprise-200: rgba(var(--color-subscription-enterprise-200));*/
+/*    --color-custom-subscription-enterprise-400: rgba(var(--color-subscription-enterprise-400));*/
 
-    /* Toast Background */
-    --color-toast-background-success: rgb(var(--color-toast-success-background));
-    --color-toast-background-error: rgb(var(--color-toast-error-background));
-    --color-toast-background-warning: rgb(var(--color-toast-warning-background));
-    --color-toast-background-info: rgb(var(--color-toast-info-background));
-    --color-toast-background-loading: rgb(var(--color-toast-loading-background));
+/*    !* Toast Text *!*/
+/*    --color-toast-text-success: rgb(var(--color-toast-success-text));*/
+/*    --color-toast-text-error: rgb(var(--color-toast-error-text));*/
+/*    --color-toast-text-warning: rgb(var(--color-toast-warning-text));*/
+/*    --color-toast-text-info: rgb(var(--color-toast-info-text));*/
+/*    --color-toast-text-loading: rgb(var(--color-toast-loading-text));*/
+/*    --color-toast-text-secondary: rgb(var(--color-toast-secondary-text));*/
+/*    --color-toast-text-tertiary: rgb(var(--color-toast-tertiary-text));*/
 
-    /* Toast Border */
-    --color-toast-border-success: rgb(var(--color-toast-success-border));
-    --color-toast-border-error: rgb(var(--color-toast-error-border));
-    --color-toast-border-warning: rgb(var(--color-toast-warning-border));
-    --color-toast-border-info: rgb(var(--color-toast-info-border));
-    --color-toast-border-loading: rgb(var(--color-toast-loading-border));
+/*    !* Toast Background *!*/
+/*    --color-toast-background-success: rgb(var(--color-toast-success-background));*/
+/*    --color-toast-background-error: rgb(var(--color-toast-error-background));*/
+/*    --color-toast-background-warning: rgb(var(--color-toast-warning-background));*/
+/*    --color-toast-background-info: rgb(var(--color-toast-info-background));*/
+/*    --color-toast-background-loading: rgb(var(--color-toast-loading-background));*/
 
-    @keyframes leftToaster {
-        0% { inset-inline-start: -20rem}
-        100% {inset-inline-start: 0}
-    }
+/*    !* Toast Border *!*/
+/*    --color-toast-border-success: rgb(var(--color-toast-success-border));*/
+/*    --color-toast-border-error: rgb(var(--color-toast-error-border));*/
+/*    --color-toast-border-warning: rgb(var(--color-toast-warning-border));*/
+/*    --color-toast-border-info: rgb(var(--color-toast-info-border));*/
+/*    --color-toast-border-loading: rgb(var(--color-toast-loading-border));*/
 
-    @keyframes rightToaster {
-        0% { inset-inline-end: -20rem }
-        100% { inset-inline-end: 0 }
-    }
+/*    @keyframes leftToaster {*/
+/*        0% { inset-inline-start: -20rem}*/
+/*        100% {inset-inline-start: 0}*/
+/*    }*/
 
-    @keyframes bar-loader {
-        from { inset-inline-start: -100% }
-        to { inset-inline-start: 100% }
-    }
+/*    @keyframes rightToaster {*/
+/*        0% { inset-inline-end: -20rem }*/
+/*        100% { inset-inline-end: 0 }*/
+/*    }*/
 
-    --breakpoint-3xl: 1792px;
+/*    @keyframes bar-loader {*/
+/*        from { inset-inline-start: -100% }*/
+/*        to { inset-inline-start: 100% }*/
+/*    }*/
 
-    --spacing-0: 0;
-    --spacing-0-5: 0.1125rem;
-    --spacing-1: 0.225rem;
-    --spacing-1-5: 0.3375rem;
-    --spacing-2: 0.45rem;
-    --spacing-2-5: 0.5625rem;
-    --spacing-3: 0.675rem;
-    --spacing-3-5: 0.7875rem;
-    --spacing-4: 0.9rem;
-    --spacing-5: 1.125rem;
-    --spacing-6: 1.35rem;
-    --spacing-7: 1.575rem;
-    --spacing-8: 1.8rem;
-    --spacing-9: 2.025rem;
-    --spacing-10: 2.25rem;
-    --spacing-11: 2.475rem;
-    --spacing-12: 2.7rem;
-    --spacing-16: 3.6rem;
-    --spacing-20: 4.5rem;
-    --spacing-24: 5.4rem;
-    --spacing-32: 7.2rem;
-    --spacing-40: 9rem;
-    --spacing-48: 10.8rem;
-    --spacing-56: 12.6rem;
-    --spacing-64: 14.4rem;
-    --spacing-72: 16.2rem;
-    --spacing-80: 18rem;
-    --spacing-96: 21.6rem;
-    --spacing-page-x: 1.35rem;
-    --spacing-page-y: 1.35rem;
+/*    --breakpoint-3xl: 1792px;*/
 
-    --height-header: 3.25rem;
-}
+/*    --spacing: 0.225rem;*/
 
-@layer utilities {
-    @keyframes slide-up {
-        from {
-            transform: translateY(10px);
-            opacity: 0;
-        }
-        to {
-            transform: translateY(0);
-            opacity: 1;
-        }
-    }
+/*    !*--spacing-0: 0;*!*/
+/*    !*--spacing-0-5: 0.1125rem;*!*/
+/*    !*--spacing-1: 0.225rem;*!*/
+/*    !*--spacing-1-5: 0.3375rem;*!*/
+/*    !*--spacing-2: 0.45rem;*!*/
+/*    !*--spacing-2-5: 0.5625rem;*!*/
+/*    !*--spacing-3: 0.675rem;*!*/
+/*    !*--spacing-3-5: 0.7875rem;*!*/
+/*    !*--spacing-4: 0.9rem;*!*/
+/*    !*--spacing-5: 1.125rem;*!*/
+/*    !*--spacing-6: 1.35rem;*!*/
+/*    !*--spacing-7: 1.575rem;*!*/
+/*    !*--spacing-8: 1.8rem;*!*/
+/*    !*--spacing-9: 2.025rem;*!*/
+/*    !*--spacing-10: 2.25rem;*!*/
+/*    !*--spacing-11: 2.475rem;*!*/
+/*    !*--spacing-12: 2.7rem;*!*/
+/*    !*--spacing-16: 3.6rem;*!*/
+/*    !*--spacing-20: 4.5rem;*!*/
+/*    !*--spacing-24: 5.4rem;*!*/
+/*    !*--spacing-32: 7.2rem;*!*/
+/*    !*--spacing-40: 9rem;*!*/
+/*    !*--spacing-48: 10.8rem;*!*/
+/*    !*--spacing-56: 12.6rem;*!*/
+/*    !*--spacing-64: 14.4rem;*!*/
+/*    !*--spacing-72: 16.2rem;*!*/
+/*    !*--spacing-80: 18rem;*!*/
+/*    !*--spacing-96: 21.6rem;*!*/
+/*    --spacing-page-x: 1.35rem;*/
+/*    --spacing-page-y: 1.35rem;*/
 
-    .animate-slide-up {
-        animation: slide-up 0.3s ease-out forwards;
-    }
-}
+/*    --height-header: 3.25rem;*/
+/*}*/
 
 @layer base {
     html {

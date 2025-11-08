@@ -77,7 +77,6 @@
     "@types/react-color": "^3.0.6",
     "@types/react-dom": "catalog:",
     "prettier": "^3.2.5",
-    "typescript": "catalog:",
-    "tailwindcss": "^4.1.17"
+    "typescript": "catalog:"
   }
 }

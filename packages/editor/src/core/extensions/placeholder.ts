@@ -1,4 +1,5 @@
 import { Placeholder } from "@tiptap/extension-placeholder";
+import { useTranslation } from "@plane/i18n";
 // constants
 import { CORE_EXTENSIONS } from "@/constants/extension";
 // types
@@ -9,6 +10,7 @@ type TArgs = {
 };
 
 export const CustomPlaceholderExtension = (args: TArgs) => {
+  const {t} = useTranslation();
   const { placeholder } = args;
 
   return Placeholder.configure({
@@ -34,7 +36,7 @@ export const CustomPlaceholderExtension = (args: TArgs) => {
         else return placeholder(editor.isFocused, editor.getHTML());
       }
 
-      return "Press '/' for commands...";
+      return t("advanced_description_placeholder");
     },
     includeChildren: true,
   });
