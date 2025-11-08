@@ -71,7 +71,7 @@ export const PeekOverviewHeader: React.FC<Props> = observer((props) => {
             as="div"
             value={peekMode}
             onChange={(val) => setPeekMode(val)}
-            className="relative flex-shrink-0 text-left"
+            className="relative flex-shrink-0 text-start"
           >
             <Listbox.Button
               className={`grid place-items-center text-custom-text-300 hover:text-custom-text-200 ${peekMode === "full" ? "rotate-45" : ""}`}
@@ -88,7 +88,7 @@ export const PeekOverviewHeader: React.FC<Props> = observer((props) => {
               leaveFrom="transform opacity-100 scale-100"
               leaveTo="transform opacity-0 scale-95"
             >
-              <Listbox.Options className="absolute left-0 z-10 mt-1 min-w-[12rem] origin-top-left overflow-y-auto whitespace-nowrap rounded-md border border-custom-border-300 bg-custom-background-90 text-xs shadow-lg focus:outline-none">
+              <Listbox.Options className="absolute start-0 z-10 mt-1 min-w-[12rem] origin-top-left overflow-y-auto whitespace-nowrap rounded-md border border-custom-border-300 bg-custom-background-90 text-xs shadow-lg focus:outline-none">
                 <div className="space-y-1 p-2">
                   {PEEK_MODES.map((mode) => (
                     <Listbox.Option

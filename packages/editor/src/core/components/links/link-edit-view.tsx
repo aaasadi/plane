@@ -130,7 +130,7 @@ export const LinkEditView = ({ viewProps }: LinkEditViewProps) => {
   return (
     <div
       onKeyDown={handleKeyDown}
-      className="shadow-md rounded p-2 flex flex-col gap-3 bg-custom-background-90 border-custom-border-100 border-2 animate-in fade-in translate-y-1"
+      className="shadow-md rounded-sm p-2 flex flex-col gap-3 bg-custom-background-90 border-custom-border-100 border-2 animate-in fade-in translate-y-1"
       style={{
         transition: "all 0.1s cubic-bezier(.55, .085, .68, .53)",
       }}

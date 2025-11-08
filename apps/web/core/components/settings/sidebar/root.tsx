@@ -39,7 +39,7 @@ export const SettingsSidebar = observer((props: SettingsSidebarProps) => {
   return (
     <div
       className={cn("flex w-[250px] flex-col gap-2 flex-shrink-0 overflow-y-scroll h-full md:pt-page-y ", {
-        "absolute left-0 top-[42px] z-50 h-fit max-h-[400px] overflow-scroll bg-custom-background-100 border border-custom-border-100 rounded shadow-sm p-4":
+        "absolute start-0 top-[42px] z-50 h-fit max-h-[400px] overflow-scroll bg-custom-background-100 border border-custom-border-100 rounded shadow-xs p-4":
           isMobile,
       })}
     >

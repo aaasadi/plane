@@ -53,7 +53,7 @@ export const AuthInput: React.FC<AuthInputProps> = ({
           <button
             type="button"
             onClick={() => setShowPassword(!showPassword)}
-            className="absolute right-3 h-5 w-5 stroke-custom-text-400 hover:cursor-pointer"
+            className="absolute end-3 h-5 w-5 stroke-custom-text-400 hover:cursor-pointer"
           >
             {showPassword ? <EyeOff className="h-5 w-5" /> : <Eye className="h-5 w-5" />}
           </button>

@@ -22,7 +22,7 @@ export const AppliedStatusFilters: React.FC<Props> = observer((props) => {
           <div
             key={status}
             className={cn(
-              "flex items-center gap-1 rounded py-1 px-1.5 text-xs",
+              "flex items-center gap-1 rounded-sm py-1 px-1.5 text-xs",
               statusDetails?.bgColor,
               statusDetails?.textColor
             )}

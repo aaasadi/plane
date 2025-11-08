@@ -22,7 +22,7 @@ export const MultipleSelectGroupAction: React.FC<Props> = (props) => {
 
   return (
     <Checkbox
-      className={cn("size-3.5 !outline-none", className)}
+      className={cn("size-3.5 !outline-hidden", className)}
       iconClassName="size-3"
       onClick={() => selectionHelpers.handleGroupClick(groupID)}
       checked={groupSelectionStatus === "complete"}

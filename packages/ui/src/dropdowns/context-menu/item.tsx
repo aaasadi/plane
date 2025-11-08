@@ -151,7 +151,7 @@ export const ContextMenuItem: React.FC<ContextMenuItemProps> = (props) => {
         ref={setReferenceElement}
         type="button"
         className={cn(
-          "w-full flex items-center gap-2 px-1 py-1.5 text-left text-custom-text-200 rounded text-xs select-none",
+          "w-full flex items-center gap-2 px-1 py-1.5 text-start text-custom-text-200 rounded text-xs select-none",
           {
             "bg-custom-background-90": isActive,
             "text-custom-text-400": item.disabled,
@@ -201,7 +201,7 @@ export const ContextMenuItem: React.FC<ContextMenuItemProps> = (props) => {
                   key={nestedItem.key}
                   type="button"
                   className={cn(
-                    "w-full flex items-center gap-2 px-1 py-1.5 text-left text-custom-text-200 rounded text-xs select-none",
+                    "w-full flex items-center gap-2 px-1 py-1.5 text-start text-custom-text-200 rounded text-xs select-none",
                     {
                       "bg-custom-background-90": index === activeNestedIndex,
                       "text-custom-text-400": nestedItem.disabled,

@@ -353,7 +353,7 @@ export const InFormContext: Story = {
               label={formData.emoji && formData.emoji.type === "emoji" ? formData.emoji.value : "Click to select icon"}
               defaultOpen={EmojiIconPickerTypes.EMOJI}
               closeOnSelect
-              buttonClassName="px-4 py-2 bg-custom-background-80 border border-custom-border-200 rounded hover:bg-custom-background-90 w-full text-left"
+              buttonClassName="px-4 py-2 bg-custom-background-80 border border-custom-border-200 rounded hover:bg-custom-background-90 w-full text-start"
             />
           </div>
           <button

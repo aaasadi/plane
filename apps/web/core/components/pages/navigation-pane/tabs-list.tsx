@@ -16,14 +16,14 @@ export const PageNavigationPaneTabsList = () => {
             <Tab
               key={tab.key}
               type="button"
-              className="relative z-[1] flex-1 py-1.5 text-sm font-semibold outline-none"
+              className="relative z-[1] flex-1 py-1.5 text-sm font-semibold outline-hidden"
             >
               {t(tab.i18n_label)}
             </Tab>
           ))}
           {/* active tab indicator */}
           <div
-            className="absolute top-1/2 -translate-y-1/2 bg-custom-background-90 rounded transition-all duration-500 ease-in-out pointer-events-none"
+            className="absolute top-1/2 -translate-y-1/2 bg-custom-background-90 rounded-sm transition-all duration-500 ease-in-out pointer-events-none"
             style={{
               left: `calc(${(selectedIndex / ORDERED_PAGE_NAVIGATION_TABS_LIST.length) * 100}% + 2px)`,
               height: "calc(100% - 4px)",

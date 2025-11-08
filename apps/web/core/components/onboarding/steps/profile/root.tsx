@@ -202,7 +202,7 @@ export const ProfileSetupStep: FC<Props> = observer(({ handleStepChange }) => {
         {/* Name Input */}
         <div className="flex flex-col gap-2">
           <label
-            className="block text-sm font-medium text-custom-text-300 after:content-['*'] after:ml-0.5 after:text-red-500"
+            className="block text-sm font-medium text-custom-text-300 after:content-['*'] after:ms-0.5 after:text-red-500"
             htmlFor="first_name"
           >
             Name

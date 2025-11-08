@@ -98,7 +98,7 @@ export const NotificationItemSnoozeOption: FC<TNotificationItemSnoozeOption> = o
               >
                 <Popover.Button
                   className={cn(
-                    "relative flex-shrink-0 w-5 h-5 rounded-sm flex justify-center items-center outline-none bg-custom-background-80 hover:bg-custom-background-90",
+                    "relative flex-shrink-0 w-5 h-5 rounded-xs flex justify-center items-center outline-none bg-custom-background-80 hover:bg-custom-background-90",
                     open ? "bg-custom-background-80" : ""
                   )}
                 >
@@ -115,11 +115,11 @@ export const NotificationItemSnoozeOption: FC<TNotificationItemSnoozeOption> = o
                 leaveFrom="opacity-100 translate-y-0"
                 leaveTo="opacity-0 translate-y-1"
               >
-                <Popover.Panel className="absolute mt-2 right-0 z-10 min-w-44 select-none">
+                <Popover.Panel className="absolute mt-2 end-0 z-10 min-w-44 select-none">
                   <div className="p-2 rounded-md border border-custom-border-200 bg-custom-background-100 space-y-1">
                     {data.snoozed_till && (
                       <button
-                        className="w-full text-left cursor-pointer px-2 p-1 transition-all hover:bg-custom-background-80 rounded-sm text-custom-text-200 text-sm"
+                        className="w-full text-start cursor-pointer px-2 p-1 transition-all hover:bg-custom-background-80 rounded-xs text-custom-text-200 text-sm"
                         onClick={(e) => {
                           e.preventDefault();
                           e.stopPropagation();
@@ -133,7 +133,7 @@ export const NotificationItemSnoozeOption: FC<TNotificationItemSnoozeOption> = o
                     {NOTIFICATION_SNOOZE_OPTIONS.map((option) => (
                       <button
                         key={option.key}
-                        className="w-full text-left cursor-pointer px-2 p-1 transition-all hover:bg-custom-background-80 rounded-sm text-custom-text-200 text-sm"
+                        className="w-full text-start cursor-pointer px-2 p-1 transition-all hover:bg-custom-background-80 rounded-xs text-custom-text-200 text-sm"
                         onClick={(e) => {
                           e.preventDefault();
                           e.stopPropagation();

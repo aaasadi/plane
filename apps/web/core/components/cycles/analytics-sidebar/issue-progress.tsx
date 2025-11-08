@@ -112,7 +112,7 @@ export const CycleAnalyticsProgress: FC<TCycleAnalyticsProgress> = observer((pro
                     {t("project_cycles.active_cycle.progress")}
                   </div>
                 </Disclosure.Button>
-                <Disclosure.Button className="ml-auto">
+                <Disclosure.Button className="ms-auto">
                   {open ? (
                     <ChevronUp className="h-3.5 w-3.5" aria-hidden="true" />
                   ) : (

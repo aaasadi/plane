@@ -350,7 +350,7 @@ export const ProjectDetailsForm: FC<IProjectDetailsForm> = (props) => {
                 className="text-sm"
                 position="right-start"
               >
-                <Info className="absolute right-2 top-2.5 h-4 w-4 text-custom-text-400" />
+                <Info className="absolute end-2 top-2.5 h-4 w-4 text-custom-text-400" />
               </Tooltip>
             </div>
             <span className="text-xs text-red-500">

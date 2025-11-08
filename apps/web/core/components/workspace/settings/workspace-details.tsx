@@ -157,7 +157,7 @@ export const WorkspaceDetails: FC = observer(() => {
           />
         )}
       />
-      <div className={`w-full md:pr-9 pr-4 ${isAdmin ? "" : "opacity-60"}`}>
+      <div className={`w-full md:pe-9 pe-4 ${isAdmin ? "" : "opacity-60"}`}>
         <div className="flex gap-5 border-b border-custom-border-100 pb-7 items-start">
           <div className="flex flex-col gap-1">
             <button type="button" onClick={() => setIsImageUploadModalOpen(true)} disabled={!isAdmin}>
@@ -165,7 +165,7 @@ export const WorkspaceDetails: FC = observer(() => {
                 <div className="relative mx-auto flex h-14 w-14">
                   <img
                     src={getFileURL(workspaceLogo)}
-                    className="absolute left-0 top-0 h-full w-full rounded-md object-cover"
+                    className="absolute start-0 top-0 h-full w-full rounded-md object-cover"
                     alt="Workspace Logo"
                   />
                 </div>
@@ -178,12 +178,12 @@ export const WorkspaceDetails: FC = observer(() => {
           </div>
           <div className="flex flex-col gap-1">
             <div className="text-lg font-semibold leading-6 mb:-my-5">{watch("name")}</div>
-            <button type="button" onClick={handleCopyUrl} className="text-sm tracking-tight text-left">{`${
+            <button type="button" onClick={handleCopyUrl} className="text-sm tracking-tight text-start">{`${
               typeof window !== "undefined" && window.location.origin.replace("http://", "").replace("https://", "")
             }/${currentWorkspace.slug}`}</button>
             {isAdmin && (
               <button
-                className="flex items-center gap-1.5 text-left text-xs font-medium text-custom-primary-100"
+                className="flex items-center gap-1.5 text-start text-xs font-medium text-custom-primary-100"
                 onClick={() => setIsImageUploadModalOpen(true)}
               >
                 {workspaceLogo && workspaceLogo !== "" ? (

@@ -41,16 +41,16 @@
           border-top: 2px solid rgba(var(--color-primary-100));
         }
 
-        &.selectedCell-border-left::after {
-          border-left: 2px solid rgba(var(--color-primary-100));
+        &.selectedCell-border-start::after {
+          border-inline-start: 2px solid rgba(var(--color-primary-100));
         }
 
         &.selectedCell-border-bottom::after {
           border-bottom: 2px solid rgba(var(--color-primary-100));
         }
 
-        &.selectedCell-border-right::after {
-          border-right: 2px solid rgba(var(--color-primary-100));
+        &.selectedCell-border-end::after {
+          border-inline-end: 2px solid rgba(var(--color-primary-100));
         }
       }
       /* End selected cell outline */

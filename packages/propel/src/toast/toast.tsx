@@ -112,15 +112,15 @@ const ToastRender = ({ id, toast }: { id: React.Key; toast: BaseToast.Root.Toast
       key={id}
       className={cn(
         // Base layout and positioning
-        "flex group items-center rounded-lg border shadow-sm p-2 w-[350px]",
-        "absolute right-3 bottom-3 z-[calc(1000-var(--toast-index))]",
+        "flex group items-center rounded-lg border shadow-xs p-2 w-[350px]",
+        "absolute end-3 bottom-3 z-[calc(1000-var(--toast-index))]",
         "select-none transition-[opacity,transform] duration-500 ease-&lsqb;cubic-bezier(0.22,1,0.36,1)&rsqb;",
 
         // Default transform with stacking and scaling
         "[transform:translateX(var(--toast-swipe-movement-x))_translateY(calc(var(--toast-swipe-movement-y)+calc(min(var(--toast-index),10)*-10px)))_scale(calc(max(0,1-(var(--toast-index)*0.1))))]",
 
         // Pseudo-element for gap spacing
-        "after:absolute after:bottom-full after:left-0 after:h-[calc(var(--gap)+1px)] after:w-full after:content-['']",
+        "after:absolute after:bottom-full after:start-0 after:h-[calc(var(--gap)+1px)] after:w-full after:content-['']",
 
         // State-based opacity
         "data-[ending-style]:opacity-0 data-[limited]:opacity-0",
@@ -156,12 +156,12 @@ const ToastRender = ({ id, toast }: { id: React.Key; toast: BaseToast.Root.Toast
       {toastData.type === TOAST_TYPE.LOADING ? (
         <div className="w-full h-full flex items-center justify-center px-4 py-2">
           {data.icon && <div className="flex items-center justify-center">{data.icon}</div>}
-          <div className={cn("w-full flex items-center gap-0.5 pr-1", data.icon ? "pl-4" : "pl-1")}>
+          <div className={cn("w-full flex items-center gap-0.5 pe-1", data.icon ? "ps-4" : "ps-1")}>
             <div className={cn("grow text-sm font-semibold", data.textColorClassName)}>
               {toastData.title ?? "Loading..."}
             </div>
             <BaseToast.Close
-              className="absolute top-2 right-2.5 text-toast-text-secondary hover:text-toast-text-tertiary cursor-pointer"
+              className="absolute top-2 end-2.5 text-toast-text-secondary hover:text-toast-text-tertiary cursor-pointer"
               aria-label="Close"
             >
               <X strokeWidth={1.5} width={14} height={14} />
@@ -170,13 +170,13 @@ const ToastRender = ({ id, toast }: { id: React.Key; toast: BaseToast.Root.Toast
         </div>
       ) : (
         <>
-          <BaseToast.Close className="absolute top-2 right-2.5 text-toast-text-secondary hover:text-toast-text-tertiary cursor-pointer">
+          <BaseToast.Close className="absolute top-2 end-2.5 text-toast-text-secondary hover:text-toast-text-tertiary cursor-pointer">
             <X strokeWidth={1.5} width={14} height={14} />
           </BaseToast.Close>
           <div className="w-full flex flex-col gap-2 p-2">
             <div className="flex items-center w-full">
               {data.icon && <div className="flex items-center justify-center">{data.icon}</div>}
-              <div className={cn("flex flex-col gap-0.5 pr-1", data.icon ? "pl-4" : "pl-1")}>
+              <div className={cn("flex flex-col gap-0.5 pe-1", data.icon ? "ps-4" : "ps-1")}>
                 <BaseToast.Title className={cn("text-sm font-semibold", data.textColorClassName)}>
                   {toastData.title}
                 </BaseToast.Title>
@@ -187,7 +187,7 @@ const ToastRender = ({ id, toast }: { id: React.Key; toast: BaseToast.Root.Toast
                 )}
               </div>
             </div>
-            {toastData.actionItems && <div className="flex items-center pl-[32px]">{toastData.actionItems}</div>}
+            {toastData.actionItems && <div className="flex items-center ps-[32px]">{toastData.actionItems}</div>}
           </div>
         </>
       )}

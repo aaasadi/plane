@@ -168,7 +168,7 @@ export const ImagePickerPopover: React.FC<Props> = observer((props) => {
   return (
     <Popover className="relative z-19" ref={ref} tabIndex={tabIndex} onKeyDown={handleKeyDown}>
       <Popover.Button
-        className="rounded border border-custom-border-300 bg-custom-background-100 px-2 py-1 text-xs text-custom-text-200 hover:text-custom-text-100"
+        className="rounded-sm border border-custom-border-300 bg-custom-background-100 px-2 py-1 text-xs text-custom-text-200 hover:text-custom-text-100"
         onClick={handleOnClick}
         disabled={disabled}
       >
@@ -177,15 +177,15 @@ export const ImagePickerPopover: React.FC<Props> = observer((props) => {
 
       {isOpen && (
         <Popover.Panel
-          className="absolute right-0 z-20 mt-2 rounded-md border border-custom-border-200 bg-custom-background-100 shadow-custom-shadow-sm"
+          className="absolute end-0 z-20 mt-2 rounded-md border border-custom-border-200 bg-custom-background-100 shadow-custom-shadow-sm"
           static
         >
           <div
             ref={imagePickerRef}
-            className="flex h-96 w-80 flex-col overflow-auto rounded border border-custom-border-300 bg-custom-background-100 p-3 shadow-2xl md:h-[28rem] md:w-[36rem]"
+            className="flex h-96 w-80 flex-col overflow-auto rounded-sm border border-custom-border-300 bg-custom-background-100 p-3 shadow-2xl md:h-[28rem] md:w-[36rem]"
           >
             <Tab.Group>
-              <Tab.List as="span" className="inline-block rounded bg-custom-background-80 p-1">
+              <Tab.List as="span" className="inline-block rounded-sm bg-custom-background-80 p-1">
                 {tabOptions.map((tab) => {
                   if (!unsplashImages && unsplashError && tab.key === "unsplash") return null;
                   if (projectCoverImages && projectCoverImages.length === 0 && tab.key === "images") return null;
@@ -194,7 +194,7 @@ export const ImagePickerPopover: React.FC<Props> = observer((props) => {
                     <Tab
                       key={tab.key}
                       className={({ selected }) =>
-                        `rounded px-4 py-1 text-center text-sm outline-none transition-colors ${
+                        `rounded-sm px-4 py-1 text-center text-sm outline-hidden transition-colors ${
                           selected ? "bg-custom-primary text-white" : "text-custom-text-100"
                         }`
                       }
@@ -249,7 +249,7 @@ export const ImagePickerPopover: React.FC<Props> = observer((props) => {
                               <img
                                 src={image.urls.small}
                                 alt={image.alt_description}
-                                className="absolute left-0 top-0 h-full w-full cursor-pointer rounded object-cover"
+                                className="absolute start-0 top-0 h-full w-full cursor-pointer rounded-sm object-cover"
                               />
                             </div>
                           ))}
@@ -288,7 +288,7 @@ export const ImagePickerPopover: React.FC<Props> = observer((props) => {
                               <img
                                 src={image}
                                 alt={`Default project cover image- ${index}`}
-                                className="absolute left-0 top-0 h-full w-full cursor-pointer rounded object-cover"
+                                className="absolute start-0 top-0 h-full w-full cursor-pointer rounded-sm object-cover"
                               />
                             </div>
                           ))}
@@ -315,7 +315,7 @@ export const ImagePickerPopover: React.FC<Props> = observer((props) => {
                     <div className="flex w-full flex-1 items-center gap-3">
                       <div
                         {...getRootProps()}
-                        className={`relative grid h-full w-full cursor-pointer place-items-center rounded-lg p-12 text-center focus:outline-none focus:ring-2 focus:ring-custom-primary focus:ring-offset-2 ${
+                        className={`relative grid h-full w-full cursor-pointer place-items-center rounded-lg p-12 text-center focus:outline-hidden focus:ring-2 focus:ring-custom-primary focus:ring-offset-2 ${
                           (image === null && isDragActive) || !value
                             ? "border-2 border-dashed border-custom-border-200 hover:bg-custom-background-90"
                             : ""
@@ -323,7 +323,7 @@ export const ImagePickerPopover: React.FC<Props> = observer((props) => {
                       >
                         <button
                           type="button"
-                          className="absolute right-0 top-0 z-40 -translate-y-1/2 rounded bg-custom-background-90 px-2 py-0.5 text-xs font-medium text-custom-text-200"
+                          className="absolute end-0 top-0 z-40 -translate-y-1/2 rounded-sm bg-custom-background-90 px-2 py-0.5 text-xs font-medium text-custom-text-200"
                         >
                           Edit
                         </button>

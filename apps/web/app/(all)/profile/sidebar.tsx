@@ -127,10 +127,10 @@ export const ProfileLayoutSidebar = observer(() => {
 
   return (
     <div
-      className={`fixed inset-y-0 z-20 flex h-full flex-shrink-0 flex-grow-0 flex-col border-r border-custom-sidebar-border-200 bg-custom-sidebar-background-100 duration-300 md:relative 
-        ${sidebarCollapsed ? "-ml-[250px]" : ""}
-        sm:${sidebarCollapsed ? "-ml-[250px]" : ""}
-        md:ml-0 ${sidebarCollapsed ? "w-[70px]" : "w-[250px]"}
+      className={`fixed inset-y-0 z-20 flex h-full flex-shrink-0 flex-grow-0 flex-col border-e border-custom-sidebar-border-200 bg-custom-sidebar-background-100 duration-300 md:relative 
+        ${sidebarCollapsed ? "-ms-[250px]" : ""}
+        sm:${sidebarCollapsed ? "-ms-[250px]" : ""}
+        md:ms-0 ${sidebarCollapsed ? "w-[70px]" : "w-[250px]"}
       `}
     >
       <div ref={ref} className="flex h-full w-full flex-col gap-y-4">
@@ -150,7 +150,7 @@ export const ProfileLayoutSidebar = observer(() => {
         </Link>
         <div className="flex flex-shrink-0 flex-col overflow-x-hidden">
           {!sidebarCollapsed && (
-            <h6 className="rounded px-6 text-sm font-semibold text-custom-sidebar-text-400">{t("your_account")}</h6>
+            <h6 className="rounded-sm px-6 text-sm font-semibold text-custom-sidebar-text-400">{t("your_account")}</h6>
           )}
           <div className="vertical-scrollbar scrollbar-sm mt-2 px-4 h-full space-y-1 overflow-y-auto">
             {PROFILE_ACTION_LINKS.map((link) => {
@@ -161,7 +161,7 @@ export const ProfileLayoutSidebar = observer(() => {
                   <Tooltip
                     tooltipContent={t(link.key)}
                     position="right"
-                    className="ml-2"
+                    className="ms-2"
                     disabled={!sidebarCollapsed}
                     isMobile={isMobile}
                   >
@@ -184,20 +184,20 @@ export const ProfileLayoutSidebar = observer(() => {
         </div>
         <div className="flex flex-col overflow-x-hidden">
           {!sidebarCollapsed && (
-            <h6 className="rounded px-6 text-sm font-semibold text-custom-sidebar-text-400">{t("workspaces")}</h6>
+            <h6 className="rounded-sm px-6 text-sm font-semibold text-custom-sidebar-text-400">{t("workspaces")}</h6>
           )}
           {workspacesList && workspacesList.length > 0 && (
             <div
               className={cn("vertical-scrollbar scrollbar-xs mt-2 px-4 h-full space-y-1.5 overflow-y-auto", {
                 "scrollbar-sm": !sidebarCollapsed,
-                "ml-2.5 px-1": sidebarCollapsed,
+                "ms-2.5 px-1": sidebarCollapsed,
               })}
             >
               {workspacesList.map((workspace) => (
                 <Link
                   key={workspace.id}
                   href={`/${workspace.slug}`}
-                  className={`flex flex-grow cursor-pointer select-none items-center truncate text-left text-sm font-medium ${
+                  className={`flex flex-grow cursor-pointer select-none items-center truncate text-start text-sm font-medium ${
                     sidebarCollapsed ? "justify-center" : `justify-between`
                   }`}
                   onClick={handleItemClick}
@@ -209,13 +209,13 @@ export const ProfileLayoutSidebar = observer(() => {
                   >
                     <span
                       className={`relative flex h-6 w-6 flex-shrink-0 items-center  justify-center p-2 text-xs uppercase ${
-                        !workspace?.logo_url && "rounded bg-custom-primary-500 text-white"
+                        !workspace?.logo_url && "rounded-sm bg-custom-primary-500 text-white"
                       }`}
                     >
                       {workspace?.logo_url && workspace.logo_url !== "" ? (
                         <img
                           src={getFileURL(workspace.logo_url)}
-                          className="absolute left-0 top-0 h-full w-full rounded object-cover"
+                          className="absolute start-0 top-0 h-full w-full rounded-sm object-cover"
                           alt="Workspace Logo"
                         />
                       ) : (
@@ -236,12 +236,12 @@ export const ProfileLayoutSidebar = observer(() => {
                 <Tooltip
                   tooltipContent={t(link.key)}
                   position="right"
-                  className="ml-2"
+                  className="ms-2"
                   disabled={!sidebarCollapsed}
                   isMobile={isMobile}
                 >
                   <div
-                    className={`group flex w-full items-center gap-2.5 rounded-md px-3 py-2 text-sm font-medium text-custom-sidebar-text-200 outline-none hover:bg-custom-sidebar-background-80 focus:bg-custom-sidebar-background-80 ${
+                    className={`group flex w-full items-center gap-2.5 rounded-md px-3 py-2 text-sm font-medium text-custom-sidebar-text-200 outline-hidden hover:bg-custom-sidebar-background-80 focus:bg-custom-sidebar-background-80 ${
                       sidebarCollapsed ? "justify-center" : ""
                     }`}
                   >
@@ -270,14 +270,14 @@ export const ProfileLayoutSidebar = observer(() => {
             </button>
             <button
               type="button"
-              className="grid place-items-center rounded-md p-1.5 text-custom-text-200 outline-none hover:bg-custom-background-90 hover:text-custom-text-100 md:hidden"
+              className="grid place-items-center rounded-md p-1.5 text-custom-text-200 outline-hidden hover:bg-custom-background-90 hover:text-custom-text-100 md:hidden"
               onClick={() => toggleSidebar()}
             >
               <MoveLeft className="h-3.5 w-3.5" />
             </button>
             <button
               type="button"
-              className={`ml-auto hidden place-items-center rounded-md p-1.5 text-custom-text-200 outline-none hover:bg-custom-background-90 hover:text-custom-text-100 md:grid ${
+              className={`ms-auto hidden place-items-center rounded-md p-1.5 text-custom-text-200 outline-hidden hover:bg-custom-background-90 hover:text-custom-text-100 md:grid ${
                 sidebarCollapsed ? "w-full" : ""
               }`}
               onClick={() => toggleSidebar()}

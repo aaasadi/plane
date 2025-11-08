@@ -83,7 +83,7 @@ export const CustomSearchSelect = (props: ICustomSearchSelectProps) => {
       as="div"
       ref={dropdownRef}
       tabIndex={tabIndex}
-      className={cn("relative flex-shrink-0 text-left", className)}
+      className={cn("relative flex-shrink-0 text-start", className)}
       onKeyDown={handleKeyDown}
       {...comboboxProps}
     >

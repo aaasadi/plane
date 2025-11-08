@@ -84,7 +84,7 @@ export const IssueLinkItem: FC<TIssueLinkItem> = observer((props) => {
                 message: t("common.link_copied_to_clipboard"),
               });
             }}
-            className="relative grid place-items-center rounded p-1 text-custom-text-400 outline-none group-hover:text-custom-text-200 cursor-pointer hover:bg-custom-background-80"
+            className="relative grid place-items-center rounded p-1 text-custom-text-400 outline-hidden group-hover:text-custom-text-200 cursor-pointer hover:bg-custom-background-80"
           >
             <Copy className="h-3.5 w-3.5 stroke-[1.5]" />
           </span>

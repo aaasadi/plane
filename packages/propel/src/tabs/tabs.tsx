@@ -49,7 +49,7 @@ const TabsTrigger = React.forwardRef<
     data-slot="tabs-trigger"
     className={cn(
       "flex items-center justify-center p-1 min-w-fit w-full font-medium text-custom-text-100 outline-none focus:outline-none cursor-pointer transition-all duration-200 ease-in-out rounded",
-      "data-[selected]:bg-custom-background-100 data-[selected]:text-custom-text-100 data-[selected]:shadow-sm",
+      "data-[selected]:bg-custom-background-100 data-[selected]:text-custom-text-100 data-[selected]:shadow-xs",
       "text-custom-text-400 hover:text-custom-text-300 hover:bg-custom-background-80/60",
       "disabled:text-custom-text-400 disabled:cursor-not-allowed",
       {
@@ -78,7 +78,7 @@ const TabsContent = React.forwardRef<
 const TabsIndicator = React.forwardRef<HTMLDivElement, React.ComponentProps<"div">>(({ className, ...props }, ref) => (
   <div
     className={cn(
-      "absolute left-0 top-[50%] z-[-1] h-6 w-[var(--active-tab-width)] translate-x-[var(--active-tab-left)] -translate-y-[50%] rounded-sm bg-custom-background-100 shadow-sm transition-[width,transform] duration-200 ease-in-out",
+      "absolute start-0 top-[50%] z-[-1] h-6 w-[var(--active-tab-width)] translate-x-[var(--active-tab-left)] -translate-y-[50%] rounded-xs bg-custom-background-100 shadow-xs transition-[width,transform] duration-200 ease-in-out",
       className
     )}
     {...props}

@@ -162,10 +162,10 @@ export const WorkspaceAuthWrapper: FC<IWorkspaceAuthWrapper> = observer((props) 
             <div className="relative flex items-center gap-2">
               <div className="text-sm font-medium">{currentUser?.email}</div>
               <div
-                className="relative flex h-6 w-6 flex-shrink-0 cursor-pointer items-center justify-center overflow-hidden rounded hover:bg-custom-background-80"
+                className="relative flex h-6 w-6 flex-shrink-0 cursor-pointer items-center justify-center overflow-hidden rounded-sm hover:bg-custom-background-80"
                 onClick={handleSignOut}
               >
-                <Tooltip tooltipContent={"Sign out"} position="top" className="ml-2" isMobile={isMobile}>
+                <Tooltip tooltipContent={"Sign out"} position="top" className="ms-2" isMobile={isMobile}>
                   <LogOut size={14} />
                 </Tooltip>
               </div>
@@ -201,7 +201,7 @@ export const WorkspaceAuthWrapper: FC<IWorkspaceAuthWrapper> = observer((props) 
             </div>
           </div>
 
-          <div className="absolute bottom-0 left-4 top-0 w-0 bg-custom-background-80 md:w-0.5" />
+          <div className="absolute bottom-0 start-4 top-0 w-0 bg-custom-background-80 md:w-0.5" />
         </div>
       </div>
     );

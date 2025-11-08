@@ -66,7 +66,7 @@ export const ColumnOptionsDropdown: React.FC<Props> = (props) => {
     <>
       <button
         type="button"
-        className="flex items-center justify-between gap-2 w-full rounded px-1 py-1.5 text-xs text-left truncate text-custom-text-200 hover:bg-custom-background-80"
+        className="flex items-center justify-between gap-2 w-full rounded-sm px-1 py-1.5 text-xs text-start truncate text-custom-text-200 hover:bg-custom-background-80"
         onClick={(e) => {
           e.preventDefault();
           e.stopPropagation();
@@ -83,7 +83,7 @@ export const ColumnOptionsDropdown: React.FC<Props> = (props) => {
         <button
           key={item.key}
           type="button"
-          className="flex items-center gap-2 w-full rounded px-1 py-1.5 text-xs text-left truncate text-custom-text-200 hover:bg-custom-background-80"
+          className="flex items-center gap-2 w-full rounded-sm px-1 py-1.5 text-xs text-start truncate text-custom-text-200 hover:bg-custom-background-80"
           onClick={(e) => {
             e.preventDefault();
             e.stopPropagation();

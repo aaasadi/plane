@@ -62,8 +62,8 @@ const ListSection = ({ itemCount }: { itemCount: number }) => (
   <div className="flex flex-shrink-0 flex-col">
     <Row className="sticky top-0 z-[2] w-full flex-shrink-0 border-b border-custom-border-200 bg-custom-background-90 py-1">
       <div className="flex items-center gap-2 py-1.5 w-full">
-        <span className="h-6 w-6 bg-custom-background-80 rounded animate-pulse" />
-        <span className="h-6 w-24 bg-custom-background-80 rounded animate-pulse" />
+        <span className="h-6 w-6 bg-custom-background-80 rounded-sm animate-pulse" />
+        <span className="h-6 w-24 bg-custom-background-80 rounded-sm animate-pulse" />
       </div>
     </Row>
     <div className="relative h-full w-full">

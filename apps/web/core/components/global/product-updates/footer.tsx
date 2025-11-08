@@ -14,7 +14,7 @@ export const ProductUpdatesFooter = () => {
         <a
           href="https://go.plane.so/p-docs"
           target="_blank"
-          className="text-sm text-custom-text-200 hover:text-custom-text-100 hover:underline underline-offset-1 outline-none"
+          className="text-sm text-custom-text-200 hover:text-custom-text-100 hover:underline underline-offset-1 outline-hidden"
         >
           {t("docs")}
         </a>
@@ -25,7 +25,7 @@ export const ProductUpdatesFooter = () => {
           data-ph-element={USER_TRACKER_ELEMENTS.CHANGELOG_REDIRECTED}
           href="https://go.plane.so/p-changelog"
           target="_blank"
-          className="text-sm text-custom-text-200 hover:text-custom-text-100 hover:underline underline-offset-1 outline-none"
+          className="text-sm text-custom-text-200 hover:text-custom-text-100 hover:underline underline-offset-1 outline-hidden"
         >
           {t("full_changelog")}
         </a>
@@ -35,7 +35,7 @@ export const ProductUpdatesFooter = () => {
         <a
           href="mailto:support@plane.so"
           target="_blank"
-          className="text-sm text-custom-text-200 hover:text-custom-text-100 hover:underline underline-offset-1 outline-none"
+          className="text-sm text-custom-text-200 hover:text-custom-text-100 hover:underline underline-offset-1 outline-hidden"
         >
           {t("support")}
         </a>
@@ -45,7 +45,7 @@ export const ProductUpdatesFooter = () => {
         <a
           href="https://go.plane.so/p-discord"
           target="_blank"
-          className="text-sm text-custom-text-200 hover:text-custom-text-100 hover:underline underline-offset-1 outline-none"
+          className="text-sm text-custom-text-200 hover:text-custom-text-100 hover:underline underline-offset-1 outline-hidden"
         >
           Discord
         </a>
@@ -55,7 +55,7 @@ export const ProductUpdatesFooter = () => {
         target="_blank"
         className={cn(
           getButtonStyling("accent-primary", "sm"),
-          "flex gap-1.5 items-center text-center font-medium hover:underline underline-offset-2 outline-none"
+          "flex gap-1.5 items-center text-center font-medium hover:underline underline-offset-2 outline-hidden"
         )}
       >
         <PlaneLogo className="h-4 w-auto text-custom-text-100" />

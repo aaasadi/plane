@@ -205,7 +205,7 @@ export const EditorBubbleMenu: FC<Props> = (props) => {
                   e.stopPropagation();
                 }}
                 className={cn(
-                  "size-7 grid place-items-center rounded text-custom-text-300 hover:bg-custom-background-80 active:bg-custom-background-80 transition-colors",
+                  "size-7 grid place-items-center rounded-sm text-custom-text-300 hover:bg-custom-background-80 active:bg-custom-background-80 transition-colors",
                   {
                     "bg-custom-background-80 text-custom-text-100": editorState[item.key],
                   }

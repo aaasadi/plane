@@ -74,7 +74,7 @@ export const DateFilterModal: React.FC<Props> = ({ title, handleClose, isOpen, o
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="relative flex transform rounded-lg bg-custom-background-100 px-5 py-8 text-left shadow-custom-shadow-md transition-all sm:my-8 sm:w-full sm:max-w-2xl sm:p-6">
+              <Dialog.Panel className="relative flex transform rounded-lg bg-custom-background-100 px-5 py-8 text-start shadow-custom-shadow-md transition-all sm:my-8 sm:w-full sm:max-w-2xl sm:p-6">
                 <form className="space-y-4">
                   <div className="flex w-full justify-between">
                     <Controller
@@ -138,7 +138,7 @@ export const DateFilterModal: React.FC<Props> = ({ title, handleClose, isOpen, o
                     <h6 className="flex items-center gap-1 text-xs">
                       <span className="text-custom-text-200">After:</span>
                       <span>{renderFormattedDate(watch("date1"))}</span>
-                      <span className="ml-1 text-custom-text-200">Before:</span>
+                      <span className="ms-1 text-custom-text-200">Before:</span>
                       {!isInvalid && <span>{renderFormattedDate(watch("date2"))}</span>}
                     </h6>
                   )}

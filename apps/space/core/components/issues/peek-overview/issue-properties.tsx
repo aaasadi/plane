@@ -81,7 +81,7 @@ export const PeekOverviewIssueProperties: React.FC<Props> = observer(({ issueDet
           </div>
           <div className="w-3/4">
             <div
-              className={`inline-flex items-center gap-1.5 rounded px-2.5 py-0.5 text-left text-sm capitalize ${
+              className={`inline-flex items-center gap-1.5 rounded px-2.5 py-0.5 text-start text-sm capitalize ${
                 priority?.key === "urgent"
                   ? "border-red-500/20 bg-red-500/20 text-red-500"
                   : priority?.key === "high"

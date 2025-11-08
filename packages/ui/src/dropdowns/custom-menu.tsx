@@ -220,7 +220,7 @@ const CustomMenu = (props: ICustomMenuDropdownProps) => {
       as="div"
       ref={dropdownRef}
       tabIndex={tabIndex}
-      className={cn("relative w-min text-left", className)}
+      className={cn("relative w-min text-start", className)}
       onKeyDownCapture={handleKeyDown}
       onClick={(e) => {
         e.stopPropagation();
@@ -272,7 +272,7 @@ const CustomMenu = (props: ICustomMenuDropdownProps) => {
                     type="button"
                     className={`flex items-center justify-between gap-1 whitespace-nowrap rounded-md px-2.5 py-1 text-xs duration-300 ${
                       open ? "bg-custom-background-90 text-custom-text-100" : "text-custom-text-200"
-                    } ${noBorder ? "" : "border border-custom-border-300 shadow-sm focus:outline-none"} ${
+                    } ${noBorder ? "" : "border border-custom-border-300 shadow-xs focus:outline-none"} ${
                       disabled
                         ? "cursor-not-allowed text-custom-text-200"
                         : "cursor-pointer hover:bg-custom-background-80"
@@ -395,7 +395,7 @@ const SubMenu: React.FC<ICustomSubMenuProps> = (props) => {
           {({ active }) => (
             <div
               className={cn(
-                "w-full select-none rounded px-1 py-1.5 text-left text-custom-text-200 flex items-center justify-between cursor-pointer",
+                "w-full select-none rounded px-1 py-1.5 text-start text-custom-text-200 flex items-center justify-between cursor-pointer",
                 {
                   "bg-custom-background-80": active && !disabled,
                   "text-custom-text-400": disabled,
@@ -458,7 +458,7 @@ const MenuItem: React.FC<ICustomMenuItemProps> = (props) => {
         <button
           type="button"
           className={cn(
-            "w-full select-none truncate rounded px-1 py-1.5 text-left text-custom-text-200",
+            "w-full select-none truncate rounded px-1 py-1.5 text-start text-custom-text-200",
             {
               "bg-custom-background-80": active && !disabled,
               "text-custom-text-400": disabled,
@@ -488,7 +488,7 @@ const SubMenuTrigger: React.FC<ICustomSubMenuTriggerProps> = (props) => {
       {({ active }) => (
         <div
           className={cn(
-            "w-full select-none rounded px-1 py-1.5 text-left text-custom-text-200 flex items-center justify-between",
+            "w-full select-none rounded px-1 py-1.5 text-start text-custom-text-200 flex items-center justify-between",
             {
               "bg-custom-background-80": active && !disabled,
               "text-custom-text-400": disabled,

@@ -73,7 +73,7 @@ export const IssueParentSelect: React.FC<TIssueParentSelect> = observer((props) 
       <button
         type="button"
         className={cn(
-          "group flex items-center justify-between gap-2 px-2 py-0.5 rounded outline-none",
+          "group flex items-center justify-between gap-2 px-2 py-0.5 rounded outline-hidden",
           {
             "cursor-not-allowed": disabled,
             "hover:bg-custom-background-80": !disabled,

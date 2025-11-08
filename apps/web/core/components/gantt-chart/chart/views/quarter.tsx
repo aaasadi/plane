@@ -16,7 +16,7 @@ export const QuarterChartView: FC<any> = observer(() => {
   const quarterBlocks: IQuarterMonthBlock[] = groupMonthsToQuarters(monthBlocks);
 
   return (
-    <div className={`absolute top-0 left-0 min-h-full h-max w-max flex`}>
+    <div className={`absolute top-0 start-0 min-h-full h-max w-max flex`}>
       {currentViewData &&
         quarterBlocks?.map((quarterBlock, rootIndex) => (
           <div
@@ -40,7 +40,7 @@ export const QuarterChartView: FC<any> = observer(() => {
                 >
                   {quarterBlock?.title}
                   {quarterBlock.today && (
-                    <span className={cn("rounded ml-2 font-medium  bg-custom-primary-100 px-1 text-2xs text-white")}>
+                    <span className={cn("rounded ms-2 font-medium  bg-custom-primary-100 px-1 text-2xs text-white")}>
                       Current
                     </span>
                   )}

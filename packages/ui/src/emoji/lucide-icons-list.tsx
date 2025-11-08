@@ -36,7 +36,7 @@ export const LucideIconsList: React.FC<TIconsListProps> = (props) => {
               onFocus={() => setIsInputFocused(true)}
               onBlur={() => setIsInputFocused(false)}
             >
-              <Search className="absolute left-2.5 bottom-3 h-3.5 w-3.5 text-custom-text-400" />
+              <Search className="absolute start-2.5 bottom-3 h-3.5 w-3.5 text-custom-text-400" />
               <Input
                 placeholder="Search"
                 value={query}
@@ -48,15 +48,15 @@ export const LucideIconsList: React.FC<TIconsListProps> = (props) => {
         )}
         <div className="grid grid-cols-9 gap-2 items-center justify-items-center px-2.5 py-1 h-9">
           {showHexInput ? (
-            <div className="col-span-8 flex items-center gap-1 justify-self-stretch ml-2">
+            <div className="col-span-8 flex items-center gap-1 justify-self-stretch ms-2">
               <span
-                className="h-4 w-4 flex-shrink-0 rounded-full mr-1"
+                className="h-4 w-4 flex-shrink-0 rounded-full me-1"
                 style={{
                   backgroundColor: `#${hexValue}`,
                 }}
               />
               <span className="text-xs text-custom-text-300 flex-shrink-0">HEX</span>
-              <span className="text-xs text-custom-text-200 flex-shrink-0 -mr-1">#</span>
+              <span className="text-xs text-custom-text-200 flex-shrink-0 -me-1">#</span>
               <Input
                 type="text"
                 value={hexValue}
@@ -65,7 +65,7 @@ export const LucideIconsList: React.FC<TIconsListProps> = (props) => {
                   setHexValue(value);
                   if (/^[0-9A-Fa-f]{6}$/.test(value)) setActiveColor(adjustColorForContrast(`#${value}`));
                 }}
-                className="flex-grow pl-0 text-xs text-custom-text-200"
+                className="flex-grow ps-0 text-xs text-custom-text-200"
                 mode="true-transparent"
                 autoFocus
               />
@@ -102,7 +102,7 @@ export const LucideIconsList: React.FC<TIconsListProps> = (props) => {
             )}
           </button>
         </div>
-        <div className="flex items-center gap-2 w-full pl-4 pr-3 py-1 h-6">
+        <div className="flex items-center gap-2 w-full ps-4 pe-3 py-1 h-6">
           <InfoIcon className="flex-shrink-0 h-3 w-3" />
           <p className="!text-xs"> Colors will be adjusted to ensure sufficient contrast.</p>
         </div>

@@ -48,7 +48,7 @@ export const ReactionSelector: React.FC<Props> = (props) => {
             leaveTo="opacity-0 translate-y-1"
           >
             <Popover.Panel
-              className={`absolute -left-2 z-10 bg-custom-sidebar-background-100 ${
+              className={`absolute -start-2 z-10 bg-custom-sidebar-background-100 ${
                 position === "top" ? "-top-12" : "-bottom-12"
               }`}
             >

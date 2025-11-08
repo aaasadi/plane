@@ -47,7 +47,7 @@ export const SubIssueFilters: FC<TSubIssueFiltersProps> = observer((props) => {
               isFilterApplied && "bg-custom-primary-60/20"
             )}
           >
-            {isFilterApplied && <span className="p-1 rounded-full bg-custom-primary-100 absolute -top-1 -right-1" />}
+            {isFilterApplied && <span className="p-1 rounded-full bg-custom-primary-100 absolute -top-1 -end-1" />}
             <ListFilter className="h-3.5 w-3.5 text-custom-text-100" />
           </div>
         }
@@ -58,7 +58,7 @@ export const SubIssueFilters: FC<TSubIssueFiltersProps> = observer((props) => {
               <Search className="text-custom-text-400" size={12} strokeWidth={2} />
               <input
                 type="text"
-                className="w-full bg-custom-background-90 outline-none placeholder:text-custom-text-400"
+                className="w-full bg-custom-background-90 outline-hidden placeholder:text-custom-text-400"
                 placeholder={t("common.search.label")}
                 value={filtersSearchQuery}
                 onChange={(e) => setFiltersSearchQuery(e.target.value)}
@@ -70,7 +70,7 @@ export const SubIssueFilters: FC<TSubIssueFiltersProps> = observer((props) => {
               )}
             </div>
           </div>
-          <div className="vertical-scrollbar scrollbar-sm h-full w-full divide-y divide-custom-border-200 overflow-y-auto px-2.5 text-left">
+          <div className="vertical-scrollbar scrollbar-sm h-full w-full divide-y divide-custom-border-200 overflow-y-auto px-2.5 text-start">
             {/* Priority */}
             {isFilterEnabled("priority") && (
               <div className="py-2">

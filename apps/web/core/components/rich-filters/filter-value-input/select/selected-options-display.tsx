@@ -37,7 +37,7 @@ export const SelectedOptionsDisplay = <V extends TFilterValue>(props: TSelectedO
       {selectedOptions.slice(0, displayCount).map((option, index) => (
         <React.Fragment key={index}>
           <div className="flex items-center whitespace-nowrap">
-            {option?.icon && <span className={cn("mr-1", option.iconClassName)}>{option.icon}</span>}
+            {option?.icon && <span className={cn("me-1", option.iconClassName)}>{option.icon}</span>}
             <span className="truncate max-w-24">{option?.label}</span>
           </div>
           {index < Math.min(displayCount, selectedOptions.length) - 1 && (
@@ -52,7 +52,7 @@ export const SelectedOptionsDisplay = <V extends TFilterValue>(props: TSelectedO
           enter="transition-opacity duration-300"
           enterFrom="opacity-0"
           enterTo="opacity-100"
-          className="text-custom-text-300 whitespace-nowrap ml-1"
+          className="text-custom-text-300 whitespace-nowrap ms-1"
         >
           +{remainingCount} more
         </Transition>

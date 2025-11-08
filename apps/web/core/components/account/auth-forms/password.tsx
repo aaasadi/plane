@@ -131,7 +131,7 @@ export const AuthPasswordForm: React.FC<Props> = observer((props: Props) => {
           </div>
           <div className="w-full text-sm font-medium text-red-500">{t("auth.sign_up.errors.password.strength")}</div>
           <div
-            className="relative ml-auto w-6 h-6 rounded-sm flex justify-center items-center transition-all cursor-pointer hover:bg-red-500/20 text-custom-primary-100/80"
+            className="relative ms-auto w-6 h-6 rounded-xs flex justify-center items-center transition-all cursor-pointer hover:bg-red-500/20 text-custom-primary-100/80"
             onClick={() => setBannerMessage(false)}
           >
             <X className="w-4 h-4 flex-shrink-0 text-red-500" />
@@ -202,7 +202,7 @@ export const AuthPasswordForm: React.FC<Props> = observer((props: Props) => {
             {passwordFormData.email.length > 0 && (
               <button
                 type="button"
-                className="absolute right-3 size-5"
+                className="absolute end-3 size-5"
                 onClick={handleEmailClear}
                 aria-label={t("aria_labels.auth_forms.clear_email")}
               >
@@ -224,7 +224,7 @@ export const AuthPasswordForm: React.FC<Props> = observer((props: Props) => {
               value={passwordFormData.password}
               onChange={(e) => handleFormChange("password", e.target.value)}
               placeholder={t("auth.common.password.placeholder")}
-              className="disable-autofill-style h-10 w-full border border-custom-border-300 !bg-custom-background-100 pr-12 placeholder:text-custom-text-400"
+              className="disable-autofill-style h-10 w-full border border-custom-border-300 !bg-custom-background-100 pe-12 placeholder:text-custom-text-400"
               onFocus={() => setIsPasswordInputFocused(true)}
               onBlur={() => setIsPasswordInputFocused(false)}
               autoComplete="on"
@@ -233,7 +233,7 @@ export const AuthPasswordForm: React.FC<Props> = observer((props: Props) => {
             <button
               type="button"
               onClick={() => handleShowPassword("password")}
-              className="absolute right-3 size-5 grid place-items-center"
+              className="absolute end-3 size-5 grid place-items-center"
               aria-label={t(
                 showPassword?.password ? "aria_labels.auth_forms.hide_password" : "aria_labels.auth_forms.show_password"
               )}
@@ -261,13 +261,13 @@ export const AuthPasswordForm: React.FC<Props> = observer((props: Props) => {
                 value={passwordFormData.confirm_password}
                 onChange={(e) => handleFormChange("confirm_password", e.target.value)}
                 placeholder={t("auth.common.password.confirm_password.placeholder")}
-                className="disable-autofill-style h-10 w-full border border-custom-border-300 !bg-custom-background-100 pr-12 placeholder:text-custom-text-400"
+                className="disable-autofill-style h-10 w-full border border-custom-border-300 !bg-custom-background-100 pe-12 placeholder:text-custom-text-400"
                 onFocus={() => setIsRetryPasswordInputFocused(true)}
                 onBlur={() => setIsRetryPasswordInputFocused(false)}
               />
               <button
                 type="button"
-                className="absolute right-3 size-5 grid place-items-center"
+                className="absolute end-3 size-5 grid place-items-center"
                 aria-label={t(
                   showPassword?.retypePassword
                     ? "aria_labels.auth_forms.hide_password"

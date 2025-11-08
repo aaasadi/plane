@@ -24,7 +24,7 @@ export const ReactionSelector: React.FC<Props> = (props) => {
           <Popover.Button
             className={`${
               open ? "" : "text-opacity-90"
-            } group inline-flex items-center rounded-md bg-custom-background-80 focus:outline-none`}
+            } group inline-flex items-center rounded-md bg-custom-background-80 focus:outline-hidden`}
           >
             <span
               className={`flex items-center justify-center rounded-md px-2 ${

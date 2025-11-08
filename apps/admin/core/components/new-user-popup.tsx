@@ -22,7 +22,7 @@ export const NewUserPopup: React.FC = observer(() => {
 
   if (!isNewUserPopup) return <></>;
   return (
-    <div className="absolute bottom-8 right-8 p-6 w-96 border border-custom-border-100 shadow-md rounded-lg bg-custom-background-100">
+    <div className="absolute bottom-8 end-8 p-6 w-96 border border-custom-border-100 shadow-md rounded-lg bg-custom-background-100">
       <div className="flex gap-4">
         <div className="grow">
           <div className="text-base font-semibold">Create workspace</div>

@@ -97,7 +97,7 @@ export const LabelCreate: FC<ILabelCreate> = (props) => {
                 <Popover>
                   <>
                     <Popover.Button as={Fragment}>
-                      <button type="button" ref={setReferenceElement} className="grid place-items-center outline-none">
+                      <button type="button" ref={setReferenceElement} className="grid place-items-center outline-hidden">
                         {value && value?.trim() !== "" && (
                           <span
                             className="h-5 w-5 rounded"

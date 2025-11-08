@@ -1,3 +1,20 @@
+/* iransans-regular */
+@font-face {
+    font-display: swap;
+    font-family: IranSansX;
+    font-style: normal;
+    font-weight: 400;
+    src: url("./IranSansX/iransans-x-regular.woff2") format("woff2");
+}
+/* iransans-regular */
+@font-face {
+    font-display: swap;
+    font-family: IranSansX;
+    font-style: normal;
+    font-weight: 700;
+    src: url("./IranSansX/iransans-x-bold.woff2") format("woff2");
+}
+
 /* inter-200 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */

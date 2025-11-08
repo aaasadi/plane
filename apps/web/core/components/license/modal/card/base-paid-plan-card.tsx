@@ -53,7 +53,7 @@ export const BasePaidPlanCard: FC<TBasePaidPlanCardProps> = observer((props) => 
                   cn(
                     "w-full rounded py-1 text-sm font-medium leading-5",
                     selected
-                      ? "bg-custom-background-100 text-custom-text-100 shadow"
+                      ? "bg-custom-background-100 text-custom-text-100 shadow-sm"
                       : "text-custom-text-300 hover:text-custom-text-200"
                   )
                 }
@@ -82,7 +82,7 @@ export const BasePaidPlanCard: FC<TBasePaidPlanCardProps> = observer((props) => 
                       })}
                     >
                       <p className="w-full text-sm font-medium leading-5 flex items-center line-clamp-1">
-                        <CheckCircle className="h-4 w-4 mr-2 text-custom-text-300 flex-shrink-0" />
+                        <CheckCircle className="h-4 w-4 me-2 text-custom-text-300 flex-shrink-0" />
                         <span className="text-custom-text-200 truncate">{feature}</span>
                       </p>
                     </li>

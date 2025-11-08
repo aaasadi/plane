@@ -45,7 +45,7 @@ const ToolbarButton: React.FC<ToolbarButtonProps> = React.memo((props) => {
             ...item.extraProps,
           })
         }
-        className={cn("grid size-7 place-items-center rounded text-custom-text-300 hover:bg-custom-background-80", {
+        className={cn("grid size-7 place-items-center rounded-sm text-custom-text-300 hover:bg-custom-background-80", {
           "bg-custom-background-80 text-custom-text-100": isActive,
         })}
       >
@@ -100,12 +100,12 @@ export const PageToolbar: React.FC<Props> = (props) => {
     <div className="flex items-center divide-x divide-custom-border-200 overflow-x-scroll">
       <CustomMenu
         customButton={
-          <span className="text-custom-text-300 text-sm border-[0.5px] border-custom-border-300 hover:bg-custom-background-80 h-7 w-24 rounded px-2 flex items-center justify-between gap-2 whitespace-nowrap text-left">
+          <span className="text-custom-text-300 text-sm border-[0.5px] border-custom-border-300 hover:bg-custom-background-80 h-7 w-24 rounded-sm px-2 flex items-center justify-between gap-2 whitespace-nowrap text-start">
             {activeTypography?.name || "Text"}
             <ChevronDown className="flex-shrink-0 size-3" />
           </span>
         }
-        className="pr-2"
+        className="pe-2"
         placement="bottom-start"
         closeOnSelect
         maxHeight="lg"
@@ -148,7 +148,7 @@ export const PageToolbar: React.FC<Props> = (props) => {
         />
       </div>
       {Object.keys(toolbarItems).map((key) => (
-        <div key={key} className="flex items-center gap-0.5 px-2 first:pl-0 last:pr-0">
+        <div key={key} className="flex items-center gap-0.5 px-2 first:ps-0 last:pe-0">
           {toolbarItems[key].map((item) => (
             <ToolbarButton
               key={item.renderKey}

@@ -21,7 +21,7 @@ export const CalloutBlockColorSelector: React.FC<Props> = (props) => {
 
   return (
     <div
-      className={cn("opacity-0 pointer-events-none absolute top-2 right-2 z-10 transition-opacity", {
+      className={cn("opacity-0 pointer-events-none absolute top-2 end-2 z-10 transition-opacity", {
         "group-hover/callout-node:opacity-100 group-hover/callout-node:pointer-events-auto": !disabled,
         "opacity-100 pointer-events-auto": isOpen,
       })}
@@ -35,7 +35,7 @@ export const CalloutBlockColorSelector: React.FC<Props> = (props) => {
             e.stopPropagation();
           }}
           className={cn(
-            "flex items-center gap-1 h-full whitespace-nowrap py-1 px-2.5 text-sm font-medium text-custom-text-300 hover:bg-white/10 active:bg-custom-background-80 rounded transition-colors",
+            "flex items-center gap-1 h-full whitespace-nowrap py-1 px-2.5 text-sm font-medium text-custom-text-300 hover:bg-white/10 active:bg-custom-background-80 rounded-sm transition-colors",
             {
               "bg-white/10": isOpen,
             }
@@ -46,13 +46,13 @@ export const CalloutBlockColorSelector: React.FC<Props> = (props) => {
           <ChevronDown className="flex-shrink-0 size-3" />
         </button>
         {isOpen && (
-          <section className="absolute top-full right-0 z-10 mt-1 rounded-md border-[0.5px] border-custom-border-300 bg-custom-background-100 p-2 shadow-custom-shadow-rg animate-in fade-in slide-in-from-top-1">
+          <section className="absolute top-full end-0 z-10 mt-1 rounded-md border-[0.5px] border-custom-border-300 bg-custom-background-100 p-2 shadow-custom-shadow-rg animate-in fade-in slide-in-from-top-1">
             <div className="flex items-center gap-2">
               {COLORS_LIST.map((color) => (
                 <button
                   key={color.key}
                   type="button"
-                  className="flex-shrink-0 size-6 rounded border-[0.5px] border-custom-border-400 hover:opacity-60 transition-opacity"
+                  className="flex-shrink-0 size-6 rounded-sm border-[0.5px] border-custom-border-400 hover:opacity-60 transition-opacity"
                   style={{
                     backgroundColor: color.backgroundColor,
                   }}
@@ -61,7 +61,7 @@ export const CalloutBlockColorSelector: React.FC<Props> = (props) => {
               ))}
               <button
                 type="button"
-                className="flex-shrink-0 size-6 grid place-items-center rounded text-custom-text-300 border-[0.5px] border-custom-border-400 hover:bg-custom-background-80 transition-colors"
+                className="flex-shrink-0 size-6 grid place-items-center rounded-sm text-custom-text-300 border-[0.5px] border-custom-border-400 hover:bg-custom-background-80 transition-colors"
                 onClick={() => handleColorSelect(null)}
               >
                 <Ban className="size-4" />

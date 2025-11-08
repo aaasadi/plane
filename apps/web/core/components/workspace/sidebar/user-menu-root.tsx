@@ -99,7 +99,7 @@ export const UserMenuRoot = observer((props: Props) => {
               leaveTo="transform opacity-0 scale-95"
             >
               <Menu.Items
-                className="absolute left-0 z-[21] mt-1 flex w-44 origin-top-left flex-col divide-y
+                className="absolute start-0 z-[21] mt-1 flex w-44 origin-top-left flex-col divide-y
               divide-custom-sidebar-border-200 rounded-md border border-custom-sidebar-border-200 bg-custom-sidebar-background-100 px-1 py-2 text-xs shadow-lg outline-none"
                 ref={setPopperElement as Ref<HTMLDivElement>}
                 style={styles.popper}

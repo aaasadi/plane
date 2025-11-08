@@ -65,7 +65,7 @@ const SettingsSidebarNavItem = observer((props: TSettingsSidebarNavItemProps) =>
         as="button"
         type="button"
         className={cn(
-          "group w-full flex items-center gap-1 whitespace-nowrap text-left text-sm font-semibold text-custom-sidebar-text-400"
+          "group w-full flex items-center gap-1 whitespace-nowrap text-start text-sm font-semibold text-custom-sidebar-text-400"
         )}
         onClick={() => setIsExpanded(!isExpanded)}
       >
@@ -83,8 +83,8 @@ const SettingsSidebarNavItem = observer((props: TSettingsSidebarNavItemProps) =>
       </Disclosure.Button>
       {/* Nested Navigation */}
       {isExpanded && (
-        <Disclosure.Panel as="div" className={cn("relative flex flex-col gap-0.5 mt-1 pl-6 mb-1.5")} static>
-          <div className="absolute left-[15px] top-0 bottom-1 w-[1px] bg-custom-border-200" />
+        <Disclosure.Panel as="div" className={cn("relative flex flex-col gap-0.5 mt-1 ps-6 mb-1.5")} static>
+          <div className="absolute start-[15px] top-0 bottom-1 w-[1px] bg-custom-border-200" />
           {renderChildren?.(setting.key)}
         </Disclosure.Panel>
       )}

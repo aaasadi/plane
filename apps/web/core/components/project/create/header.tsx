@@ -34,19 +34,19 @@ const ProjectCreateHeader: React.FC<Props> = (props) => {
       {coverImage && (
         <img
           src={getFileURL(coverImage)}
-          className="absolute left-0 top-0 h-full w-full rounded-lg object-cover"
+          className="absolute start-0 top-0 h-full w-full rounded-lg object-cover"
           alt={t("project_cover_image_alt")}
         />
       )}
-      <div className="absolute left-2.5 top-2.5">
+      <div className="absolute start-2.5 top-2.5">
         <ProjectTemplateSelect handleModalClose={handleClose} />
       </div>
-      <div className="absolute right-2 top-2 p-2">
+      <div className="absolute end-2 top-2 p-2">
         <button data-posthog="PROJECT_MODAL_CLOSE" type="button" onClick={handleClose} tabIndex={getIndex("close")}>
           <X className="h-5 w-5 text-white" />
         </button>
       </div>
-      <div className="absolute bottom-2 right-2">
+      <div className="absolute bottom-2 right2">
         <Controller
           name="cover_image_url"
           control={control}
@@ -61,7 +61,7 @@ const ProjectCreateHeader: React.FC<Props> = (props) => {
           )}
         />
       </div>
-      <div className="absolute -bottom-[22px] left-3">
+      <div className="absolute -bottom-[22px] start-3">
         <Controller
           name="logo_props"
           control={control}

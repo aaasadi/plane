@@ -85,7 +85,7 @@ export const CalendarMonthsDropdown: React.FC<Props> = observer((props: Props) =
         <button
           type="button"
           ref={setReferenceElement}
-          className="text-xl font-semibold outline-none"
+          className="text-xl font-semibold outline-hidden"
           disabled={calendarLayout === "week"}
         >
           {calendarLayout === "month"

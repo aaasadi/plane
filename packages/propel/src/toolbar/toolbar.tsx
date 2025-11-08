@@ -49,9 +49,9 @@ const ToolbarGroup = React.forwardRef<HTMLDivElement, ToolbarGroupProps>(
     <div
       ref={ref}
       className={cn(
-        "flex items-stretch gap-0.5 border-r border-custom-border-200 px-2.5",
+        "flex items-stretch gap-0.5 border-e border-custom-border-200 px-2.5",
         {
-          "pl-0": isFirst,
+          "ps-0": isFirst,
         },
         className
       )}
@@ -69,7 +69,7 @@ const ToolbarItem = React.forwardRef<HTMLButtonElement, ToolbarItemProps>(
         ref={ref}
         type="button"
         className={cn(
-          "grid place-items-center aspect-square rounded-sm p-0.5 text-custom-text-400 hover:bg-custom-background-80 transition-colors",
+          "grid place-items-center aspect-square rounded-xs p-0.5 text-custom-text-400 hover:bg-custom-background-80 transition-colors",
           {
             "bg-custom-background-80 text-custom-text-100": isActive,
           },
@@ -122,7 +122,7 @@ const buttonVariants = {
 
 const ToolbarSubmitButton = React.forwardRef<HTMLButtonElement, ToolbarSubmitButtonProps>(
   ({ loading = false, variant = "primary", className, children, disabled, ...props }, ref) => (
-    <div className="sticky right-1">
+    <div className="sticky end-1">
       <button
         ref={ref}
         className={cn(

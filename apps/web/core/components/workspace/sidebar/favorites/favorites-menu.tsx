@@ -186,7 +186,7 @@ export const SidebarFavoritesMenu = observer(() => {
             as="button"
             type="button"
             className={cn(
-              "w-full flex items-center gap-1 whitespace-nowrap text-left text-sm font-semibold text-custom-sidebar-text-400",
+              "w-full flex items-center gap-1 whitespace-nowrap text-start text-sm font-semibold text-custom-sidebar-text-400",
               {
                 "bg-custom-sidebar-background-80 opacity-60": isDragging,
               }

@@ -61,7 +61,7 @@ const CustomSelect = (props: ICustomSelectProps) => {
       tabIndex={tabIndex}
       value={value}
       onChange={onChange}
-      className={cn("relative flex-shrink-0 text-left", className)}
+      className={cn("relative flex-shrink-0 text-start", className)}
       onKeyDown={handleKeyDown}
       disabled={disabled}
     >

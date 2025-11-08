@@ -43,7 +43,7 @@ export const MemberHeaderColumn = observer((props: Props) => {
       customButton={
         <div className="flex w-full cursor-pointer items-center justify-between gap-1.5 py-2 text-sm text-custom-text-200 hover:text-custom-text-100">
           <span>{t(propertyDetails.i18n_title)}</span>
-          <div className="ml-3 flex">
+          <div className="ms-3 flex">
             {(activeSortingProperty === propertyDetails.ascendingOrderKey ||
               activeSortingProperty === propertyDetails.descendingOrderKey) && (
               <div className="flex h-3.5 w-3.5 items-center justify-center rounded-full">

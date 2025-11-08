@@ -209,7 +209,7 @@ const ImageFullScreenModalWithoutPortal = (props: Props) => {
         <button
           type="button"
           onClick={handleClose}
-          className="absolute top-10 right-10 size-8 grid place-items-center"
+          className="absolute top-10 end-10 size-8 grid place-items-center"
           aria-label="Close image viewer"
         >
           <X className="size-8 text-white/60 hover:text-white transition-colors" />
@@ -230,7 +230,7 @@ const ImageFullScreenModalWithoutPortal = (props: Props) => {
           }}
           onMouseDown={handleMouseDown}
         />
-        <div className="fixed bottom-10 left-1/2 -translate-x-1/2 flex items-center justify-center gap-1 rounded-md border border-white/20 py-2 divide-x divide-white/20 bg-black">
+        <div className="fixed bottom-10 start-1/2 -translate-x-1/2 flex items-center justify-center gap-1 rounded-md border border-white/20 py-2 divide-x divide-white/20 bg-black">
           <div className="flex items-center">
             <button
               type="button"

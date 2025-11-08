@@ -122,7 +122,7 @@ export const PeekOverviewIssueDetails: FC<Props> = observer((props) => {
         issueOperations={issueOperations}
         disabled={disabled || isArchived}
         value={issue.name}
-        containerClassName="-ml-3"
+        containerClassName="-ms-3"
       />
 
       <IssueDescriptionInput
@@ -134,7 +134,7 @@ export const PeekOverviewIssueDetails: FC<Props> = observer((props) => {
         disabled={disabled || isArchived}
         issueOperations={issueOperations}
         setIsSubmitting={(value) => setIsSubmitting(value)}
-        containerClassName="-ml-3 border-none"
+        containerClassName="-ms-3 border-none"
       />
 
       <div className="flex items-center justify-between gap-2">

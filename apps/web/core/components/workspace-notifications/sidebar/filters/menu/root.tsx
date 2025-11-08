@@ -29,7 +29,7 @@ export const NotificationFilter: FC = observer(() => {
       data={translatedFilterTypeOptions}
       button={
         <Tooltip tooltipContent={t("notification.options.filters")} isMobile={isMobile} position="bottom">
-          <div className="flex-shrink-0 w-5 h-5 flex justify-center items-center overflow-hidden cursor-pointer transition-all hover:bg-custom-background-80 rounded-sm outline-none">
+          <div className="flex-shrink-0 w-5 h-5 flex justify-center items-center overflow-hidden cursor-pointer transition-all hover:bg-custom-background-80 rounded-xs outline-none">
             <ListFilter className="h-3 w-3" />
           </div>
         </Tooltip>

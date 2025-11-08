@@ -25,7 +25,7 @@ export const PageEditorHeaderRoot: React.FC<Props> = observer((props) => {
 
   return (
     <>
-      <div className="h-[48px] flex items-end text-left">
+      <div className="h-[48px] flex items-end text-start">
         {!isLogoSelected && (
           <div
             className={cn("opacity-0 group-hover/page-header:opacity-100 transition-all duration-200", {
@@ -41,7 +41,7 @@ export const PageEditorHeaderRoot: React.FC<Props> = observer((props) => {
                 <button
                   type="button"
                   className={cn(
-                    "flex items-center gap-1 p-1 rounded font-medium text-sm hover:bg-custom-background-80 text-custom-text-300 outline-none transition-colors",
+                    "flex items-center gap-1 p-1 rounded-sm font-medium text-sm hover:bg-custom-background-80 text-custom-text-300 outline-hidden transition-colors",
                     {
                       "bg-custom-background-80": isLogoPickerOpen,
                     }

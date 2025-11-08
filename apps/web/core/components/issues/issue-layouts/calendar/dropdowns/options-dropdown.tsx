@@ -105,7 +105,7 @@ export const CalendarOptionsDropdown: React.FC<ICalendarHeader> = observer((prop
           <Popover.Button as={React.Fragment}>
             <button type="button" ref={setReferenceElement}>
               <div
-                className={`hidden md:flex items-center gap-1.5 rounded bg-custom-background-80 px-2.5 py-1 text-xs outline-none hover:bg-custom-background-80 ${
+                className={`hidden md:flex items-center gap-1.5 rounded bg-custom-background-80 px-2.5 py-1 text-xs outline-hidden hover:bg-custom-background-80 ${
                   open ? "text-custom-text-100" : "text-custom-text-200"
                 }`}
               >
@@ -135,14 +135,14 @@ export const CalendarOptionsDropdown: React.FC<ICalendarHeader> = observer((prop
                 ref={setPopperElement}
                 style={styles.popper}
                 {...attributes.popper}
-                className="absolute right-0 z-10 mt-1 min-w-[12rem] overflow-hidden rounded border border-custom-border-200 bg-custom-background-100 p-1 shadow-custom-shadow-sm"
+                className="absolute end-0 z-10 mt-1 min-w-[12rem] overflow-hidden rounded border border-custom-border-200 bg-custom-background-100 p-1 shadow-custom-shadow-sm"
               >
                 <div>
                   {Object.entries(CALENDAR_LAYOUTS).map(([layout, layoutDetails]) => (
                     <button
                       key={layout}
                       type="button"
-                      className="flex w-full items-center justify-between gap-2 rounded px-1 py-1.5 text-left text-xs hover:bg-custom-background-80"
+                      className="flex w-full items-center justify-between gap-2 rounded px-1 py-1.5 text-start text-xs hover:bg-custom-background-80"
                       onClick={() => handleLayoutChange(layoutDetails.key, closePopover)}
                     >
                       {layoutDetails.title}
@@ -151,7 +151,7 @@ export const CalendarOptionsDropdown: React.FC<ICalendarHeader> = observer((prop
                   ))}
                   <button
                     type="button"
-                    className="flex w-full items-center justify-between gap-2 rounded px-1 py-1.5 text-left text-xs hover:bg-custom-background-80"
+                    className="flex w-full items-center justify-between gap-2 rounded px-1 py-1.5 text-start text-xs hover:bg-custom-background-80"
                     onClick={handleToggleWeekends}
                   >
                     {t("common.actions.show_weekends")}

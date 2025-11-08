@@ -159,7 +159,7 @@ export const IssueDetailQuickActions: FC<Props> = observer((props) => {
             <Tooltip tooltipContent={t("common.actions.copy_link")} isMobile={isMobile}>
               <button
                 type="button"
-                className="grid h-5 w-5 place-items-center rounded hover:text-custom-text-200 focus:outline-none focus:ring-2 focus:ring-custom-primary"
+                className="grid h-5 w-5 place-items-center rounded hover:text-custom-text-200 focus:outline-hidden focus:ring-2 focus:ring-custom-primary"
                 onClick={handleCopyText}
               >
                 <LinkIcon className="h-4 w-4" />

@@ -86,7 +86,7 @@ export const IssuePeekOverview: FC<TIssuePeekOverview> = observer((props) => {
             leaveFrom="translate-x-0"
             leaveTo="translate-x-full"
           >
-            <Dialog.Panel className="fixed right-0 top-0 z-20 h-full w-1/2 bg-custom-background-100 shadow-custom-shadow-sm">
+            <Dialog.Panel className="fixed end-0 top-0 z-20 h-full w-1/2 bg-custom-background-100 shadow-custom-shadow-sm">
               <SidePeekView anchor={anchor} handleClose={handleClose} issueDetails={issueDetails} />
             </Dialog.Panel>
           </Transition.Child>
@@ -116,7 +116,7 @@ export const IssuePeekOverview: FC<TIssuePeekOverview> = observer((props) => {
           >
             <Dialog.Panel>
               <div
-                className={`fixed left-1/2 top-1/2 z-20 -translate-x-1/2 -translate-y-1/2 rounded-lg bg-custom-background-100 shadow-custom-shadow-xl transition-all duration-300 ${
+                className={`fixed start-1/2 top-1/2 z-20 -translate-x-1/2 -translate-y-1/2 rounded-lg bg-custom-background-100 shadow-custom-shadow-xl transition-all duration-300 ${
                   issueDetailStore.peekMode === "modal" ? "h-[70%] w-3/5" : "h-[95%] w-[95%]"
                 }`}
               >

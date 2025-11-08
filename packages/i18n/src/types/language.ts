@@ -1,4 +1,5 @@
 export type TLanguage =
+  | "fa"
   | "en"
   | "fr"
   | "es"
@@ -17,8 +18,7 @@ export type TLanguage =
   | "id"
   | "ro"
   | "vi-VN"
-  | "tr-TR"
-  | "fa";
+  | "tr-TR";
 
 export interface ILanguageOption {
   label: string;

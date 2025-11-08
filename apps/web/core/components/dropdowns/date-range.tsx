@@ -223,7 +223,7 @@ export const DateRangeDropdown: React.FC<Props> = observer((props) => {
           <>
             <span
               className={cn(
-                "h-full flex items-center justify-center gap-1 rounded-sm flex-grow",
+                "h-full flex items-center justify-center gap-1 rounded-xs flex-grow",
                 buttonFromDateClassName
               )}
             >
@@ -233,7 +233,7 @@ export const DateRangeDropdown: React.FC<Props> = observer((props) => {
             <ArrowRight className="h-3 w-3 flex-shrink-0" />
             <span
               className={cn(
-                "h-full flex items-center justify-center gap-1 rounded-sm flex-grow",
+                "h-full flex items-center justify-center gap-1 rounded-xs flex-grow",
                 buttonToDateClassName
               )}
             >
@@ -242,7 +242,7 @@ export const DateRangeDropdown: React.FC<Props> = observer((props) => {
             </span>
             {isClearable && !disabled && hasDisplayedDates && (
               <X
-                className={cn("h-2.5 w-2.5 flex-shrink-0 cursor-pointer ml-1", clearIconClassName)}
+                className={cn("h-2.5 w-2.5 flex-shrink-0 cursor-pointer ms-1", clearIconClassName)}
                 onClick={(e) => {
                   e.stopPropagation();
                   e.preventDefault();

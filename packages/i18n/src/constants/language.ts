@@ -3,6 +3,7 @@ import { TLanguage, ILanguageOption } from "../types";
 export const FALLBACK_LANGUAGE: TLanguage = "en";
 
 export const SUPPORTED_LANGUAGES: ILanguageOption[] = [
+  { label: "فارسی", value: "fa" },
   { label: "English", value: "en" },
   { label: "Français", value: "fr" },
   { label: "Español", value: "es" },
@@ -22,7 +23,6 @@ export const SUPPORTED_LANGUAGES: ILanguageOption[] = [
   { label: "Română", value: "ro" },
   { label: "Tiếng việt", value: "vi-VN" },
   { label: "Türkçe", value: "tr-TR" },
-  { label: "فارسی", value: "fa" },
 ];
 
 /**

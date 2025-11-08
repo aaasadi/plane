@@ -140,7 +140,7 @@ export const WorkspaceCreateStep: React.FC<Props> = observer(
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-2">
             <label
-              className="text-sm text-custom-text-300 font-medium after:content-['*'] after:ml-0.5 after:text-red-500"
+              className="text-sm text-custom-text-300 font-medium after:content-['*'] after:ms-0.5 after:text-red-500"
               htmlFor="name"
             >
               {t("workspace_creation.form.name.label")}
@@ -189,7 +189,7 @@ export const WorkspaceCreateStep: React.FC<Props> = observer(
           </div>
           <div className="flex flex-col gap-2">
             <label
-              className="text-sm text-custom-text-300 font-medium after:content-['*'] after:ml-0.5 after:text-red-500"
+              className="text-sm text-custom-text-300 font-medium after:content-['*'] after:ms-0.5 after:text-red-500"
               htmlFor="slug"
             >
               {t("workspace_creation.form.url.label")}
@@ -214,7 +214,7 @@ export const WorkspaceCreateStep: React.FC<Props> = observer(
                     }
                   )}
                 >
-                  <span className={cn("pr-0 text-custom-text-200 rounded-md whitespace-nowrap")}>
+                  <span className={cn("pe-0 text-custom-text-200 rounded-md whitespace-nowrap")}>
                     {window && window.location.host}/
                   </span>
                   <input
@@ -230,7 +230,7 @@ export const WorkspaceCreateStep: React.FC<Props> = observer(
                     ref={ref}
                     placeholder={t("workspace_creation.form.url.placeholder")}
                     className={cn(
-                      "w-full px-3 py-0 pl-0 text-custom-text-200 border-none ring-none outline-none rounded-md bg-custom-background-100 placeholder:text-custom-text-400"
+                      "w-full px-3 py-0 ps-0 text-custom-text-200 border-none ring-none outline-none rounded-md bg-custom-background-100 placeholder:text-custom-text-400"
                     )}
                   />
                 </div>
@@ -249,7 +249,7 @@ export const WorkspaceCreateStep: React.FC<Props> = observer(
           </div>
           <div className="flex flex-col gap-2">
             <label
-              className="text-sm text-custom-text-300 font-medium after:content-['*'] after:ml-0.5 after:text-red-500"
+              className="text-sm text-custom-text-300 font-medium after:content-['*'] after:ms-0.5 after:text-red-500"
               htmlFor="organization_size"
             >
               {t("workspace_creation.form.organization_size.label")}

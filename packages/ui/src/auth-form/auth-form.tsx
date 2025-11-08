@@ -194,7 +194,7 @@ export const AuthForm: React.FC<AuthFormProps> = ({
             <button
               type="button"
               onClick={handleModeChange}
-              className="ml-1 text-sm text-custom-primary-100 hover:text-custom-primary-200 transition-colors duration-200"
+              className="ms-1 text-sm text-custom-primary-100 hover:text-custom-primary-200 transition-colors duration-200"
               disabled={disabled}
             >
               {getAlternateModeButtonText()}

@@ -93,7 +93,7 @@ export const ProjectSettingLabelGroup: React.FC<Props> = observer((props) => {
           >
             {({ open }) => (
               <>
-                <div className={`py-3 pl-1 pr-3 ${!isUpdating && "max-h-full overflow-y-hidden"}`}>
+                <div className={`py-3 ps-1 pe-3 ${!isUpdating && "max-h-full overflow-y-hidden"}`}>
                   <>
                     <div className="relative flex cursor-pointer items-center justify-between gap-2">
                       {isEditLabelForm ? (
@@ -137,7 +137,7 @@ export const ProjectSettingLabelGroup: React.FC<Props> = observer((props) => {
                       leaveTo="transform opacity-0"
                     >
                       <Disclosure.Panel>
-                        <div className="ml-6">
+                        <div className="ms-6">
                           {labelChildren.map((child, index) => (
                             <div key={child.id} className={`group flex w-full items-center text-sm`}>
                               <div className="w-full">

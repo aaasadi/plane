@@ -52,7 +52,7 @@ export const EditorUserMention: React.FC<Props> = observer((props) => {
 
   if (!userDetails) {
     return (
-      <div className="not-prose inline px-1 py-0.5 rounded bg-custom-background-80 text-custom-text-300 no-underline">
+      <div className="not-prose inline px-1 py-0.5 rounded-sm bg-custom-background-80 text-custom-text-300 no-underline">
         @deactivated user
       </div>
     );
@@ -61,7 +61,7 @@ export const EditorUserMention: React.FC<Props> = observer((props) => {
   return (
     <div
       className={cn(
-        "not-prose group/user-mention inline px-1 py-0.5 rounded bg-custom-primary-100/20 text-custom-primary-100 no-underline",
+        "not-prose group/user-mention inline px-1 py-0.5 rounded-sm bg-custom-primary-100/20 text-custom-primary-100 no-underline",
         {
           "bg-yellow-500/20 text-yellow-500": id === currentUser?.id,
         }
@@ -71,7 +71,7 @@ export const EditorUserMention: React.FC<Props> = observer((props) => {
         @{userDetails?.display_name}
       </Link>
       <div
-        className="top-full left-0 z-10 min-w-60 bg-custom-background-90 shadow-custom-shadow-rg rounded-lg p-4 opacity-0 pointer-events-none group-hover/user-mention:opacity-100 group-hover/user-mention:pointer-events-auto transition-opacity"
+        className="top-full start-0 z-10 min-w-60 bg-custom-background-90 shadow-custom-shadow-rg rounded-lg p-4 opacity-0 pointer-events-none group-hover/user-mention:opacity-100 group-hover/user-mention:pointer-events-auto transition-opacity"
         ref={setPopperElement}
         style={styles.popper}
         {...attributes.popper}

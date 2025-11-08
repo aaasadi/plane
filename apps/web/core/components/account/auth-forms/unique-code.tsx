@@ -137,7 +137,7 @@ export const AuthUniqueCodeForm: React.FC<TAuthUniqueCodeForm> = (props) => {
           {uniqueCodeFormData.email.length > 0 && (
             <button
               type="button"
-              className="absolute right-3 size-5 grid place-items-center"
+              className="absolute end-3 size-5 grid place-items-center"
               aria-label={t("aria_labels.auth_forms.clear_email")}
               onClick={handleEmailClear}
             >
@@ -157,7 +157,7 @@ export const AuthUniqueCodeForm: React.FC<TAuthUniqueCodeForm> = (props) => {
           value={uniqueCodeFormData.code}
           onChange={(e) => handleFormChange("code", e.target.value)}
           placeholder={t("auth.common.unique_code.placeholder")}
-          className="disable-autofill-style h-10 w-full border border-custom-border-300 !bg-custom-background-100 pr-12 placeholder:text-custom-text-400"
+          className="disable-autofill-style h-10 w-full border border-custom-border-300 !bg-custom-background-100 pe-12 placeholder:text-custom-text-400"
           autoFocus
         />
         <div className="flex w-full items-center justify-between px-1 text-xs pt-1">

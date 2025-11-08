@@ -317,7 +317,7 @@ export const ProfileSetup: React.FC<Props> = observer((props) => {
                   {!userAvatar || userAvatar === "" ? (
                     <div className="flex flex-col items-center justify-between">
                       <div className="relative h-14 w-14 overflow-hidden">
-                        <div className="absolute left-0 top-0 flex items-center justify-center h-full w-full rounded-full text-white text-3xl font-medium bg-[#9747FF] uppercase">
+                        <div className="absolute start-0 top-0 flex items-center justify-center h-full w-full rounded-full text-white text-3xl font-medium bg-[#9747FF] uppercase">
                           {watch("first_name")[0] ?? "R"}
                         </div>
                       </div>
@@ -326,10 +326,10 @@ export const ProfileSetup: React.FC<Props> = observer((props) => {
                       </div>
                     </div>
                   ) : (
-                    <div className="relative mr-3 h-16 w-16 overflow-hidden">
+                    <div className="relative me-3 h-16 w-16 overflow-hidden">
                       <img
                         src={getFileURL(userAvatar ?? "")}
-                        className="absolute left-0 top-0 h-full w-full rounded-full object-cover"
+                        className="absolute start-0 top-0 h-full w-full rounded-full object-cover"
                         onClick={() => setIsImageUploadModalOpen(true)}
                         alt={user?.display_name}
                       />
@@ -340,7 +340,7 @@ export const ProfileSetup: React.FC<Props> = observer((props) => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-1">
                   <label
-                    className="text-sm text-custom-text-300 font-medium after:content-['*'] after:ml-0.5 after:text-red-500"
+                    className="text-sm text-custom-text-300 font-medium after:content-['*'] after:ms-0.5 after:text-red-500"
                     htmlFor="first_name"
                   >
                     First name
@@ -375,7 +375,7 @@ export const ProfileSetup: React.FC<Props> = observer((props) => {
                 </div>
                 <div className="space-y-1">
                   <label
-                    className="text-sm text-custom-text-300 font-medium after:content-['*'] after:ml-0.5 after:text-red-500"
+                    className="text-sm text-custom-text-300 font-medium after:content-['*'] after:ms-0.5 after:text-red-500"
                     htmlFor="last_name"
                   >
                     Last name
@@ -432,19 +432,19 @@ export const ProfileSetup: React.FC<Props> = observer((props) => {
                             ref={ref}
                             hasError={Boolean(errors.password)}
                             placeholder="New password..."
-                            className="w-full border-[0.5px] border-custom-border-300 pr-12 placeholder:text-custom-text-400"
+                            className="w-full border-[0.5px] border-custom-border-300 pe-12 placeholder:text-custom-text-400"
                             onFocus={() => setIsPasswordInputFocused(true)}
                             onBlur={() => setIsPasswordInputFocused(false)}
                             autoComplete="on"
                           />
                           {showPassword.password ? (
                             <EyeOff
-                              className="absolute right-3 h-4 w-4 stroke-custom-text-400 hover:cursor-pointer"
+                              className="absolute end-3 h-4 w-4 stroke-custom-text-400 hover:cursor-pointer"
                               onClick={() => handleShowPassword("password")}
                             />
                           ) : (
                             <Eye
-                              className="absolute right-3 h-4 w-4 stroke-custom-text-400 hover:cursor-pointer"
+                              className="absolute end-3 h-4 w-4 stroke-custom-text-400 hover:cursor-pointer"
                               onClick={() => handleShowPassword("password")}
                             />
                           )}
@@ -475,16 +475,16 @@ export const ProfileSetup: React.FC<Props> = observer((props) => {
                             ref={ref}
                             hasError={Boolean(errors.confirm_password)}
                             placeholder={t("auth.common.password.confirm_password.placeholder")}
-                            className="w-full border-custom-border-300 pr-12 placeholder:text-custom-text-400"
+                            className="w-full border-custom-border-300 pe-12 placeholder:text-custom-text-400"
                           />
                           {showPassword.retypePassword ? (
                             <EyeOff
-                              className="absolute right-3 h-4 w-4 stroke-custom-text-400 hover:cursor-pointer"
+                              className="absolute end-3 h-4 w-4 stroke-custom-text-400 hover:cursor-pointer"
                               onClick={() => handleShowPassword("retypePassword")}
                             />
                           ) : (
                             <Eye
-                              className="absolute right-3 h-4 w-4 stroke-custom-text-400 hover:cursor-pointer"
+                              className="absolute end-3 h-4 w-4 stroke-custom-text-400 hover:cursor-pointer"
                               onClick={() => handleShowPassword("retypePassword")}
                             />
                           )}
@@ -505,7 +505,7 @@ export const ProfileSetup: React.FC<Props> = observer((props) => {
             <>
               <div className="space-y-1">
                 <label
-                  className="text-sm text-custom-text-300 font-medium after:content-['*'] after:ml-0.5 after:text-red-500"
+                  className="text-sm text-custom-text-300 font-medium after:content-['*'] after:ms-0.5 after:text-red-500"
                   htmlFor="role"
                 >
                   What role are you working on? Choose one.
@@ -536,7 +536,7 @@ export const ProfileSetup: React.FC<Props> = observer((props) => {
               </div>
               <div className="space-y-1">
                 <label
-                  className="text-sm text-custom-text-300 font-medium after:content-['*'] after:ml-0.5 after:text-red-500"
+                  className="text-sm text-custom-text-300 font-medium after:content-['*'] after:ms-0.5 after:text-red-500"
                   htmlFor="use_case"
                 >
                   What is your domain expertise? Choose one.

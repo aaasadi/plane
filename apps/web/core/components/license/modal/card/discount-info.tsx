@@ -48,7 +48,7 @@ export const DiscountInfo = ({ className, currency, frequency, price, subscripti
                 : "https://images.plane.so/pricing/hero/scribble-black.svg"
             }
             alt="image"
-            className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-full scale-x-125"
+            className="absolute top-1/2 start-1/2 -translate-y-1/2 -translate-x-1/2 w-full scale-x-125"
           />
           {currency}
           {actualPrice}

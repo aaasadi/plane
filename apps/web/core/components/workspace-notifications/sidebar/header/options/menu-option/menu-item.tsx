@@ -13,14 +13,14 @@ export const NotificationMenuOptionItem: FC<TPopoverMenuOptions> = observer((pro
   if (type === "menu-item")
     return (
       <div
-        className="flex items-center gap-2 cursor-pointer mx-2 px-2 p-1 transition-all hover:bg-custom-background-80 rounded-sm"
+        className="flex items-center gap-2 cursor-pointer mx-2 px-2 p-1 transition-all hover:bg-custom-background-80 rounded-xs"
         onClick={() => onClick && onClick()}
       >
         {prependIcon && prependIcon}
         <div className={cn("whitespace-nowrap text-sm", isActive ? "text-custom-text-100" : "text-custom-text-200")}>
           {label}
         </div>
-        {appendIcon && <div className="ml-auto">{appendIcon}</div>}
+        {appendIcon && <div className="ms-auto">{appendIcon}</div>}
       </div>
     );
 

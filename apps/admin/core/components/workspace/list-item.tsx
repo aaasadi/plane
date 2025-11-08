@@ -34,7 +34,7 @@ export const WorkspaceListItem = observer(({ workspaceId }: TWorkspaceListItemPr
           {workspace?.logo_url && workspace.logo_url !== "" ? (
             <img
               src={getFileURL(workspace.logo_url)}
-              className="absolute left-0 top-0 h-full w-full rounded object-cover"
+              className="absolute start-0 top-0 h-full w-full rounded object-cover"
               alt="Workspace Logo"
             />
           ) : (

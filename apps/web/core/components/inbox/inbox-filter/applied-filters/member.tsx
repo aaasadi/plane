@@ -40,7 +40,7 @@ export const InboxIssueAppliedFiltersMember: FC<InboxIssueAppliedFiltersMember> 
         const optionDetail = currentOptionDetail(value);
         if (!optionDetail) return <></>;
         return (
-          <div key={value} className="relative flex items-center gap-1 rounded bg-custom-background-80 p-1 text-xs">
+          <div key={value} className="relative flex items-center gap-1 rounded-sm bg-custom-background-80 p-1 text-xs">
             <div className="flex-shrink-0 relative flex justify-center items-center overflow-hidden">
               <Avatar
                 name={optionDetail.display_name}

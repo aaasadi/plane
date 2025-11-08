@@ -254,7 +254,7 @@ export const InstanceSetupForm: FC = (props) => {
                   <button
                     type="button"
                     tabIndex={-1}
-                    className="absolute right-3 top-3.5 flex items-center justify-center text-custom-text-400"
+                    className="absolute end-3 top-3.5 flex items-center justify-center text-custom-text-400"
                     onClick={() => handleShowPassword("password")}
                   >
                     <EyeOff className="h-4 w-4" />
@@ -263,7 +263,7 @@ export const InstanceSetupForm: FC = (props) => {
                   <button
                     type="button"
                     tabIndex={-1}
-                    className="absolute right-3 top-3.5 flex items-center justify-center text-custom-text-400"
+                    className="absolute end-3 top-3.5 flex items-center justify-center text-custom-text-400"
                     onClick={() => handleShowPassword("password")}
                   >
                     <Eye className="h-4 w-4" />
@@ -289,7 +289,7 @@ export const InstanceSetupForm: FC = (props) => {
                   value={formData.confirm_password}
                   onChange={(e) => handleFormChange("confirm_password", e.target.value)}
                   placeholder="Confirm password"
-                  className="w-full border border-custom-border-100 !bg-custom-background-100 pr-12 placeholder:text-custom-text-400"
+                  className="w-full border border-custom-border-100 !bg-custom-background-100 pe-12 placeholder:text-custom-text-400"
                   onFocus={() => setIsRetryPasswordInputFocused(true)}
                   onBlur={() => setIsRetryPasswordInputFocused(false)}
                 />
@@ -297,7 +297,7 @@ export const InstanceSetupForm: FC = (props) => {
                   <button
                     type="button"
                     tabIndex={-1}
-                    className="absolute right-3 top-3.5 flex items-center justify-center text-custom-text-400"
+                    className="absolute end-3 top-3.5 flex items-center justify-center text-custom-text-400"
                     onClick={() => handleShowPassword("retypePassword")}
                   >
                     <EyeOff className="h-4 w-4" />
@@ -306,7 +306,7 @@ export const InstanceSetupForm: FC = (props) => {
                   <button
                     type="button"
                     tabIndex={-1}
-                    className="absolute right-3 top-3.5 flex items-center justify-center text-custom-text-400"
+                    className="absolute end-3 top-3.5 flex items-center justify-center text-custom-text-400"
                     onClick={() => handleShowPassword("retypePassword")}
                   >
                     <Eye className="h-4 w-4" />

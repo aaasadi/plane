@@ -45,7 +45,7 @@ export const BubbleMenuLinkSelector: FC<Props> = (props) => {
       classNames={{
         buttonContainer: "h-full",
         button: cn(
-          "h-full flex items-center gap-1 px-3 text-sm font-medium text-custom-text-300 hover:bg-custom-background-80 active:bg-custom-background-80 rounded whitespace-nowrap transition-colors",
+          "h-full flex items-center gap-1 px-3 text-sm font-medium text-custom-text-300 hover:bg-custom-background-80 active:bg-custom-background-80 rounded-sm whitespace-nowrap transition-colors",
           {
             "bg-custom-background-80": context.open,
             "text-custom-text-100": editor.isActive(CORE_EXTENSIONS.CUSTOM_LINK),
@@ -64,7 +64,7 @@ export const BubbleMenuLinkSelector: FC<Props> = (props) => {
     >
       <div className="w-60 mt-1 rounded-md bg-custom-background-100 shadow-custom-shadow-rg">
         <div
-          className={cn("flex rounded  border-[0.5px] border-custom-border-300 transition-colors", {
+          className={cn("flex rounded-sm  border-[0.5px] border-custom-border-300 transition-colors", {
             "border-red-500": error,
           })}
         >
@@ -88,7 +88,7 @@ export const BubbleMenuLinkSelector: FC<Props> = (props) => {
           {editor.getAttributes("link").href ? (
             <button
               type="button"
-              className="grid place-items-center rounded-sm p-1 text-red-500 hover:bg-red-500/20 transition-all"
+              className="grid place-items-center rounded-xs p-1 text-red-500 hover:bg-red-500/20 transition-all"
               onClick={(e) => {
                 unsetLinkEditor(editor);
                 e.stopPropagation();
@@ -100,7 +100,7 @@ export const BubbleMenuLinkSelector: FC<Props> = (props) => {
           ) : (
             <button
               type="button"
-              className="h-full aspect-square grid place-items-center p-1 rounded-sm text-custom-text-300 hover:bg-custom-background-80 transition-all"
+              className="h-full aspect-square grid place-items-center p-1 rounded-xs text-custom-text-300 hover:bg-custom-background-80 transition-all"
               onClick={(e) => {
                 e.stopPropagation();
                 handleLinkSubmit();

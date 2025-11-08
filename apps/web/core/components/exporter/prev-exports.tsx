@@ -86,7 +86,7 @@ export const PrevExports = observer((props: Props) => {
             }`}
           >
             <MoveLeft className="h-4 w-4" />
-            <div className="pr-1">{t("prev")}</div>
+            <div className="pe-1">{t("prev")}</div>
           </button>
           <button
             disabled={!exporterServices?.next_page_results}
@@ -97,7 +97,7 @@ export const PrevExports = observer((props: Props) => {
                 : "cursor-not-allowed opacity-75"
             }`}
           >
-            <div className="pl-1">{t("next")}</div>
+            <div className="ps-1">{t("next")}</div>
             <MoveRight className="h-4 w-4" />
           </button>
         </div>
@@ -113,7 +113,7 @@ export const PrevExports = observer((props: Props) => {
                   data={exporterServices?.results ?? []}
                   keyExtractor={(rowData: RowData) => rowData?.id ?? ""}
                   tHeadClassName="border-b border-custom-border-100"
-                  thClassName="text-left font-medium divide-x-0 text-custom-text-400"
+                  thClassName="text-start font-medium divide-x-0 text-custom-text-400"
                   tBodyClassName="divide-y-0"
                   tBodyTrClassName="divide-x-0 p-4 h-[40px] text-custom-text-200"
                   tHeadTrClassName="divide-x-0"

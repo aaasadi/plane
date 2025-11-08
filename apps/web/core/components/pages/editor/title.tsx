@@ -47,7 +47,7 @@ export const PageEditorTitle: React.FC<Props> = observer((props) => {
       ) : (
         <div className="relative">
           <TextArea
-            className={cn(titleFontClassName, "block w-full border-none outline-none p-0 resize-none rounded-none")}
+            className={cn(titleFontClassName, "block w-full border-none outline-hidden p-0 resize-none rounded-none")}
             placeholder="Untitled"
             onKeyDown={(e) => {
               if (e.key === "Enter") {
@@ -64,7 +64,7 @@ export const PageEditorTitle: React.FC<Props> = observer((props) => {
           />
           <div
             className={cn(
-              "pointer-events-none absolute bottom-1 right-1 z-[2] font-normal rounded bg-custom-background-100 p-0.5 text-xs text-custom-text-200 opacity-0 transition-opacity",
+              "pointer-events-none absolute bottom-1 end-1 z-[2] font-normal rounded-sm bg-custom-background-100 p-0.5 text-xs text-custom-text-200 opacity-0 transition-opacity",
               {
                 "opacity-100": isLengthVisible,
               }

@@ -48,7 +48,7 @@ export const CommandMenuItem: React.FC<Props> = (props) => {
       type="button"
       id={`item-${sectionIndex}-${itemIndex}`}
       className={cn(
-        "flex items-center gap-2 w-full rounded px-1 py-1.5 text-sm text-left truncate text-custom-text-200",
+        "flex items-center gap-2 w-full rounded-sm px-1 py-1.5 text-sm text-start truncate text-custom-text-200",
         {
           "bg-custom-background-80": isSelected,
         }

@@ -40,7 +40,7 @@ export const getBannerActionStyling = (): string => `flex items-center flex-shri
 
 // Get dismiss button styling
 export const getBannerDismissStyling = (): string =>
-  "rounded p-1 hover:bg-custom-background-90 transition-colors flex-shrink-0";
+  "rounded-sm p-1 hover:bg-custom-background-90 transition-colors flex-shrink-0";
 
 // Get dismiss icon styling
 export const getBannerDismissIconStyling = (): string => "text-custom-text-200";

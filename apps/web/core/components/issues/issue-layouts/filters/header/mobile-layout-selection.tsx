@@ -31,7 +31,7 @@ export const MobileLayoutSelection = ({
         ) : (
           <div className="flex flex-start text-sm text-custom-text-200">
             {t("common.layout")}
-            <ChevronDown className="ml-2  h-4 w-4 text-custom-text-200 my-auto" strokeWidth={2} />
+            <ChevronDown className="ms-2  h-4 w-4 text-custom-text-200 my-auto" strokeWidth={2} />
           </div>
         )
       }

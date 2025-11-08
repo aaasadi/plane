@@ -169,7 +169,7 @@ export const CycleSidebarHeader: FC<Props> = observer((props) => {
           <h4 className="w-full break-words text-xl font-semibold text-custom-text-100">{cycleDetails.name}</h4>
           {currentCycle && (
             <span
-              className="flex h-6 min-w-20 px-3 items-center justify-center rounded text-center text-xs font-medium"
+              className="flex h-6 min-w-20 px-3 items-center justify-center rounded-sm text-center text-xs font-medium"
               style={{
                 color: currentCycle.color,
                 backgroundColor: `${currentCycle.color}20`,

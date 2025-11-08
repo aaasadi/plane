@@ -42,7 +42,7 @@ export const TableDragHandleDropdownColorSelector: React.FC<Props> = (props) => 
       <Disclosure.Button
         as="button"
         type="button"
-        className="flex items-center justify-between gap-2 w-full rounded px-1 py-1.5 text-xs text-left truncate text-custom-text-200 hover:bg-custom-background-80"
+        className="flex items-center justify-between gap-2 w-full rounded-sm px-1 py-1.5 text-xs text-start truncate text-custom-text-200 hover:bg-custom-background-80"
       >
         {({ open }) => (
           <>
@@ -66,7 +66,7 @@ export const TableDragHandleDropdownColorSelector: React.FC<Props> = (props) => 
               <button
                 key={color.key}
                 type="button"
-                className="flex-shrink-0 size-6 rounded border-[0.5px] border-custom-border-400 hover:opacity-60 transition-opacity"
+                className="flex-shrink-0 size-6 rounded-sm border-[0.5px] border-custom-border-400 hover:opacity-60 transition-opacity"
                 style={{
                   backgroundColor: color.textColor,
                 }}
@@ -75,7 +75,7 @@ export const TableDragHandleDropdownColorSelector: React.FC<Props> = (props) => 
             ))}
             <button
               type="button"
-              className="flex-shrink-0 size-6 grid place-items-center rounded text-custom-text-300 border-[0.5px] border-custom-border-400 hover:bg-custom-background-80 transition-colors"
+              className="flex-shrink-0 size-6 grid place-items-center rounded-sm text-custom-text-300 border-[0.5px] border-custom-border-400 hover:bg-custom-background-80 transition-colors"
               onClick={() => handleTextColorChange(editor, null)}
             >
               <Ban className="size-4" />
@@ -89,7 +89,7 @@ export const TableDragHandleDropdownColorSelector: React.FC<Props> = (props) => 
               <button
                 key={color.key}
                 type="button"
-                className="flex-shrink-0 size-6 rounded border-[0.5px] border-custom-border-400 hover:opacity-60 transition-opacity"
+                className="flex-shrink-0 size-6 rounded-sm border-[0.5px] border-custom-border-400 hover:opacity-60 transition-opacity"
                 style={{
                   backgroundColor: color.backgroundColor,
                 }}
@@ -101,7 +101,7 @@ export const TableDragHandleDropdownColorSelector: React.FC<Props> = (props) => 
             ))}
             <button
               type="button"
-              className="flex-shrink-0 size-6 grid place-items-center rounded text-custom-text-300 border-[0.5px] border-custom-border-400 hover:bg-custom-background-80 transition-colors"
+              className="flex-shrink-0 size-6 grid place-items-center rounded-sm text-custom-text-300 border-[0.5px] border-custom-border-400 hover:bg-custom-background-80 transition-colors"
               onClick={() => {
                 handleBackgroundColorChange(editor, null);
                 onSelect(null);

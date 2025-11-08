@@ -80,7 +80,7 @@ export const CommentCard: React.FC<Props> = observer((props) => {
           </div>
         )}
 
-        <span className="absolute -bottom-0.5 -right-1 rounded-tl bg-custom-background-80 px-0.5 py-px">
+        <span className="absolute -bottom-0.5 -end-1 rounded-tl bg-custom-background-80 px-0.5 py-px">
           <MessageSquare className="h-3 w-3 text-custom-text-200" aria-hidden="true" strokeWidth={2} />
         </span>
       </div>
@@ -158,7 +158,7 @@ export const CommentCard: React.FC<Props> = observer((props) => {
       </div>
 
       {!isInIframe && currentUser?.id === comment?.actor_detail?.id && (
-        <Menu as="div" className="relative w-min text-left">
+        <Menu as="div" className="relative w-min text-start">
           <Menu.Button
             type="button"
             onClick={() => {}}
@@ -176,7 +176,7 @@ export const CommentCard: React.FC<Props> = observer((props) => {
             leaveFrom="transform opacity-100 scale-100"
             leaveTo="transform opacity-0 scale-95"
           >
-            <Menu.Items className="absolute right-0 z-10 mt-1 max-h-36 min-w-[8rem] origin-top-right overflow-auto overflow-y-scroll whitespace-nowrap rounded-md border border-custom-border-300 bg-custom-background-90 p-1 text-xs shadow-lg focus:outline-none">
+            <Menu.Items className="absolute end-0 z-10 mt-1 max-h-36 min-w-[8rem] origin-top-right overflow-auto overflow-y-scroll whitespace-nowrap rounded-md border border-custom-border-300 bg-custom-background-90 p-1 text-xs shadow-lg focus:outline-none">
               <Menu.Item>
                 {({ active }) => (
                   <div className="py-1">
@@ -185,7 +185,7 @@ export const CommentCard: React.FC<Props> = observer((props) => {
                       onClick={() => {
                         setIsEditing(true);
                       }}
-                      className={`w-full select-none truncate rounded px-1 py-1.5 text-left text-custom-text-200 hover:bg-custom-background-80 ${
+                      className={`w-full select-none truncate rounded px-1 py-1.5 text-start text-custom-text-200 hover:bg-custom-background-80 ${
                         active ? "bg-custom-background-80" : ""
                       }`}
                     >
@@ -200,7 +200,7 @@ export const CommentCard: React.FC<Props> = observer((props) => {
                     <button
                       type="button"
                       onClick={handleDelete}
-                      className={`w-full select-none truncate rounded px-1 py-1.5 text-left text-custom-text-200 hover:bg-custom-background-80 ${
+                      className={`w-full select-none truncate rounded px-1 py-1.5 text-start text-custom-text-200 hover:bg-custom-background-80 ${
                         active ? "bg-custom-background-80" : ""
                       }`}
                     >

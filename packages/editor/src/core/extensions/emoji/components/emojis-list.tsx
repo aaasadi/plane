@@ -141,7 +141,7 @@ export const EmojisListDropdown = forwardRef<EmojiListRef, EmojisListDropdownPro
                 id={`emoji-item-${index}`}
                 type="button"
                 className={cn(
-                  "flex items-center gap-2 w-full rounded px-2 py-1.5 text-sm text-left truncate text-custom-text-200 hover:bg-custom-background-80 transition-colors duration-150",
+                  "flex items-center gap-2 w-full rounded-sm px-2 py-1.5 text-sm text-start truncate text-custom-text-200 hover:bg-custom-background-80 transition-colors duration-150",
                   {
                     "bg-custom-background-80": isSelected,
                   }

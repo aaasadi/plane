@@ -188,7 +188,7 @@ export const InboxIssueMainContent: React.FC<Props> = observer((props) => {
           issueOperations={issueOperations}
           disabled={!isEditable}
           value={issue.name}
-          containerClassName="-ml-3"
+          containerClassName="-ms-3"
         />
 
         {loader === "issue-loading" ? (
@@ -206,7 +206,7 @@ export const InboxIssueMainContent: React.FC<Props> = observer((props) => {
             disabled={!isEditable}
             issueOperations={issueOperations}
             setIsSubmitting={(value) => setIsSubmitting(value)}
-            containerClassName="-ml-3 border-none"
+            containerClassName="-ms-3 border-none"
           />
         )}
 

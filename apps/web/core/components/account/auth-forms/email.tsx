@@ -81,7 +81,7 @@ export const AuthEmailForm: FC<TAuthEmailForm> = observer((props) => {
                 setEmail("");
                 inputRef.current?.focus();
               }}
-              className="absolute right-3 size-5 grid place-items-center"
+              className="absolute end-3 size-5 grid place-items-center"
               aria-label={t("aria_labels.auth_forms.clear_email")}
               tabIndex={-1}
             >

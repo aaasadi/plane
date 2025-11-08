@@ -1,7 +1,7 @@
 import React from "react";
-import { Button } from "../button/button";
-import { cn } from "../utils/classname";
-import { getCompactAsset } from "./assets/asset-registry";
+import { Button } from "../button";
+import { cn } from "../utils";
+import { getCompactAsset } from "./assets";
 import type { CompactAssetType } from "./assets/asset-types";
 import type { BaseEmptyStateCommonProps } from "./types";
 
@@ -21,7 +21,7 @@ export const EmptyStateCompact: React.FC<BaseEmptyStateCommonProps> = ({
   const resolvedAsset = assetKey ? getCompactAsset(assetKey as CompactAssetType, assetClassName) : asset;
 
   const rootAlignClasses = align === "center" ? "items-center" : "items-start";
-  const containerAlignClasses = align === "center" ? "items-center text-center" : "items-start text-left";
+  const containerAlignClasses = align === "center" ? "items-center text-center" : "items-start text-start";
 
   return (
     <div className={cn("flex size-full items-center justify-center", rootAlignClasses, rootClassName)}>

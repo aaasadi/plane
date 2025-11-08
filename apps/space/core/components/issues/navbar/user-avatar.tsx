@@ -58,7 +58,7 @@ export const UserAvatar: FC = observer(() => {
   const { queryParam } = queryParamGenerator({ peekId, board, state, priority, labels });
 
   return (
-    <div className="relative mr-2">
+    <div className="relative me-2">
       {currentUser?.id ? (
         <div>
           <Popover as="div">

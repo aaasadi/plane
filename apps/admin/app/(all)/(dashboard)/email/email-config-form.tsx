@@ -179,7 +179,7 @@ export const InstanceEmailForm: FC<IInstanceEmailForm> = (props) => {
         </div>
         <div className="flex flex-col gap-6 my-6 pt-4 border-t border-custom-border-100">
           <div className="flex w-full max-w-xl flex-col gap-y-10 px-1">
-            <div className="mr-8 flex items-center gap-10 pt-4">
+            <div className="me-8 flex items-center gap-10 pt-4">
               <div className="grow">
                 <div className="text-sm font-medium text-custom-text-100">Authentication</div>
                 <div className="text-xs font-normal text-custom-text-300">

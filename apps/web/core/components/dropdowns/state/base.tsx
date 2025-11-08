@@ -116,7 +116,7 @@ export const WorkItemStateDropdownBase: React.FC<TWorkItemStateDropdownBaseProps
           className={cn("flex-shrink-0", iconSize)}
           percentage={state?.order}
         />
-        <span className="flex-grow truncate text-left">{state?.name}</span>
+        <span className="flex-grow truncate text-start">{state?.name}</span>
       </div>
     ),
   }));
@@ -182,7 +182,7 @@ export const WorkItemStateDropdownBase: React.FC<TWorkItemStateDropdownBaseProps
                   />
                 )}
                 {BUTTON_VARIANTS_WITH_TEXT.includes(buttonVariant) && (
-                  <span className="flex-grow truncate text-left">{selectedState?.name ?? t("state")}</span>
+                  <span className="flex-grow truncate text-start">{selectedState?.name ?? t("state")}</span>
                 )}
                 {dropdownArrow && (
                   <ChevronDown className={cn("h-2.5 w-2.5 flex-shrink-0", dropdownArrowClassName)} aria-hidden="true" />

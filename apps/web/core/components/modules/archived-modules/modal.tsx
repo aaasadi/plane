@@ -82,7 +82,7 @@ export const ArchiveModuleModal: React.FC<Props> = (props) => {
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-custom-background-100 text-left shadow-custom-shadow-md transition-all sm:my-8 sm:w-full sm:max-w-lg">
+              <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-custom-background-100 text-start shadow-custom-shadow-md transition-all sm:my-8 sm:w-full sm:max-w-lg">
                 <div className="px-5 py-4">
                   <h3 className="text-xl font-medium 2xl:text-2xl">Archive module {moduleName}</h3>
                   <p className="mt-3 text-sm text-custom-text-200">
