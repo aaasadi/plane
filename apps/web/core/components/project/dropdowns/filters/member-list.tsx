@@ -96,7 +96,7 @@ export const MemberListFiltersDropdown: React.FC<Props> = observer((props) => {
             <ChevronDownIcon className="h-3 w-3" />
           </Button>
           {appliedFiltersCount > 0 && (
-            <div className="absolute -top-1 -right-1 h-2 w-2 rounded-full bg-custom-primary-100" />
+            <div className="absolute -top-1 -end-1 h-2 w-2 rounded-full bg-custom-primary-100" />
           )}
         </div>
       }

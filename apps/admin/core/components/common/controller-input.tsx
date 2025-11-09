@@ -54,7 +54,7 @@ export const ControllerInput: React.FC<Props> = (props) => {
               hasError={error}
               placeholder={placeholder}
               className={cn("w-full rounded-md font-medium", {
-                "pr-10": type === "password",
+                "pe-10": type === "password",
               })}
             />
           )}
@@ -63,7 +63,7 @@ export const ControllerInput: React.FC<Props> = (props) => {
           (showPassword ? (
             <button
               tabIndex={-1}
-              className="absolute right-3 top-2.5 flex items-center justify-center text-custom-text-400"
+              className="absolute end-3 top-2.5 flex items-center justify-center text-custom-text-400"
               onClick={() => setShowPassword(false)}
             >
               <EyeOff className="h-4 w-4" />
@@ -71,7 +71,7 @@ export const ControllerInput: React.FC<Props> = (props) => {
           ) : (
             <button
               tabIndex={-1}
-              className="absolute right-3 top-2.5 flex items-center justify-center text-custom-text-400"
+              className="absolute end-3 top-2.5 flex items-center justify-center text-custom-text-400"
               onClick={() => setShowPassword(true)}
             >
               <Eye className="h-4 w-4" />

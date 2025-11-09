@@ -85,7 +85,7 @@ export const ProfileSidebar: FC<TProfileSidebar> = observer((props) => {
   return (
     <div
       className={cn(
-        `vertical-scrollbar scrollbar-md fixed z-[5] h-full w-full flex-shrink-0 overflow-hidden overflow-y-auto border-l border-custom-border-100 bg-custom-sidebar-background-100 transition-all md:relative md:w-[300px]`,
+        `vertical-scrollbar scrollbar-md fixed z-[5] h-full w-full flex-shrink-0 overflow-hidden overflow-y-auto border-s border-custom-border-100 bg-custom-sidebar-background-100 transition-all md:relative md:w-[300px]`,
         className
       )}
       style={profileSidebarCollapsed ? { marginLeft: `${window?.innerWidth || 0}px` } : {}}
@@ -94,7 +94,7 @@ export const ProfileSidebar: FC<TProfileSidebar> = observer((props) => {
         <>
           <div className="relative h-[110px]">
             {currentUser?.id === userId && (
-              <div className="absolute right-3.5 top-3.5 grid h-5 w-5 place-items-center rounded bg-white">
+              <div className="absolute end-3.5 top-3.5 grid h-5 w-5 place-items-center rounded bg-white">
                 <Link href={`/${workspaceSlug}/settings/account`}>
                   <span className="grid place-items-center text-black">
                     <Pencil className="h-3 w-3" />
@@ -111,7 +111,7 @@ export const ProfileSidebar: FC<TProfileSidebar> = observer((props) => {
               alt={userData?.display_name}
               className="h-[110px] w-full object-cover"
             />
-            <div className="absolute -bottom-[26px] left-5 h-[52px] w-[52px] rounded">
+            <div className="absolute -bottom-[26px] start-5 h-[52px] w-[52px] rounded">
               {userData?.avatar_url && userData?.avatar_url !== "" ? (
                 <img
                   src={getFileURL(userData?.avatar_url)}
@@ -193,7 +193,7 @@ export const ProfileSidebar: FC<TProfileSidebar> = observer((props) => {
                           leaveFrom="transform opacity-100"
                           leaveTo="transform opacity-0"
                         >
-                          <Disclosure.Panel className="mt-5 pl-9">
+                          <Disclosure.Panel className="mt-5 ps-9">
                             {totalIssues > 0 && (
                               <div className="flex items-center gap-0.5">
                                 <div
@@ -229,7 +229,7 @@ export const ProfileSidebar: FC<TProfileSidebar> = observer((props) => {
                             <div className="mt-7 space-y-5 text-sm text-custom-text-200">
                               <div className="flex items-center justify-between gap-2">
                                 <div className="flex items-center gap-2">
-                                  <div className="h-2.5 w-2.5 rounded-sm bg-[#203b80]" />
+                                  <div className="h-2.5 w-2.5 rounded-xs bg-[#203b80]" />
                                   Created
                                 </div>
                                 <div className="font-medium">
@@ -238,7 +238,7 @@ export const ProfileSidebar: FC<TProfileSidebar> = observer((props) => {
                               </div>
                               <div className="flex items-center justify-between gap-2">
                                 <div className="flex items-center gap-2">
-                                  <div className="h-2.5 w-2.5 rounded-sm bg-[#3f76ff]" />
+                                  <div className="h-2.5 w-2.5 rounded-xs bg-[#3f76ff]" />
                                   Assigned
                                 </div>
                                 <div className="font-medium">
@@ -247,7 +247,7 @@ export const ProfileSidebar: FC<TProfileSidebar> = observer((props) => {
                               </div>
                               <div className="flex items-center justify-between gap-2">
                                 <div className="flex items-center gap-2">
-                                  <div className="h-2.5 w-2.5 rounded-sm bg-[#f59e0b]" />
+                                  <div className="h-2.5 w-2.5 rounded-xs bg-[#f59e0b]" />
                                   Due
                                 </div>
                                 <div className="font-medium">
@@ -256,7 +256,7 @@ export const ProfileSidebar: FC<TProfileSidebar> = observer((props) => {
                               </div>
                               <div className="flex items-center justify-between gap-2">
                                 <div className="flex items-center gap-2">
-                                  <div className="h-2.5 w-2.5 rounded-sm bg-[#16a34a]" />
+                                  <div className="h-2.5 w-2.5 rounded-xs bg-[#16a34a]" />
                                   Completed
                                 </div>
                                 <div className="font-medium">

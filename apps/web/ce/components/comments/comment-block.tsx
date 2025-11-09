@@ -42,7 +42,7 @@ export const CommentBlock: FC<TCommentBlock> = observer((props) => {
       ref={commentBlockRef}
     >
       <div
-        className="absolute left-[13px] top-0 bottom-0 w-0.5 transition-border duration-1000 bg-custom-background-80"
+        className="absolute start-[13px] top-0 bottom-0 w-0.5 transition-border duration-1000 bg-custom-background-80"
         aria-hidden
       />
       <div

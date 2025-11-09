@@ -165,7 +165,7 @@ export const WithIcons: Story = {
           <Tabs.List>
             {tabsWithIcons.map((tab) => (
               <Tabs.Trigger key={tab.value} value={tab.value}>
-                <tab.icon className="w-4 h-4 mr-2" />
+                <tab.icon className="w-4 h-4 me-2" />
                 {tab.label}
               </Tabs.Trigger>
             ))}
@@ -239,7 +239,7 @@ export const DynamicTabs: Story = {
         <div className="mb-4">
           <button
             onClick={addTab}
-            className="px-3 py-1.5 text-sm bg-custom-background-80 rounded hover:bg-custom-background-90"
+            className="px-3 py-1.5 text-sm bg-custom-background-80 rounded-sm hover:bg-custom-background-90"
           >
             Add Tab
           </button>
@@ -255,7 +255,7 @@ export const DynamicTabs: Story = {
                       e.stopPropagation();
                       removeTab(tab.value);
                     }}
-                    className="ml-2 hover:text-red-500"
+                    className="ms-2 hover:text-red-500"
                   >
                     ×
                   </button>

@@ -267,7 +267,7 @@ export const ModuleAnalyticsSidebar: React.FC<Props> = observer((props) => {
                 <CustomSelect
                   customButton={
                     <span
-                      className={`flex h-6 w-20 items-center justify-center rounded-sm text-center text-xs ${
+                      className={`flex h-6 w-20 items-center justify-center rounded-xs text-center text-xs ${
                         isEditingAllowed && !isArchived ? "cursor-pointer" : "cursor-not-allowed"
                       }`}
                       style={{
@@ -301,7 +301,7 @@ export const ModuleAnalyticsSidebar: React.FC<Props> = observer((props) => {
 
         {moduleDetails.description && (
           <TextArea
-            className="outline-none ring-none w-full max-h-max bg-transparent !p-0 !m-0 !border-0 resize-none text-sm leading-5 text-custom-text-200"
+            className="outline-hidden ring-none w-full max-h-max bg-transparent !p-0 !m-0 !border-0 resize-none text-sm leading-5 text-custom-text-200"
             value={moduleDetails.description}
             disabled
           />

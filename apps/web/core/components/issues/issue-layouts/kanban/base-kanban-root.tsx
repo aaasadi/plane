@@ -251,7 +251,7 @@ export const BaseKanBanRoot: React.FC<IBaseKanBanLayout> = observer((props: IBas
       />
       {/* drag and delete component */}
       <div
-        className={`fixed left-1/2 -translate-x-1/2 ${
+        className={`fixed start-1/2 -translate-x-1/2 ${
           isDragging ? "z-40" : ""
         } top-3 mx-3 flex w-72 items-center justify-center`}
         ref={deleteAreaRef}

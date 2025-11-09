@@ -45,7 +45,7 @@ export const ProductUpdatesModal: FC<ProductUpdatesModalProps> = observer((props
                 data-ph-element={USER_TRACKER_ELEMENTS.CHANGELOG_REDIRECTED}
                 href="https://go.plane.so/p-changelog"
                 target="_blank"
-                className="text-sm text-custom-primary-100 font-medium hover:text-custom-primary-200 underline underline-offset-1 outline-none"
+                className="text-sm text-custom-primary-100 font-medium hover:text-custom-primary-200 underline underline-offset-1 outline-hidden"
               >
                 {t("our_changelogs")}
               </a>{" "}

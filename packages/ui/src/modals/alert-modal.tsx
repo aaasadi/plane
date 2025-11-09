@@ -77,7 +77,7 @@ export const AlertModalCore: React.FC<Props> = (props) => {
             <Icon className="size-5" aria-hidden="true" />
           </span>
         )}
-        <div className="text-center sm:text-left">
+        <div className="text-center sm:text-start">
           <h3 className="text-lg font-medium">{title}</h3>
           <p className="mt-1 text-sm text-custom-text-200">{content}</p>
         </div>

@@ -123,7 +123,7 @@ export const IssueLabelSelect: React.FC<IIssueLabelSelect> = observer((props) =>
     <>
       <Combobox
         as="div"
-        className={`w-auto max-w-full flex-shrink-0 text-left`}
+        className={`w-auto max-w-full flex-shrink-0 text-start`}
         value={issueLabels}
         onChange={(value) => onSelect(value)}
         multiple
@@ -141,7 +141,7 @@ export const IssueLabelSelect: React.FC<IIssueLabelSelect> = observer((props) =>
 
         <Combobox.Options className="fixed z-10">
           <div
-            className={`z-10 my-1 w-48 whitespace-nowrap rounded border border-custom-border-300 bg-custom-background-100 py-2.5 text-xs shadow-custom-shadow-rg focus:outline-none`}
+            className={`z-10 my-1 w-48 whitespace-nowrap rounded border border-custom-border-300 bg-custom-background-100 py-2.5 text-xs shadow-custom-shadow-rg focus:outline-hidden`}
             ref={setPopperElement}
             style={styles.popper}
             {...attributes.popper}
@@ -150,7 +150,7 @@ export const IssueLabelSelect: React.FC<IIssueLabelSelect> = observer((props) =>
               <div className="flex w-full items-center justify-start rounded border border-custom-border-200 bg-custom-background-90 px-2">
                 <Search className="h-3.5 w-3.5 text-custom-text-300" />
                 <Combobox.Input
-                  className="w-full bg-transparent px-2 py-1 text-xs text-custom-text-200 placeholder:text-custom-text-400 focus:outline-none"
+                  className="w-full bg-transparent px-2 py-1 text-xs text-custom-text-200 placeholder:text-custom-text-400 focus:outline-hidden"
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
                   placeholder={t("common.search.label")}
@@ -160,7 +160,7 @@ export const IssueLabelSelect: React.FC<IIssueLabelSelect> = observer((props) =>
                 />
               </div>
             </div>
-            <div className={`vertical-scrollbar scrollbar-sm mt-2 max-h-48 space-y-1 overflow-y-scroll px-2 pr-0`}>
+            <div className={`vertical-scrollbar scrollbar-sm mt-2 max-h-48 space-y-1 overflow-y-scroll px-2 pe-0`}>
               {isLoading ? (
                 <p className="text-center text-custom-text-200">{t("common.loading")}</p>
               ) : filteredOptions.length > 0 ? (
@@ -197,7 +197,7 @@ export const IssueLabelSelect: React.FC<IIssueLabelSelect> = observer((props) =>
                     if (!query.length) return;
                     handleAddLabel(query);
                   }}
-                  className={`text-left text-custom-text-200 ${query.length ? "cursor-pointer" : "cursor-default"}`}
+                  className={`text-start text-custom-text-200 ${query.length ? "cursor-pointer" : "cursor-default"}`}
                 >
                   {query.length ? (
                     <>
@@ -209,7 +209,7 @@ export const IssueLabelSelect: React.FC<IIssueLabelSelect> = observer((props) =>
                   )}
                 </Combobox.Option>
               ) : (
-                <p className="text-left text-custom-text-200 ">{t("common.search.no_matching_results")}</p>
+                <p className="text-start text-custom-text-200 ">{t("common.search.no_matching_results")}</p>
               )}
             </div>
           </div>

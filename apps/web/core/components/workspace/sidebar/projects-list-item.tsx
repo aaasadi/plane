@@ -129,7 +129,7 @@ export const SidebarProjectsListItem: React.FC<Props> = observer((props) => {
             render: ({ container }) => {
               const root = createRoot(container);
               root.render(
-                <div className="rounded flex items-center bg-custom-background-100 text-sm p-1 pr-2">
+                <div className="rounded flex items-center bg-custom-background-100 text-sm p-1 pe-2">
                   <div className="size-4 grid place-items-center flex-shrink-0">
                     {project && <Logo logo={project?.logo_props} />}
                   </div>
@@ -242,7 +242,7 @@ export const SidebarProjectsListItem: React.FC<Props> = observer((props) => {
                 <button
                   type="button"
                   className={cn(
-                    "hidden group-hover/project-item:flex items-center justify-center absolute top-1/2 -left-3 -translate-y-1/2 rounded text-custom-sidebar-text-400 cursor-grab",
+                    "hidden group-hover/project-item:flex items-center justify-center absolute top-1/2 -start-3 -translate-y-1/2 rounded text-custom-sidebar-text-400 cursor-grab",
                     {
                       "cursor-not-allowed opacity-60": project.sort_order === null,
                       "cursor-grabbing": isDragging,
@@ -264,7 +264,7 @@ export const SidebarProjectsListItem: React.FC<Props> = observer((props) => {
                 <Disclosure.Button
                   as="button"
                   type="button"
-                  className={cn("flex-grow flex items-center gap-1.5 text-left select-none w-full", {})}
+                  className={cn("flex-grow flex items-center gap-1.5 text-start select-none w-full", {})}
                   aria-label={
                     isProjectListOpen
                       ? t("aria_labels.projects_sidebar.close_project_menu")
@@ -402,8 +402,8 @@ export const SidebarProjectsListItem: React.FC<Props> = observer((props) => {
             leaveTo="transform scale-95 opacity-0"
           >
             {isProjectListOpen && (
-              <Disclosure.Panel as="div" className="relative flex flex-col gap-0.5 mt-1 pl-6 mb-1.5">
-                <div className="absolute left-[15px] top-0 bottom-1 w-[1px] bg-custom-border-200" />
+              <Disclosure.Panel as="div" className="relative flex flex-col gap-0.5 mt-1 ps-6 mb-1.5">
+                <div className="absolute start-[15px] top-0 bottom-1 w-[1px] bg-custom-border-200" />
                 <ProjectNavigationRoot workspaceSlug={workspaceSlug.toString()} projectId={projectId.toString()} />
               </Disclosure.Panel>
             )}

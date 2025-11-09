@@ -25,7 +25,7 @@ export const MonthChartView: FC<any> = observer(() => {
   const marginLeftDays = getNumberOfDaysBetweenTwoDates(monthsStartDate, weeksStartDate);
 
   return (
-    <div className={`absolute top-0 left-0 min-h-full h-max w-max flex`}>
+    <div className={`absolute top-0 start-0 min-h-full h-max w-max flex`}>
       {currentViewData && (
         <div className="relative flex flex-col outline-[0.25px] outline outline-custom-border-200">
           {/** Header Div */}
@@ -46,12 +46,12 @@ export const MonthChartView: FC<any> = observer(() => {
                   <div
                     className="sticky flex items-center font-normal z-[1] m-1 whitespace-nowrap px-3 py-1 text-base capitalize bg-custom-background-100 text-custom-text-200"
                     style={{
-                      left: `${SIDEBAR_WIDTH}px`,
+                      insetInlineStart: `${SIDEBAR_WIDTH}px`,
                     }}
                   >
                     {monthBlock?.title}
                     {monthBlock.today && (
-                      <span className={cn("rounded ml-2 font-medium bg-custom-primary-100 px-1 text-2xs text-white")}>
+                      <span className={cn("rounded ms-2 font-medium bg-custom-primary-100 px-1 text-2xs text-white")}>
                         Current
                       </span>
                     )}

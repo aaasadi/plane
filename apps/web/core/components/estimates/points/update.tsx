@@ -168,7 +168,7 @@ export const EstimatePointUpdate: FC<TEstimatePointUpdate> = observer((props) =>
   };
 
   return (
-    <form onSubmit={handleUpdate} className="relative flex items-center gap-2 text-base pr-2.5">
+    <form onSubmit={handleUpdate} className="relative flex items-center gap-2 text-base pe-2.5">
       <div
         className={cn(
           "relative w-full border rounded flex items-center my-1",
@@ -190,7 +190,7 @@ export const EstimatePointUpdate: FC<TEstimatePointUpdate> = observer((props) =>
               }
               position="bottom"
             >
-              <div className="flex-shrink-0 w-3.5 h-3.5 overflow-hidden mr-3 relative flex justify-center items-center text-red-500">
+              <div className="flex-shrink-0 w-3.5 h-3.5 overflow-hidden me-3 relative flex justify-center items-center text-red-500">
                 <Info size={14} />
               </div>
             </Tooltip>
@@ -201,7 +201,7 @@ export const EstimatePointUpdate: FC<TEstimatePointUpdate> = observer((props) =>
       {estimateInputValue && estimateInputValue.length > 0 && (
         <button
           type="submit"
-          className="rounded-sm w-6 h-6 flex-shrink-0 relative flex justify-center items-center hover:bg-custom-background-80 transition-colors cursor-pointer text-green-500"
+          className="rounded-xs w-6 h-6 flex-shrink-0 relative flex justify-center items-center hover:bg-custom-background-80 transition-colors cursor-pointer text-green-500"
           disabled={loader}
         >
           {loader ? <Spinner className="w-4 h-4" /> : <Check size={14} />}
@@ -209,7 +209,7 @@ export const EstimatePointUpdate: FC<TEstimatePointUpdate> = observer((props) =>
       )}
       <button
         type="button"
-        className="rounded-sm w-6 h-6 flex-shrink-0 relative flex justify-center items-center hover:bg-custom-background-80 transition-colors cursor-pointer"
+        className="rounded-xs w-6 h-6 flex-shrink-0 relative flex justify-center items-center hover:bg-custom-background-80 transition-colors cursor-pointer"
         onClick={handleClose}
         disabled={loader}
       >

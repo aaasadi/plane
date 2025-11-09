@@ -57,7 +57,7 @@ export const StickyActionBar = observer(() => {
       >
         <Tooltip tooltipContent="All stickies" isMobile={false} position="left">
           <button
-            className="btn btn--icon rounded-full w-10 h-10 flex items-center justify-center shadow-sm bg-custom-background-100"
+            className="btn btn--icon rounded-full w-10 h-10 flex items-center justify-center shadow-xs bg-custom-background-100"
             onClick={() => toggleAllStickiesModal(true)}
           >
             <RecentStickyIcon className="size-5 rotate-90 text-custom-text-350" />
@@ -65,7 +65,7 @@ export const StickyActionBar = observer(() => {
         </Tooltip>
         {recentStickyId && (
           <Tooltip
-            className="scale-75 -mr-30 translate-x-10"
+            className="scale-75 -me-30 translate-x-10"
             tooltipContent={
               <div className="-m-2 max-h-[150px]">
                 <StickyNote
@@ -74,7 +74,7 @@ export const StickyActionBar = observer(() => {
                   stickyId={newSticky ? activeStickyId : recentStickyId || ""}
                 />
                 <div
-                  className="absolute top-0 right-0 h-full w-full"
+                  className="absolute top-0 end-0 h-full w-full"
                   style={{
                     background: `linear-gradient(to top, ${recentStickyBackgroundColor}, transparent)`,
                   }}
@@ -86,7 +86,7 @@ export const StickyActionBar = observer(() => {
             disabled={showRecentSticky}
           >
             <button
-              className="btn btn--icon rounded-full w-10 h-10 flex items-center justify-center shadow-sm bg-custom-background-100"
+              className="btn btn--icon rounded-full w-10 h-10 flex items-center justify-center shadow-xs bg-custom-background-100"
               onClick={() => setShowRecentSticky(true)}
               style={{ color: recentStickyBackgroundColor }}
             >
@@ -96,7 +96,7 @@ export const StickyActionBar = observer(() => {
         )}
         <Tooltip tooltipContent="Add sticky" isMobile={false} position="left">
           <button
-            className="btn btn--icon rounded-full w-10 h-10 flex items-center justify-center shadow-sm bg-custom-background-100"
+            className="btn btn--icon rounded-full w-10 h-10 flex items-center justify-center shadow-xs bg-custom-background-100"
             onClick={() => {
               updateActiveStickyId("");
               toggleShowNewSticky(true);
@@ -109,7 +109,7 @@ export const StickyActionBar = observer(() => {
       </div>
 
       <button
-        className={`btn btn--icon rounded-full w-10 h-10 flex items-center justify-center shadow-sm bg-custom-background-100 transition-transform duration-300 ${isExpanded ? "rotate-180" : ""}`}
+        className={`btn btn--icon rounded-full w-10 h-10 flex items-center justify-center shadow-xs bg-custom-background-100 transition-transform duration-300 ${isExpanded ? "rotate-180" : ""}`}
         onClick={() => setIsExpanded(!isExpanded)}
       >
         {isExpanded ? (
@@ -121,7 +121,7 @@ export const StickyActionBar = observer(() => {
 
       <div
         className={cn(
-          "absolute bottom-16 right-0 z-[20]",
+          "absolute bottom-16 end-0 z-[20]",
           "transform transition-all duration-300 ease-in-out",
           newSticky || showRecentSticky ? "translate-y-[0%] min-h-[300px]" : "translate-y-[100%] h-0"
         )}

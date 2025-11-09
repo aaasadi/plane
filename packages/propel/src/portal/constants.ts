@@ -19,9 +19,9 @@ export const PORTAL_WIDTH_CLASSES = {
 } as const;
 
 export const PORTAL_POSITION_CLASSES = {
-  [EPortalPosition.LEFT]: "left-0",
-  [EPortalPosition.RIGHT]: "right-0",
-  [EPortalPosition.CENTER]: "left-1/2 -translate-x-1/2",
+  [EPortalPosition.LEFT]: "start-0",
+  [EPortalPosition.RIGHT]: "end-0",
+  [EPortalPosition.CENTER]: "start-1/2 -translate-x-1/2",
 } as const;
 
 export const DEFAULT_PORTAL_ID = "full-screen-portal";

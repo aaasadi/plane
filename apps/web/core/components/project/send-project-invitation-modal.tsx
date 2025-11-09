@@ -210,7 +210,7 @@ export const SendProjectInvitationModal: React.FC<Props> = observer((props) => {
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="relative transform rounded-lg bg-custom-background-100 p-5 text-left shadow-custom-shadow-md transition-all sm:w-full sm:max-w-2xl">
+              <Dialog.Panel className="relative transform rounded-lg bg-custom-background-100 p-5 text-start shadow-custom-shadow-md transition-all sm:w-full sm:max-w-2xl">
                 <form onSubmit={handleSubmit(onSubmit)}>
                   <div className="space-y-5">
                     <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-custom-text-100">
@@ -239,7 +239,7 @@ export const SendProjectInvitationModal: React.FC<Props> = observer((props) => {
                                   <CustomSearchSelect
                                     value={value}
                                     customButton={
-                                      <button className="flex w-full items-center justify-between gap-1 rounded-md border border-custom-border-200 px-3 py-2 text-left text-sm text-custom-text-200 shadow-sm duration-300 hover:bg-custom-background-80 hover:text-custom-text-100 focus:outline-none">
+                                      <button className="flex w-full items-center justify-between gap-1 rounded-md border border-custom-border-200 px-3 py-2 text-start text-sm text-custom-text-200 shadow-xs duration-300 hover:bg-custom-background-80 hover:text-custom-text-100 focus:outline-none">
                                         {value && value !== "" ? (
                                           <div className="flex items-center gap-2">
                                             <Avatar
@@ -288,7 +288,7 @@ export const SendProjectInvitationModal: React.FC<Props> = observer((props) => {
                                   <CustomSelect
                                     {...field}
                                     customButton={
-                                      <div className="flex w-24 items-center justify-between gap-1 rounded-md border border-custom-border-200 px-3 py-2.5 text-left text-sm text-custom-text-200 shadow-sm duration-300 hover:bg-custom-background-80 hover:text-custom-text-100 focus:outline-none">
+                                      <div className="flex w-24 items-center justify-between gap-1 rounded-md border border-custom-border-200 px-3 py-2.5 text-start text-sm text-custom-text-200 shadow-xs duration-300 hover:bg-custom-background-80 hover:text-custom-text-100 focus:outline-none">
                                         <span className="capitalize">
                                           {field.value ? ROLE[field.value] : "Select role"}
                                         </span>
@@ -338,7 +338,7 @@ export const SendProjectInvitationModal: React.FC<Props> = observer((props) => {
                   <div className="mt-5 flex items-center justify-between gap-2">
                     <button
                       type="button"
-                      className="flex items-center gap-2 bg-transparent py-2 pr-3 text-sm font-medium text-custom-primary outline-custom-primary"
+                      className="flex items-center gap-2 bg-transparent py-2 pe-3 text-sm font-medium text-custom-primary outline-custom-primary"
                       onClick={appendField}
                     >
                       <Plus className="h-4 w-4" />

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { InfoIcon, Search } from "lucide-react";
-import { cn } from "../../utils/classname";
+import { cn } from "../../utils";
 import { adjustColorForContrast, DEFAULT_COLORS } from "../helper";
 import { LucideIconsList } from "./lucide-root";
 import { MaterialIconList } from "./material-root";
@@ -45,7 +45,7 @@ export const IconRoot: React.FC<IconRootProps> = (props) => {
               onFocus={() => setIsInputFocused(true)}
               onBlur={() => setIsInputFocused(false)}
             >
-              <Search className="absolute left-2.5 bottom-3 h-3.5 w-3.5 text-custom-text-400" />
+              <Search className="absolute start-2.5 bottom-3 h-3.5 w-3.5 text-custom-text-400" />
 
               <input
                 placeholder="Search"
@@ -58,15 +58,15 @@ export const IconRoot: React.FC<IconRootProps> = (props) => {
         )}
         <div className="grid grid-cols-9 gap-2 items-center justify-items-center px-2.5 py-1 h-9">
           {showHexInput ? (
-            <div className="col-span-8 flex items-center gap-1 justify-self-stretch ml-2">
+            <div className="col-span-8 flex items-center gap-1 justify-self-stretch ms-2">
               <span
-                className="h-4 w-4 flex-shrink-0 rounded-full mr-1"
+                className="h-4 w-4 flex-shrink-0 rounded-full me-1"
                 style={{
                   backgroundColor: `#${hexValue}`,
                 }}
               />
               <span className="text-xs text-custom-text-300 flex-shrink-0">HEX</span>
-              <span className="text-xs text-custom-text-200 flex-shrink-0 -mr-1">#</span>
+              <span className="text-xs text-custom-text-200 flex-shrink-0 -me-1">#</span>
               <input
                 type="text"
                 value={hexValue}
@@ -75,7 +75,7 @@ export const IconRoot: React.FC<IconRootProps> = (props) => {
                   setHexValue(value);
                   if (/^[0-9A-Fa-f]{6}$/.test(value)) setActiveColor(adjustColorForContrast(`#${value}`));
                 }}
-                className="block placeholder-custom-text-400 focus:outline-none px-3 py-2 border-[0.5px] border-custom-border-200 flex-grow pl-0 text-xs text-custom-text-200 rounded border-none bg-transparent ring-0"
+                className="block placeholder-custom-text-400 focus:outline-none px-3 py-2 border-[0.5px] border-custom-border-200 flex-grow ps-0 text-xs text-custom-text-200 rounded border-none bg-transparent ring-0"
                 autoFocus
               />
             </div>
@@ -111,7 +111,7 @@ export const IconRoot: React.FC<IconRootProps> = (props) => {
             )}
           </button>
         </div>
-        <div className="flex items-center gap-2 w-full pl-4 pr-3 py-1 h-6">
+        <div className="flex items-center gap-2 w-full ps-4 pe-3 py-1 h-6">
           <InfoIcon className="h-3 w-3" />
           <p className="text-xs"> Colors will be adjusted to ensure sufficient contrast.</p>
         </div>

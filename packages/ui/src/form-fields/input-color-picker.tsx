@@ -52,7 +52,7 @@ export const InputColorPicker: React.FC<InputColorPickerProps> = (props) => {
         style={style}
       />
 
-      <Popover as="div" className="absolute right-1 top-1/2 z-10 -translate-y-1/2">
+      <Popover as="div" className="absolute end-1 top-1/2 z-10 -translate-y-1/2">
         {({ open }) => {
           if (open) {
           }

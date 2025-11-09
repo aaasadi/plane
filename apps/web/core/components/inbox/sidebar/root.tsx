@@ -80,7 +80,7 @@ export const InboxSidebar: FC<IInboxSidebarProps> = observer((props) => {
   }, [currentTab, filteredInboxIssueIds, inboxIssueId, projectId, router, workspaceSlug]);
 
   return (
-    <div className="bg-custom-background-100 flex-shrink-0 w-full h-full border-r border-custom-border-300 ">
+    <div className="bg-custom-background-100 flex-shrink-0 w-full h-full border-e border-custom-border-300 ">
       <div className="relative w-full h-full flex flex-col overflow-hidden">
         <Header variant={EHeaderVariant.SECONDARY}>
           {tabNavigationOptions.map((option) => (
@@ -105,13 +105,13 @@ export const InboxSidebar: FC<IInboxSidebarProps> = observer((props) => {
               )}
               <div
                 className={cn(
-                  `border absolute bottom-0 right-0 left-0 rounded-t-md`,
+                  `border absolute bottom-0 end-0 start-0 rounded-t-md`,
                   currentTab === option?.key ? `border-custom-primary-100` : `border-transparent`
                 )}
               />
             </div>
           ))}
-          <div className="m-auto mr-0">
+          <div className="m-auto me-0">
             <FiltersRoot />
           </div>
         </Header>

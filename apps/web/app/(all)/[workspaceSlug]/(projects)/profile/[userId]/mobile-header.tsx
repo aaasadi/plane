@@ -88,7 +88,7 @@ export const ProfileIssuesMobileHeader = observer(() => {
         customButton={
           <div className="flex flex-center text-sm text-custom-text-200">
             {t("common.layout")}
-            <ChevronDownIcon className="ml-2  h-4 w-4 text-custom-text-200 my-auto" strokeWidth={2} />
+            <ChevronDownIcon className="ms-2  h-4 w-4 text-custom-text-200 my-auto" strokeWidth={2} />
           </div>
         }
         customButtonClassName="flex flex-center text-custom-text-200 text-sm"
@@ -110,14 +110,14 @@ export const ProfileIssuesMobileHeader = observer(() => {
           );
         })}
       </CustomMenu>
-      <div className="flex flex-grow items-center justify-center border-l border-custom-border-200 text-sm text-custom-text-200">
+      <div className="flex flex-grow items-center justify-center border-s border-custom-border-200 text-sm text-custom-text-200">
         <FiltersDropdown
           title={t("common.display")}
           placement="bottom-end"
           menuButton={
             <div className="flex flex-center text-sm text-custom-text-200">
               {t("common.display")}
-              <ChevronDownIcon className="ml-2 h-4 w-4 text-custom-text-200" strokeWidth={2} />
+              <ChevronDownIcon className="ms-2 h-4 w-4 text-custom-text-200" strokeWidth={2} />
             </div>
           }
         >

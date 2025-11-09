@@ -133,7 +133,7 @@ export const CreateWorkspace: React.FC<Props> = observer((props) => {
             onClick={handleCurrentViewChange}
           >
             I want to join invited workspaces{" "}
-            <span className="bg-custom-primary-200 h-4 w-4 flex items-center justify-center rounded-sm text-xs font-medium text-white">
+            <span className="bg-custom-primary-200 h-4 w-4 flex items-center justify-center rounded-xs text-xs font-medium text-white">
               {invitedWorkspaces}
             </span>
           </Button>
@@ -151,7 +151,7 @@ export const CreateWorkspace: React.FC<Props> = observer((props) => {
       <form className="w-full mx-auto mt-2 space-y-4" onSubmit={handleSubmit(handleCreateWorkspace)}>
         <div className="space-y-1">
           <label
-            className="text-sm text-custom-text-300 font-medium after:content-['*'] after:ml-0.5 after:text-red-500"
+            className="text-sm text-custom-text-300 font-medium after:content-['*'] after:ms-0.5 after:text-red-500"
             htmlFor="name"
           >
             {t("workspace_creation.form.name.label")}
@@ -195,7 +195,7 @@ export const CreateWorkspace: React.FC<Props> = observer((props) => {
         </div>
         <div className="space-y-1">
           <label
-            className="text-sm text-custom-text-300 font-medium after:content-['*'] after:ml-0.5 after:text-red-500"
+            className="text-sm text-custom-text-300 font-medium after:content-['*'] after:ms-0.5 after:text-red-500"
             htmlFor="slug"
           >
             {t("workspace_creation.form.url.label")}
@@ -247,7 +247,7 @@ export const CreateWorkspace: React.FC<Props> = observer((props) => {
         <hr className="w-full border-custom-border-300" />
         <div className="space-y-1">
           <label
-            className="text-sm text-custom-text-300 font-medium after:content-['*'] after:ml-0.5 after:text-red-500"
+            className="text-sm text-custom-text-300 font-medium after:content-['*'] after:ms-0.5 after:text-red-500"
             htmlFor="organization_size"
           >
             {t("workspace_creation.form.organization_size.label")}

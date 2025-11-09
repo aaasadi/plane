@@ -6,6 +6,7 @@ import { Palette, Trash2 } from "lucide-react";
 import type { EditorRefApi } from "@plane/editor";
 // ui
 import { useOutsideClickDetector } from "@plane/hooks";
+import { useTranslation } from "@plane/i18n";
 import { Tooltip } from "@plane/propel/tooltip";
 import type { TSticky } from "@plane/types";
 // constants
@@ -25,6 +26,7 @@ type Props = {
 const toolbarItems = TOOLBAR_ITEMS.sticky;
 
 export const StickyEditorToolbar: React.FC<Props> = (props) => {
+  const {t} = useTranslation();
   const { executeCommand, editorRef, handleColorChange, handleDelete } = props;
 
   // State to manage active states of toolbar items
@@ -79,7 +81,7 @@ export const StickyEditorToolbar: React.FC<Props> = (props) => {
           </button>
         </Tooltip>
 
-        <div className="flex w-fit items-stretch justify-between gap-4 rounded p-1 my-auto">
+        <div className="flex w-fit items-stretch justify-between gap-4 rounded-sm p-1 my-auto">
           <div className="flex items-stretch my-auto gap-4">
             {Object.keys(toolbarItems).map((key) => (
               <div key={key} className={cn("flex items-stretch gap-4", {})}>
@@ -100,7 +102,7 @@ export const StickyEditorToolbar: React.FC<Props> = (props) => {
                         type="button"
                         onClick={() => executeCommand(item)}
                         className={cn(
-                          "grid place-items-center aspect-square rounded-sm p-0.5 text-custom-text-100/50",
+                          "grid place-items-center aspect-square rounded-xs p-0.5 text-custom-text-100/50",
                           {}
                         )}
                       >
@@ -123,7 +125,7 @@ export const StickyEditorToolbar: React.FC<Props> = (props) => {
       <Tooltip
         tooltipContent={
           <p className="flex flex-col gap-1 text-center text-xs">
-            <span className="font-medium">Delete</span>
+            <span className="font-medium">{t("delete")}</span>
           </p>
         }
       >

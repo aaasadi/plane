@@ -72,14 +72,14 @@ export const ProjectIssuesMobileHeader = observer(() => {
           layouts={[EIssueLayoutTypes.LIST, EIssueLayoutTypes.KANBAN, EIssueLayoutTypes.CALENDAR]}
           onChange={handleLayoutChange}
         />
-        <div className="flex flex-grow items-center justify-center border-l border-custom-border-200 text-sm text-custom-text-200">
+        <div className="flex flex-grow items-center justify-center border-s border-custom-border-200 text-sm text-custom-text-200">
           <FiltersDropdown
             title={t("common.display")}
             placement="bottom-end"
             menuButton={
               <span className="flex items-center text-sm text-custom-text-200">
                 {t("common.display")}
-                <ChevronDownIcon className="ml-2 h-4 w-4 text-custom-text-200" />
+                <ChevronDownIcon className="ms-2 h-4 w-4 text-custom-text-200" />
               </span>
             }
           >
@@ -99,7 +99,7 @@ export const ProjectIssuesMobileHeader = observer(() => {
 
         <button
           onClick={() => setAnalyticsModal(true)}
-          className="flex flex-grow justify-center border-l border-custom-border-200 text-sm text-custom-text-200"
+          className="flex flex-grow justify-center border-s border-custom-border-200 text-sm text-custom-text-200"
         >
           {t("common.analytics")}
         </button>

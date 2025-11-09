@@ -47,6 +47,7 @@
     "@plane/propel": "workspace:*",
     "@plane/utils": "workspace:*",
     "@tiptap/core": "catalog:",
+    "@plane/i18n": "workspace:*",
     "@tiptap/extension-blockquote": "^2.22.3",
     "@tiptap/extension-character-count": "^2.22.3",
     "@tiptap/extension-collaboration": "^2.22.3",

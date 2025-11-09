@@ -1,14 +1,14 @@
-@import "@plane/propel/styles/fonts.css";
+@import "@plane/propel/styles/fonts";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
-  .text-1\.5xl {
-    font-size: 1.375rem;
-    line-height: 1.875rem;
-  }
+    .text-1\.5xl {
+        font-size: 1.375rem;
+        line-height: 1.875rem;
+    }
 
   .text-2\.5xl {
     font-size: 1.75rem;
@@ -397,27 +397,27 @@ body {
 
 /* Progress Bar Styles */
 :root {
-  --bprogress-color: rgb(var(--color-primary-100)) !important;
-  --bprogress-height: 2.5px !important;
+    --bprogress-color: rgb(var(--color-primary-100)) !important;
+    --bprogress-height: 2.5px !important;
 }
 
 .bprogress {
-  pointer-events: none;
+    pointer-events: none;
 }
 
 .bprogress .bar {
-  background: linear-gradient(
-    90deg,
-    rgba(var(--color-primary-100), 0.8) 0%,
-    rgba(var(--color-primary-100), 1) 100%
-  ) !important;
-  will-change: width, opacity;
+    background: linear-gradient(
+            90deg,
+            rgba(var(--color-primary-100), 0.8) 0%,
+            rgba(var(--color-primary-100), 1) 100%
+    ) !important;
+    will-change: width, opacity;
 }
 
 .bprogress .peg {
-  display: block;
-  box-shadow:
-    0 0 8px rgba(var(--color-primary-100), 0.6),
-    0 0 4px rgba(var(--color-primary-100), 0.4) !important;
-  will-change: transform, opacity;
+    display: block;
+    box-shadow:
+            0 0 8px rgba(var(--color-primary-100), 0.6),
+            0 0 4px rgba(var(--color-primary-100), 0.4) !important;
+    will-change: transform, opacity;
 }

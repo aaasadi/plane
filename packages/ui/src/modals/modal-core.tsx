@@ -51,7 +51,7 @@ export const ModalCore: React.FC<Props> = (props) => {
             >
               <Dialog.Panel
                 className={cn(
-                  "relative transform rounded-lg bg-custom-background-100 text-left shadow-custom-shadow-md transition-all w-full",
+                  "relative transform rounded-lg bg-custom-background-100 text-start shadow-custom-shadow-md transition-all w-full",
                   width,
                   className
                 )}

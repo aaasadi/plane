@@ -30,7 +30,7 @@ export const ForgotPasswordPopover = () => {
         <button
           type="button"
           ref={setReferenceElement}
-          className="text-xs font-medium text-custom-primary-100 outline-none"
+          className="text-xs font-medium text-custom-primary-100 outline-hidden"
         >
           {t("auth.common.forgot_password")}
         </button>
@@ -38,7 +38,7 @@ export const ForgotPasswordPopover = () => {
       <Popover.Panel className="fixed z-10">
         {({ close }) => (
           <div
-            className="border border-custom-border-300 bg-custom-background-100 rounded z-10 py-1 px-2 w-64 break-words flex items-start gap-3 text-left ml-3"
+            className="border border-custom-border-300 bg-custom-background-100 rounded z-10 py-1 px-2 w-64 break-words flex items-start gap-3 text-start ms-3"
             ref={setPopperElement}
             style={styles.popper}
             {...attributes.popper}

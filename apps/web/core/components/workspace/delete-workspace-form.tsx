@@ -101,7 +101,7 @@ export const DeleteWorkspaceForm: React.FC<Props> = observer((props) => {
           <AlertTriangle className="size-5 text-red-600" aria-hidden="true" />
         </span>
         <div>
-          <div className="text-center sm:text-left">
+          <div className="text-center sm:text-start">
             <h3 className="text-lg font-medium">{t("workspace_settings.settings.general.delete_modal.title")}</h3>
             <p className="mt-1 text-sm text-custom-text-200">
               You are about to delete the workspace <span className="break-words font-semibold">{data?.name}</span>. If

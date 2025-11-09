@@ -31,7 +31,7 @@ export const PasswordInput: React.FC<PasswordInputProps> = ({
         value={value}
         onChange={(e) => onChange(e.target.value)}
         className={cn(
-          "w-full px-3 py-2 pr-10 text-custom-text-200 border rounded-md bg-custom-background-100 focus:outline-none focus:ring-2 focus:ring-custom-primary-100 placeholder:text-custom-text-400 focus:border-transparent transition-all duration-200",
+          "w-full px-3 py-2 pe-10 text-custom-text-200 border rounded-md bg-custom-background-100 focus:outline-none focus:ring-2 focus:ring-custom-primary-100 placeholder:text-custom-text-400 focus:border-transparent transition-all duration-200",
           {
             "border-custom-border-300": !error,
             "border-red-500": error,
@@ -45,7 +45,7 @@ export const PasswordInput: React.FC<PasswordInputProps> = ({
           <button
             type="button"
             onClick={() => setShowPassword(!showPassword)}
-            className="absolute inset-y-0 right-0 pr-3 flex items-center text-custom-text-200 hover:text-custom-text-100 transition-colors duration-200"
+            className="absolute inset-y-0 end-0 pe-3 flex items-center text-custom-text-200 hover:text-custom-text-100 transition-colors duration-200"
           >
             <div className="relative w-4 h-4">
               <Eye

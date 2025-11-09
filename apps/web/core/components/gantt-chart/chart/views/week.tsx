@@ -13,7 +13,7 @@ export const WeekChartView: FC<any> = observer(() => {
   const weekBlocks: IWeekBlock[] = renderView;
 
   return (
-    <div className={`absolute top-0 left-0 min-h-full h-max w-max flex`}>
+    <div className={`absolute top-0 start-0 min-h-full h-max w-max flex`}>
       {currentViewData &&
         weekBlocks?.map((block, rootIndex) => (
           <div
@@ -32,7 +32,7 @@ export const WeekChartView: FC<any> = observer(() => {
                 <div
                   className="sticky flex items-center font-normal z-[1] m-1 whitespace-nowrap px-3 py-1 text-sm capitalize bg-custom-background-100 text-custom-text-200"
                   style={{
-                    left: `${SIDEBAR_WIDTH}px`,
+                    insetInlineStart: `${SIDEBAR_WIDTH}px`,
                   }}
                 >
                   {block?.title}

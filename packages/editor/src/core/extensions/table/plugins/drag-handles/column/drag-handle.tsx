@@ -181,14 +181,14 @@ export const ColumnDragHandle: React.FC<ColumnDragHandleProps> = (props) => {
 
   return (
     <>
-      <div className="table-col-handle-container absolute z-20 top-0 left-0 flex justify-center items-center w-full -translate-y-1/2">
+      <div className="table-col-handle-container absolute z-20 top-0 start-0 flex justify-center items-center w-full -translate-y-1/2">
         <button
           ref={refs.setReference}
           {...getReferenceProps()}
           type="button"
           onMouseDown={handleMouseDown}
           className={cn(
-            "px-1 bg-custom-background-90 border border-custom-border-400 rounded outline-none transition-all duration-200",
+            "px-1 bg-custom-background-90 border border-custom-border-400 rounded-sm outline-none transition-all duration-200",
             {
               "!opacity-100 bg-custom-primary-100 border-custom-primary-100": isDropdownOpen,
               "hover:bg-custom-background-80": !isDropdownOpen,

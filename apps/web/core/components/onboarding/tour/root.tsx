@@ -139,7 +139,7 @@ export const TourRoot: React.FC<Props> = observer((props) => {
         <div className="relative grid h-3/5 w-4/5 grid-cols-10 overflow-hidden rounded-[10px] bg-custom-background-100 sm:h-3/4 md:w-1/2 lg:w-3/5">
           <button
             type="button"
-            className="fixed right-[9%] top-[19%] z-10 -translate-y-1/2 translate-x-1/2 cursor-pointer rounded-full border border-custom-text-100 p-1 sm:top-[11.5%] md:right-[24%] lg:right-[19%]"
+            className="fixed end-[9%] top-[19%] z-10 -translate-y-1/2 translate-x-1/2 cursor-pointer rounded-full border border-custom-text-100 p-1 sm:top-[11.5%] md:end-[24%] lg:end-[19%]"
             onClick={onComplete}
           >
             <CloseIcon className="h-3 w-3 text-custom-text-100" />

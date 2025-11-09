@@ -82,29 +82,29 @@ export const WithFooter: Story = {
         <TableHeader>
           <TableRow>
             <TableHead>Product</TableHead>
-            <TableHead className="text-right">Quantity</TableHead>
-            <TableHead className="text-right">Price</TableHead>
-            <TableHead className="text-right">Total</TableHead>
+            <TableHead className="text-end">Quantity</TableHead>
+            <TableHead className="text-end">Price</TableHead>
+            <TableHead className="text-end">Total</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
           <TableRow>
             <TableCell>Product A</TableCell>
-            <TableCell className="text-right">2</TableCell>
-            <TableCell className="text-right">$10.00</TableCell>
-            <TableCell className="text-right">$20.00</TableCell>
+            <TableCell className="text-end">2</TableCell>
+            <TableCell className="text-end">$10.00</TableCell>
+            <TableCell className="text-end">$20.00</TableCell>
           </TableRow>
           <TableRow>
             <TableCell>Product B</TableCell>
-            <TableCell className="text-right">1</TableCell>
-            <TableCell className="text-right">$25.00</TableCell>
-            <TableCell className="text-right">$25.00</TableCell>
+            <TableCell className="text-end">1</TableCell>
+            <TableCell className="text-end">$25.00</TableCell>
+            <TableCell className="text-end">$25.00</TableCell>
           </TableRow>
           <TableRow>
             <TableCell>Product C</TableCell>
-            <TableCell className="text-right">3</TableCell>
-            <TableCell className="text-right">$15.00</TableCell>
-            <TableCell className="text-right">$45.00</TableCell>
+            <TableCell className="text-end">3</TableCell>
+            <TableCell className="text-end">$15.00</TableCell>
+            <TableCell className="text-end">$45.00</TableCell>
           </TableRow>
         </TableBody>
         <TableFooter>
@@ -112,7 +112,7 @@ export const WithFooter: Story = {
             <TableCell colSpan={3} className="font-semibold">
               Total
             </TableCell>
-            <TableCell className="text-right font-semibold">$90.00</TableCell>
+            <TableCell className="text-end font-semibold">$90.00</TableCell>
           </TableRow>
         </TableFooter>
       </Table>
@@ -129,7 +129,7 @@ export const WithActions: Story = {
             <TableHead>Name</TableHead>
             <TableHead>Email</TableHead>
             <TableHead>Role</TableHead>
-            <TableHead className="text-right">Actions</TableHead>
+            <TableHead className="text-end">Actions</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -137,8 +137,8 @@ export const WithActions: Story = {
             <TableCell>John Doe</TableCell>
             <TableCell>john@example.com</TableCell>
             <TableCell>Admin</TableCell>
-            <TableCell className="text-right">
-              <button className="mr-2 text-blue-500 hover:underline">Edit</button>
+            <TableCell className="text-end">
+              <button className="me-2 text-blue-500 hover:underline">Edit</button>
               <button className="text-red-500 hover:underline">Delete</button>
             </TableCell>
           </TableRow>
@@ -146,8 +146,8 @@ export const WithActions: Story = {
             <TableCell>Jane Smith</TableCell>
             <TableCell>jane@example.com</TableCell>
             <TableCell>User</TableCell>
-            <TableCell className="text-right">
-              <button className="mr-2 text-blue-500 hover:underline">Edit</button>
+            <TableCell className="text-end">
+              <button className="me-2 text-blue-500 hover:underline">Edit</button>
               <button className="text-red-500 hover:underline">Delete</button>
             </TableCell>
           </TableRow>

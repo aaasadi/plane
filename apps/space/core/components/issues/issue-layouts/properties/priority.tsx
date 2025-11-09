@@ -61,7 +61,7 @@ export const IssueBlockPriority = ({
         ) : (
           <SignalHigh className="size-3" />
         )}
-        {shouldShowName && <span className="pl-2 text-sm">{t(priority_detail?.titleTranslationKey || "")}</span>}
+        {shouldShowName && <span className="ps-2 text-sm">{t(priority_detail?.titleTranslationKey || "")}</span>}
       </div>
     </Tooltip>
   );

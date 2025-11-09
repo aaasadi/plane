@@ -76,7 +76,7 @@ export const WorkspaceMenuRoot = observer((props: WorkspaceMenuRootProps) => {
       as="div"
       className={cn("relative h-full flex ", {
         "justify-center text-center": renderLogoOnly,
-        "flex-grow justify-stretch text-left truncate": !renderLogoOnly,
+        "flex-grow justify-stretch text-start truncate": !renderLogoOnly,
       })}
     >
       {({ open, close }: { open: boolean; close: () => void }) => {
@@ -138,9 +138,9 @@ export const WorkspaceMenuRoot = observer((props: WorkspaceMenuRootProps) => {
               leaveTo="transform opacity-0 scale-95"
             >
               <Menu.Items as={Fragment}>
-                <div className="fixed top-12 left-4 z-[21] mt-1 flex w-[19rem] origin-top-left flex-col divide-y divide-custom-border-100 rounded-md border-[0.5px] border-custom-sidebar-border-300 bg-custom-sidebar-background-100 shadow-custom-shadow-rg outline-none">
+                <div className="fixed top-12 start-4 z-[21] mt-1 flex w-[19rem] origin-top-start flex-col divide-y divide-custom-border-100 rounded-md border-[0.5px] border-custom-sidebar-border-300 bg-custom-sidebar-background-100 shadow-custom-shadow-rg outline-none">
                   <div className="overflow-x-hidden vertical-scrollbar scrollbar-sm flex max-h-96 flex-col items-start justify-start overflow-y-scroll">
-                    <span className="rounded-md text-left px-4 sticky top-0 z-[21] h-full w-full bg-custom-sidebar-background-100 pb-1 pt-3 text-sm font-medium text-custom-text-400 truncate flex-shrink-0">
+                    <span className="rounded-md text-start px-4 sticky top-0 z-[21] h-full w-full bg-custom-sidebar-background-100 pb-1 pt-3 text-sm font-medium text-custom-text-400 truncate flex-shrink-0">
                       {currentUser?.email}
                     </span>
                     {workspacesList ? (

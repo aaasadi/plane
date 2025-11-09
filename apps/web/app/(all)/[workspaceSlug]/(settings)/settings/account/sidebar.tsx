@@ -56,7 +56,7 @@ export const ProfileSidebar = observer((props: TProfileSidebarProps) => {
               <div className="relative h-8 w-8 overflow-hidden">
                 <img
                   src={getFileURL(currentUser?.avatar_url)}
-                  className="absolute left-0 top-0 h-full w-full rounded-lg object-cover"
+                  className="absolute start-0 top-0 h-full w-full rounded-lg object-cover"
                   alt={currentUser?.display_name}
                 />
               </div>

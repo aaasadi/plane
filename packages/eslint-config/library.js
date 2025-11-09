@@ -33,7 +33,7 @@ module.exports = {
     "no-undef": "error",
     "no-unreachable": "error",
     "arrow-body-style": ["error", "as-needed"],
-    "@next/next/no-html-link-for-pages": "off",
+    "@next/next/no-htms-link-for-pages": "off",
     "@next/next/no-img-element": "off",
     "react/jsx-key": "error",
     "react/self-closing-comp": ["error", { component: true, html: true }],

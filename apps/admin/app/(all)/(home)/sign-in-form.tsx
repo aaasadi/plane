@@ -166,7 +166,7 @@ export const InstanceSignInForm: React.FC = () => {
                 {showPassword ? (
                   <button
                     type="button"
-                    className="absolute right-3 top-3.5 flex items-center justify-center text-custom-text-400"
+                    className="absolute end-3 top-3.5 flex items-center justify-center text-custom-text-400"
                     onClick={() => setShowPassword(false)}
                   >
                     <EyeOff className="h-4 w-4" />
@@ -174,7 +174,7 @@ export const InstanceSignInForm: React.FC = () => {
                 ) : (
                   <button
                     type="button"
-                    className="absolute right-3 top-3.5 flex items-center justify-center text-custom-text-400"
+                    className="absolute end-3 top-3.5 flex items-center justify-center text-custom-text-400"
                     onClick={() => setShowPassword(true)}
                   >
                     <Eye className="h-4 w-4" />

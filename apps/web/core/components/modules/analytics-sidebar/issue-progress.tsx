@@ -152,7 +152,7 @@ export const ModuleAnalyticsProgress: FC<TModuleAnalyticsProgress> = observer((p
                     {loader && <Spinner className="h-3 w-3" />}
                   </>
                 )}
-                <Disclosure.Button className="ml-auto">
+                <Disclosure.Button className="ms-auto">
                   {open ? (
                     <ChevronUpIcon className="h-3.5 w-3.5" aria-hidden="true" />
                   ) : (

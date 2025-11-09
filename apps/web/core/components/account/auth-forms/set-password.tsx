@@ -135,7 +135,7 @@ export const SetPasswordForm = observer(() => {
               value={user?.email}
               //hasError={Boolean(errors.email)}
               placeholder={t("auth.common.email.placeholder")}
-              className="h-10 w-full border border-custom-border-300 !bg-custom-background-100 pr-12 text-custom-text-400 cursor-not-allowed"
+              className="h-10 w-full border border-custom-border-300 !bg-custom-background-100 pe-12 text-custom-text-400 cursor-not-allowed"
               autoComplete="on"
               disabled
             />
@@ -153,7 +153,7 @@ export const SetPasswordForm = observer(() => {
               onChange={(e) => handleFormChange("password", e.target.value)}
               //hasError={Boolean(errors.password)}
               placeholder={t("auth.common.password.placeholder")}
-              className="h-10 w-full border border-custom-border-300 !bg-custom-background-100 pr-12 placeholder:text-custom-text-400"
+              className="h-10 w-full border border-custom-border-300 !bg-custom-background-100 pe-12 placeholder:text-custom-text-400"
               minLength={8}
               onFocus={() => setIsPasswordInputFocused(true)}
               onBlur={() => setIsPasswordInputFocused(false)}
@@ -162,12 +162,12 @@ export const SetPasswordForm = observer(() => {
             />
             {showPassword.password ? (
               <EyeOff
-                className="absolute right-3 h-5 w-5 stroke-custom-text-400 hover:cursor-pointer"
+                className="absolute end-3 h-5 w-5 stroke-custom-text-400 hover:cursor-pointer"
                 onClick={() => handleShowPassword("password")}
               />
             ) : (
               <Eye
-                className="absolute right-3 h-5 w-5 stroke-custom-text-400 hover:cursor-pointer"
+                className="absolute end-3 h-5 w-5 stroke-custom-text-400 hover:cursor-pointer"
                 onClick={() => handleShowPassword("password")}
               />
             )}
@@ -185,18 +185,18 @@ export const SetPasswordForm = observer(() => {
               value={passwordFormData.confirm_password}
               onChange={(e) => handleFormChange("confirm_password", e.target.value)}
               placeholder={t("auth.common.password.confirm_password.placeholder")}
-              className="h-10 w-full border border-custom-border-300 !bg-custom-background-100 pr-12 placeholder:text-custom-text-400"
+              className="h-10 w-full border border-custom-border-300 !bg-custom-background-100 pe-12 placeholder:text-custom-text-400"
               onFocus={() => setIsRetryPasswordInputFocused(true)}
               onBlur={() => setIsRetryPasswordInputFocused(false)}
             />
             {showPassword.retypePassword ? (
               <EyeOff
-                className="absolute right-3 h-5 w-5 stroke-custom-text-400 hover:cursor-pointer"
+                className="absolute end-3 h-5 w-5 stroke-custom-text-400 hover:cursor-pointer"
                 onClick={() => handleShowPassword("retypePassword")}
               />
             ) : (
               <Eye
-                className="absolute right-3 h-5 w-5 stroke-custom-text-400 hover:cursor-pointer"
+                className="absolute end-3 h-5 w-5 stroke-custom-text-400 hover:cursor-pointer"
                 onClick={() => handleShowPassword("retypePassword")}
               />
             )}

@@ -90,7 +90,7 @@ export const IssueRelationSelect: React.FC<TIssueRelationSelect> = observer((pro
       <button
         type="button"
         className={cn(
-          "group flex items-center gap-2 rounded px-2 py-0.5 outline-none",
+          "group flex items-center gap-2 rounded px-2 py-0.5 outline-hidden",
           {
             "cursor-not-allowed": disabled,
             "hover:bg-custom-background-80": !disabled,

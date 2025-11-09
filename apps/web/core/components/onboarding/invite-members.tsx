@@ -140,7 +140,7 @@ const InviteMemberInput: React.FC<InviteMemberFormProps> = observer((props) => {
   return (
     <div>
       <div className="group relative grid grid-cols-10 gap-4">
-        <div className="col-span-6 ml-8">
+        <div className="col-span-6 ms-8">
           <Controller
             control={control}
             name={`emails.${index}.email`}
@@ -169,7 +169,7 @@ const InviteMemberInput: React.FC<InviteMemberFormProps> = observer((props) => {
             )}
           />
         </div>
-        <div className="col-span-4 mr-8">
+        <div className="col-span-4 me-8">
           <Controller
             control={control}
             name={`emails.${index}.role`}
@@ -182,7 +182,7 @@ const InviteMemberInput: React.FC<InviteMemberFormProps> = observer((props) => {
                   onChange(val);
                   setValue(`emails.${index}.role_active`, true);
                 }}
-                className="w-full flex-shrink-0 text-left"
+                className="w-full flex-shrink-0 text-start"
               >
                 <Listbox.Button
                   type="button"
@@ -208,7 +208,7 @@ const InviteMemberInput: React.FC<InviteMemberFormProps> = observer((props) => {
 
                 <Listbox.Options as="div">
                   <div
-                    className="p-2 absolute space-y-1 z-10 mt-1 h-fit w-48 sm:w-60 rounded-md border border-custom-border-300 bg-custom-background-100 shadow-sm focus:outline-none"
+                    className="p-2 absolute space-y-1 z-10 mt-1 h-fit w-48 sm:w-60 rounded-md border border-custom-border-300 bg-custom-background-100 shadow-xs focus:outline-none"
                     ref={setPopperElement}
                     style={styles.popper}
                     {...attributes.popper}
@@ -244,10 +244,10 @@ const InviteMemberInput: React.FC<InviteMemberFormProps> = observer((props) => {
         {fields.length > 1 && (
           <button
             type="button"
-            className="absolute right-0 hidden place-items-center self-center rounded group-hover:grid"
+            className="absolute end-0 hidden place-items-center self-center rounded group-hover:grid"
             onClick={() => remove(index)}
           >
-            <XCircle className="h-5 w-5 pl-0.5 text-custom-text-400" />
+            <XCircle className="h-5 w-5 ps-0.5 text-custom-text-400" />
           </button>
         )}
       </div>

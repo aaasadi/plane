@@ -67,7 +67,7 @@ export const IntercomConfig: React.FC<TIntercomConfig> = observer((props) => {
             </div>
           </div>
 
-          <div className="ml-auto">
+          <div className="ms-auto">
             <ToggleSwitch
               value={isIntercomEnabled ? true : false}
               onChange={enableIntercomConfig}

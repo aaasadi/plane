@@ -57,12 +57,12 @@ export const SwitchAccountDropdown: FC<TSwitchAccountDropdownProps> = observer((
           leaveFrom="transform scale-100 opacity-100"
           leaveTo="transform scale-95 opacity-0"
         >
-          <Menu.Items className="absolute z-10 right-0 rounded-md border-[0.5px] border-custom-border-300 mt-2 bg-custom-background-100 px-2 py-2.5 text-sm min-w-[12rem] shadow-custom-shadow-rg">
+          <Menu.Items className="absolute z-10 end-0 rounded-md border-[0.5px] border-custom-border-300 mt-2 bg-custom-background-100 px-2 py-2.5 text-sm min-w-[12rem] shadow-custom-shadow-rg">
             <Menu.Item
               as="button"
               type="button"
               className={({ active }) =>
-                cn("text-red-500 px-1 py-1.5 whitespace-nowrap text-left rounded w-full", {
+                cn("text-red-500 px-1 py-1.5 whitespace-nowrap text-start rounded w-full", {
                   "bg-custom-background-80": active,
                 })
               }

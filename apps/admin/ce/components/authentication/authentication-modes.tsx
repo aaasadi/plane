@@ -101,7 +101,7 @@ export const getAuthenticationModes: (props: TGetBaseAuthenticationModeProps) =>
     key: "saml",
     name: "SAML",
     description: "Authenticate your users via the Security Assertion Markup Language protocol.",
-    icon: <Image src={SAMLLogo} height={22} width={22} alt="SAML Logo" className="pl-0.5" />,
+    icon: <Image src={SAMLLogo} height={22} width={22} alt="SAML Logo" className="ps-0.5" />,
     config: <UpgradeButton />,
     unavailable: true,
   },

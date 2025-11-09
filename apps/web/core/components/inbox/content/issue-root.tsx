@@ -188,14 +188,14 @@ export const InboxIssueMainContent: React.FC<Props> = observer((props) => {
           issueOperations={issueOperations}
           disabled={!isEditable}
           value={issue.name}
-          containerClassName="-ml-3"
+          containerClassName="-ms-3"
         />
 
         {loader === "issue-loading" ? (
           <DescriptionInputLoader />
         ) : (
           <DescriptionInput
-            containerClassName="-ml-3 border-none"
+            containerClassName="-ms-3 border-none"
             disabled={!isEditable}
             editorRef={editorRef}
             entityId={issue.id}

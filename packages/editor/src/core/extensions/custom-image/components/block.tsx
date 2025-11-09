@@ -218,8 +218,8 @@ export const CustomImageBlock: React.FC<CustomImageBlockProps> = (props) => {
     <div
       id={getImageBlockId(node.attrs.id ?? "")}
       className={cn("w-fit max-w-full transition-all", {
-        "ml-[50%] -translate-x-1/2": nodeAlignment === "center",
-        "ml-[100%] -translate-x-full": nodeAlignment === "right",
+        "ms-[50%] -translate-x-1/2": nodeAlignment === "center",
+        "ms-[100%] -translate-x-full": nodeAlignment === "right",
       })}
     >
       <div
@@ -281,7 +281,7 @@ export const CustomImageBlock: React.FC<CustomImageBlockProps> = (props) => {
             // hide the image while the background calculations of the image loader are in progress (to avoid flickering) and show the loader until then
             hidden: showImageLoader,
             "read-only-image": !editor.isEditable,
-            "blur-sm opacity-80 loading-image": !resolvedImageSrc,
+            "blur-xs opacity-80 loading-image": !resolvedImageSrc,
           })}
           style={{
             width: size.width,
@@ -325,8 +325,8 @@ export const CustomImageBlock: React.FC<CustomImageBlockProps> = (props) => {
                   "opacity-100 pointer-events-auto": isResizing,
                   "opacity-0 pointer-events-none group-hover/image-component:opacity-100 group-hover/image-component:pointer-events-auto":
                     !isResizing,
-                  "left-0 -translate-x-1/2 cursor-nesw-resize": nodeAlignment === "right",
-                  "right-0 translate-x-1/2 cursor-nwse-resize": nodeAlignment !== "right",
+                  "start-0 -translate-x-1/2 cursor-nesw-resize": nodeAlignment === "right",
+                  "end-0 translate-x-1/2 cursor-nwse-resize": nodeAlignment !== "right",
                 }
               )}
               onMouseDown={handleResizeStart}

@@ -97,7 +97,7 @@ export const IssueDetailsSidebar: React.FC<Props> = observer((props) => {
                 disabled={!isEditable}
                 buttonVariant="transparent-with-text"
                 className="group w-3/5 flex-grow"
-                buttonContainerClassName="w-full text-left"
+                buttonContainerClassName="w-full text-start"
                 buttonClassName="text-sm"
                 dropdownArrow
                 dropdownArrowClassName="h-3.5 w-3.5 hidden group-hover:inline"
@@ -118,7 +118,7 @@ export const IssueDetailsSidebar: React.FC<Props> = observer((props) => {
                 multiple
                 buttonVariant={issue?.assignee_ids?.length > 1 ? "transparent-without-text" : "transparent-with-text"}
                 className="group w-3/5 flex-grow"
-                buttonContainerClassName="w-full text-left"
+                buttonContainerClassName="w-full text-start"
                 buttonClassName={`text-sm justify-between ${
                   issue?.assignee_ids?.length > 0 ? "" : "text-custom-text-400"
                 }`}
@@ -139,7 +139,7 @@ export const IssueDetailsSidebar: React.FC<Props> = observer((props) => {
                 disabled={!isEditable}
                 buttonVariant="border-with-text"
                 className="w-3/5 flex-grow rounded px-2 hover:bg-custom-background-80"
-                buttonContainerClassName="w-full text-left"
+                buttonContainerClassName="w-full text-start"
                 buttonClassName="w-min h-auto whitespace-nowrap"
               />
             </div>
@@ -174,7 +174,7 @@ export const IssueDetailsSidebar: React.FC<Props> = observer((props) => {
                 disabled={!isEditable}
                 buttonVariant="transparent-with-text"
                 className="group w-3/5 flex-grow"
-                buttonContainerClassName="w-full text-left"
+                buttonContainerClassName="w-full text-start"
                 buttonClassName={`text-sm ${issue?.start_date ? "" : "text-custom-text-400"}`}
                 hideIcon
                 clearIconClassName="h-3 w-3 hidden group-hover:inline"
@@ -201,7 +201,7 @@ export const IssueDetailsSidebar: React.FC<Props> = observer((props) => {
                   disabled={!isEditable}
                   buttonVariant="transparent-with-text"
                   className="group w-3/5 flex-grow"
-                  buttonContainerClassName="w-full text-left"
+                  buttonContainerClassName="w-full text-start"
                   buttonClassName={cn("text-sm", {
                     "text-custom-text-400": !issue.target_date,
                     "text-red-500": shouldHighlightIssueDueDate(issue.target_date, stateDetails?.group),
@@ -230,7 +230,7 @@ export const IssueDetailsSidebar: React.FC<Props> = observer((props) => {
                   disabled={!isEditable}
                   buttonVariant="transparent-with-text"
                   className="group w-3/5 flex-grow"
-                  buttonContainerClassName="w-full text-left"
+                  buttonContainerClassName="w-full text-start"
                   buttonClassName={`text-sm ${issue?.estimate_point !== null ? "" : "text-custom-text-400"}`}
                   placeholder={t("common.none")}
                   hideIcon

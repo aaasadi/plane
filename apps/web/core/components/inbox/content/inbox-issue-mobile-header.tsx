@@ -89,13 +89,13 @@ export const InboxIssueActionsMobileHeader: React.FC<Props> = observer((props) =
     <Header variant={EHeaderVariant.SECONDARY} className="justify-start">
       {isNotificationEmbed && (
         <button onClick={embedRemoveCurrentNotification}>
-          <MoveRight className="h-4 w-4 text-custom-text-300 hover:text-custom-text-200 mr-2" />
+          <MoveRight className="h-4 w-4 text-custom-text-300 hover:text-custom-text-200 me-2" />
         </button>
       )}
       <PanelLeft
         onClick={() => setIsMobileSidebar(!isMobileSidebar)}
         className={cn(
-          "w-4 h-4 flex-shrink-0 mr-2 my-auto",
+          "w-4 h-4 flex-shrink-0 me-2 my-auto",
           isMobileSidebar ? "text-custom-primary-100" : "text-custom-text-200"
         )}
       />
@@ -103,14 +103,14 @@ export const InboxIssueActionsMobileHeader: React.FC<Props> = observer((props) =
         <div className="flex items-center gap-x-2">
           <button
             type="button"
-            className="rounded border border-custom-border-200 p-1.5"
+            className="rounded-sm border border-custom-border-200 p-1.5"
             onClick={() => handleInboxIssueNavigation("prev")}
           >
             <ChevronUpIcon height={14} width={14} strokeWidth={2} />
           </button>
           <button
             type="button"
-            className="rounded border border-custom-border-200 p-1.5"
+            className="rounded-sm border border-custom-border-200 p-1.5"
             onClick={() => handleInboxIssueNavigation("next")}
           >
             <ChevronDownIcon height={14} width={14} strokeWidth={2} />
@@ -122,7 +122,7 @@ export const InboxIssueActionsMobileHeader: React.FC<Props> = observer((props) =
             <NameDescriptionUpdateStatus isSubmitting={isSubmitting} />
           </div>
         </div>
-        <div className="ml-auto">
+        <div className="ms-auto">
           <CustomMenu verticalEllipsis placement="bottom-start">
             {isAcceptedOrDeclined && (
               <CustomMenu.MenuItem onClick={handleCopyIssueLink}>

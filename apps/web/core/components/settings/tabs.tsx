@@ -47,7 +47,7 @@ const SettingsTabs = observer(() => {
             className={cn(
               "flex items-center justify-center p-1 min-w-fit w-full font-medium outline-none focus:outline-none cursor-pointer transition-all rounded text-custom-text-200 ",
               {
-                "bg-custom-background-100 text-custom-text-100 shadow-sm": isActive,
+                "bg-custom-background-100 text-custom-text-100 shadow-xs": isActive,
                 "hover:text-custom-text-100 hover:bg-custom-background-80/60": !isActive,
               }
             )}

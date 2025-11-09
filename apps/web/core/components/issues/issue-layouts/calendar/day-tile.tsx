@@ -150,7 +150,7 @@ export const CalendarDayTile: React.FC<Props> = observer((props) => {
       <div ref={dayTileRef} className="group relative flex h-full w-full flex-col bg-custom-background-90">
         {/* header */}
         <div
-          className={`hidden flex-shrink-0 items-center justify-end px-2 py-1.5 text-right text-xs md:flex ${
+          className={`hidden flex-shrink-0 items-center justify-end px-2 py-1.5 text-end text-xs md:flex ${
             isMonthLayout // if month layout, highlight current month days
               ? date.is_current_month
                 ? "font-medium"

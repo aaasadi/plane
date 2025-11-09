@@ -33,14 +33,14 @@ export const ColorDropdown: React.FC<Props> = memo((props) => {
         type="button"
         className={({ open }) =>
           cn("h-full", {
-            "outline-none": open,
+            "outline-hidden": open,
           })
         }
       >
         {({ open }) => (
           <span
             className={cn(
-              "h-full px-2 text-custom-text-300 text-sm flex items-center gap-1.5 rounded hover:bg-custom-background-80",
+              "h-full px-2 text-custom-text-300 text-sm flex items-center gap-1.5 rounded-sm hover:bg-custom-background-80",
               {
                 "text-custom-text-100 bg-custom-background-80": open,
               }
@@ -49,7 +49,7 @@ export const ColorDropdown: React.FC<Props> = memo((props) => {
             Color
             <span
               className={cn(
-                "flex-shrink-0 size-6 grid place-items-center rounded border-[0.5px] border-custom-border-300",
+                "flex-shrink-0 size-6 grid place-items-center rounded-sm border-[0.5px] border-custom-border-300",
                 {
                   "bg-custom-background-100": !activeBackgroundColor,
                 }
@@ -81,7 +81,7 @@ export const ColorDropdown: React.FC<Props> = memo((props) => {
               <button
                 key={color.key}
                 type="button"
-                className="flex-shrink-0 size-6 rounded border-[0.5px] border-custom-border-400 hover:opacity-60 transition-opacity"
+                className="flex-shrink-0 size-6 rounded-sm border-[0.5px] border-custom-border-400 hover:opacity-60 transition-opacity"
                 style={{
                   backgroundColor: color.textColor,
                 }}
@@ -90,7 +90,7 @@ export const ColorDropdown: React.FC<Props> = memo((props) => {
             ))}
             <button
               type="button"
-              className="flex-shrink-0 size-6 grid place-items-center rounded text-custom-text-300 border-[0.5px] border-custom-border-400 hover:bg-custom-background-80 transition-colors"
+              className="flex-shrink-0 size-6 grid place-items-center rounded-sm text-custom-text-300 border-[0.5px] border-custom-border-400 hover:bg-custom-background-80 transition-colors"
               onClick={() => handleColorSelect("text-color", undefined)}
             >
               <Ban className="size-4" />
@@ -104,7 +104,7 @@ export const ColorDropdown: React.FC<Props> = memo((props) => {
               <button
                 key={color.key}
                 type="button"
-                className="flex-shrink-0 size-6 rounded border-[0.5px] border-custom-border-400 hover:opacity-60 transition-opacity"
+                className="flex-shrink-0 size-6 rounded-sm border-[0.5px] border-custom-border-400 hover:opacity-60 transition-opacity"
                 style={{
                   backgroundColor: color.backgroundColor,
                 }}
@@ -113,7 +113,7 @@ export const ColorDropdown: React.FC<Props> = memo((props) => {
             ))}
             <button
               type="button"
-              className="flex-shrink-0 size-6 grid place-items-center rounded text-custom-text-300 border-[0.5px] border-custom-border-400 hover:bg-custom-background-80 transition-colors"
+              className="flex-shrink-0 size-6 grid place-items-center rounded-sm text-custom-text-300 border-[0.5px] border-custom-border-400 hover:bg-custom-background-80 transition-colors"
               onClick={() => handleColorSelect("background-color", undefined)}
             >
               <Ban className="size-4" />

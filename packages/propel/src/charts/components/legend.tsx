@@ -54,8 +54,8 @@ const CustomLegend = React.forwardRef<
           className={cn("flex items-center gap-1.5 text-custom-text-300 text-sm font-medium whitespace-nowrap", {
             "px-2": layout === "horizontal",
             "py-2": layout === "vertical",
-            "pl-0 pt-0": index === 0,
-            "pr-0 pb-0": index === payload.length - 1,
+            "ps-0 pt-0": index === 0,
+            "pe-0 pb-0": index === payload.length - 1,
             "cursor-pointer": !!props.onClick,
           })}
           onClick={(e) => onClick?.(item, index, e)}
@@ -63,7 +63,7 @@ const CustomLegend = React.forwardRef<
           onMouseLeave={(e) => onMouseLeave?.(item, index, e)}
         >
           <div
-            className="flex-shrink-0 size-2 rounded-sm"
+            className="flex-shrink-0 size-2 rounded-xs"
             style={{
               backgroundColor: item.color,
             }}

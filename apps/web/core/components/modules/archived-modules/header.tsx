@@ -85,7 +85,7 @@ export const ArchivedModulesHeader: FC = observer(() => {
         {!isSearchOpen && (
           <button
             type="button"
-            className="-mr-5 p-2 hover:bg-custom-background-80 rounded text-custom-text-400 grid place-items-center"
+            className="-me-5 p-2 hover:bg-custom-background-80 rounded text-custom-text-400 grid place-items-center"
             onClick={() => {
               setIsSearchOpen(true);
               inputRef.current?.focus();
@@ -96,7 +96,7 @@ export const ArchivedModulesHeader: FC = observer(() => {
         )}
         <div
           className={cn(
-            "ml-auto flex items-center justify-start gap-1 rounded-md border border-transparent bg-custom-background-100 text-custom-text-400 w-0 transition-[width] ease-linear overflow-hidden opacity-0",
+            "ms-auto flex items-center justify-start gap-1 rounded-md border border-transparent bg-custom-background-100 text-custom-text-400 w-0 transition-[width] ease-linear overflow-hidden opacity-0",
             {
               "w-64 px-2.5 py-1.5 border-custom-border-200 opacity-100": isSearchOpen,
             }
@@ -105,7 +105,7 @@ export const ArchivedModulesHeader: FC = observer(() => {
           <Search className="h-3.5 w-3.5" />
           <input
             ref={inputRef}
-            className="w-full max-w-[234px] border-none bg-transparent text-sm text-custom-text-100 placeholder:text-custom-text-400 focus:outline-none"
+            className="w-full max-w-[234px] border-none bg-transparent text-sm text-custom-text-100 placeholder:text-custom-text-400 focus:outline-hidden"
             placeholder="Search"
             value={archivedModulesSearchQuery}
             onChange={(e) => updateArchivedModulesSearchQuery(e.target.value)}

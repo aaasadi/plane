@@ -54,7 +54,7 @@ export const useProjectColumns = (props: TUseProjectColumnsProps) => {
     {
       key: "Full Name",
       content: "Full name",
-      thClassName: "text-left",
+      thClassName: "text-start",
       thRender: () => (
         <MemberHeaderColumn
           property="full_name"

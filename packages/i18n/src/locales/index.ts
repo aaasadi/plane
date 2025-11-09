@@ -14,6 +14,12 @@ export const locales = {
     editor: () => import("./en/editor"),
     "empty-state": () => import("./en/empty-state"),
   },
+  fa: {
+    translations: () => import("./fa/translations"),
+    accessibility: () => import("./fa/accessibility"),
+    editor: () => import("./fa/editor"),
+    "empty-state": () => import("./fa/empty-state"),
+  },
   fr: {
     translations: () => import("./fr/translations"),
     accessibility: () => import("./fr/accessibility"),
@@ -121,12 +127,5 @@ export const locales = {
     accessibility: () => import("./tr-TR/accessibility"),
     editor: () => import("./tr-TR/editor"),
     "empty-state": () => import("./tr-TR/empty-state"),
-  },
-  fa: {
-    core: () => import("./fa/core"),
-    translations: () => import("./fa/translations"),
-    accessibility: () => import("./fa/accessibility"),
-    editor: () => import("./fa/editor"),
-    "empty-state": () => import("./fa/empty-state"),
-  },
+  }
 };

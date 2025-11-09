@@ -30,7 +30,7 @@ export const AppliedMembersFilters: React.FC<Props> = observer((props) => {
         if (!memberDetails) return null;
 
         return (
-          <div key={memberId} className="flex items-center gap-1 rounded bg-custom-background-80 py-1 px-1.5 text-xs">
+          <div key={memberId} className="flex items-center gap-1 rounded-sm bg-custom-background-80 py-1 px-1.5 text-xs">
             <Avatar
               name={memberDetails.display_name}
               src={getFileURL(memberDetails.avatar_url)}

@@ -122,7 +122,7 @@ export const ActiveCycleStats: FC<ActiveCycleStatsProps> = observer((props) => {
       >
         <Tab.List
           as="div"
-          className="relative border-[0.5px] border-custom-border-200 rounded bg-custom-background-80 p-[1px] grid"
+          className="relative border-[0.5px] border-custom-border-200 rounded-sm bg-custom-background-80 p-[1px] grid"
           style={{
             gridTemplateColumns: `repeat(3, 1fr)`,
           }}
@@ -130,7 +130,7 @@ export const ActiveCycleStats: FC<ActiveCycleStatsProps> = observer((props) => {
           <Tab
             className={({ selected }) =>
               cn(
-                "relative z-[1] font-semibold text-xs rounded-[3px] py-1.5 text-custom-text-400 focus:outline-none transition duration-500",
+                "relative z-[1] font-semibold text-xs rounded-[3px] py-1.5 text-custom-text-400 focus:outline-hidden transition duration-500",
                 {
                   "text-custom-text-300 bg-custom-background-100": selected,
                   "hover:text-custom-text-300": !selected,
@@ -143,7 +143,7 @@ export const ActiveCycleStats: FC<ActiveCycleStatsProps> = observer((props) => {
           <Tab
             className={({ selected }) =>
               cn(
-                "relative z-[1] font-semibold text-xs rounded-[3px] py-1.5 text-custom-text-400 focus:outline-none transition duration-500",
+                "relative z-[1] font-semibold text-xs rounded-[3px] py-1.5 text-custom-text-400 focus:outline-hidden transition duration-500",
                 {
                   "text-custom-text-300 bg-custom-background-100": selected,
                   "hover:text-custom-text-300": !selected,
@@ -156,7 +156,7 @@ export const ActiveCycleStats: FC<ActiveCycleStatsProps> = observer((props) => {
           <Tab
             className={({ selected }) =>
               cn(
-                "relative z-[1] font-semibold text-xs rounded-[3px] py-1.5 text-custom-text-400 focus:outline-none transition duration-500",
+                "relative z-[1] font-semibold text-xs rounded-[3px] py-1.5 text-custom-text-400 focus:outline-hidden transition duration-500",
                 {
                   "text-custom-text-300 bg-custom-background-100": selected,
                   "hover:text-custom-text-300": !selected,
@@ -229,7 +229,7 @@ export const ActiveCycleStats: FC<ActiveCycleStatsProps> = observer((props) => {
                                 tooltipHeading="Target Date"
                                 tooltipContent={renderFormattedDate(issue.target_date)}
                               >
-                                <div className="h-full flex truncate items-center gap-1.5 rounded text-xs px-2 py-0.5 bg-custom-background-80 group-hover:bg-custom-background-100 cursor-pointer">
+                                <div className="h-full flex truncate items-center gap-1.5 rounded-sm text-xs px-2 py-0.5 bg-custom-background-80 group-hover:bg-custom-background-100 cursor-pointer">
                                   <CalendarCheck className="h-3 w-3 flex-shrink-0" />
                                   <span className="text-xs truncate">
                                     {renderFormattedDateWithoutYear(issue.target_date)}

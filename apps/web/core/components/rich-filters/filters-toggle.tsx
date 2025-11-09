@@ -64,7 +64,7 @@ export const FiltersToggle = observer(
           />
           {showFilterRowChangesPill && (
             <span
-              className={cn("p-[3px] rounded-full bg-custom-primary-100 absolute top-[0.2px] -right-[0.4px]", {
+              className={cn("p-[3px] rounded-full bg-custom-primary-100 absolute top-[0.2px] -end-[0.4px]", {
                 "bg-custom-text-300": hasAnyConditions === false && filter?.hasChanges === true, // If there are no conditions and there are changes, show the pill in the background color
               })}
             />

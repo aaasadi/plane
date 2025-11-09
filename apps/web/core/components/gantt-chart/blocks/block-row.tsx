@@ -97,7 +97,7 @@ export const BlockRow: React.FC<Props> = observer((props) => {
                 type="button"
                 className="sticky z-[5] grid h-8 w-8 translate-y-1.5 cursor-pointer place-items-center rounded border border-custom-border-300 bg-custom-background-80 text-custom-text-200 hover:text-custom-text-100"
                 style={{
-                  left: `${SIDEBAR_WIDTH + 4}px`,
+                  insetInlineStart: `${SIDEBAR_WIDTH + 4}px`,
                 }}
                 onClick={() => handleScrollToBlock(block)}
               >

@@ -83,19 +83,19 @@ export const ColorPickerInput: FC<Props> = (props) => {
           />
         )}
       />
-      <div className="absolute right-4 top-2.5">
+      <div className="absolute end-4 top-2.5">
         <Popover className="relative grid place-items-center">
           {({ open }) => (
             <>
               <Popover.Button
                 type="button"
-                className={`group inline-flex items-center outline-none ${
+                className={`group inline-flex items-center outline-hidden ${
                   open ? "text-custom-text-100" : "text-custom-text-200"
                 }`}
               >
                 {watch(name) && watch(name) !== "" ? (
                   <span
-                    className="h-4 w-4 rounded border border-custom-border-200"
+                    className="h-4 w-4 rounded-sm border border-custom-border-200"
                     style={{
                       backgroundColor: `${watch(name)}`,
                     }}
@@ -116,7 +116,7 @@ export const ColorPickerInput: FC<Props> = (props) => {
               >
                 <Popover.Panel
                   className={`absolute bottom-8 z-20 mt-1 max-w-xs px-2 sm:px-0 ${
-                    position === "right" ? "left-0" : "right-0"
+                    position === "right" ? "start-0" : "end-0"
                   }`}
                 >
                   <SketchPicker color={watch(name)} onChange={handleColorChange} />

@@ -12,8 +12,8 @@ export const LatestFeatureBlock = () => {
   return (
     <>
       <div className="mx-auto mt-16 flex rounded-[3.5px] border border-custom-border-200 bg-custom-background-100 py-2 sm:w-96">
-        <Lightbulb className="mx-3 mr-2 h-7 w-7" />
-        <p className="text-left text-sm text-custom-text-100">
+        <Lightbulb className="mx-3 me-2 h-7 w-7" />
+        <p className="text-start text-sm text-custom-text-100">
           Pages gets a facelift! Write anything and use Galileo to help you start.{" "}
           <Link href="https://plane.so/changelog" target="_blank" rel="noopener noreferrer">
             <span className="text-sm font-medium underline hover:cursor-pointer">Learn more</span>
@@ -29,7 +29,7 @@ export const LatestFeatureBlock = () => {
           <Image
             src={latestFeatures}
             alt="Plane Work items"
-            className={`-mt-2 ml-10 h-full rounded-md ${
+            className={`-mt-2 ms-10 h-full rounded-md ${
               resolvedTheme === "dark" ? "bg-custom-background-100" : "bg-custom-primary-70"
             }`}
           />

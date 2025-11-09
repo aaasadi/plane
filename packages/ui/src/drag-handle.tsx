@@ -29,7 +29,7 @@ export const DragHandle = forwardRef<HTMLButtonElement | null, IDragHandle>((pro
       ref={ref}
     >
       <MoreVertical className="h-3.5 w-3.5 stroke-custom-text-400" />
-      <MoreVertical className="-ml-5 h-3.5 w-3.5 stroke-custom-text-400" />
+      <MoreVertical className="-ms-5 h-3.5 w-3.5 stroke-custom-text-400" />
     </button>
   );
 });

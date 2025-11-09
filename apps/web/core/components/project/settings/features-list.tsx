@@ -105,7 +105,7 @@ export const ProjectFeaturesList: FC<Props> = observer((props) => {
                   disabled={!isAdmin}
                 />
               </div>
-              <div className="pl-14">
+              <div className="ps-14">
                 {currentProjectDetails?.[featureItem.property as keyof IProject] &&
                   featureItem.renderChildren?.(currentProjectDetails, workspaceSlug)}
               </div>

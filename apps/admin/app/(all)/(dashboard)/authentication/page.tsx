@@ -77,7 +77,7 @@ const InstanceAuthenticationPage = observer<React.FC<Route.ComponentProps>>(() =
                     </div>
                   </div>
                 </div>
-                <div className={`shrink-0 pr-4 ${isSubmitting && "opacity-70"}`}>
+                <div className={`shrink-0 pe-4 ${isSubmitting && "opacity-70"}`}>
                   <div className="flex items-center gap-4">
                     <ToggleSwitch
                       value={Boolean(parseInt(enableSignUpConfig))}

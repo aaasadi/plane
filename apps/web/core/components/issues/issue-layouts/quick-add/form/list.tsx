@@ -22,7 +22,7 @@ export const ListQuickAddIssueForm: FC<TQuickAddIssueForm> = observer((props) =>
             {...register("name", {
               required: isEpic ? t("epic.title.required") : t("issue.title.required"),
             })}
-            className="w-full rounded-md bg-transparent px-2 py-3 text-sm font-medium leading-5 text-custom-text-200 outline-none"
+            className="w-full rounded-md bg-transparent px-2 py-3 text-sm font-medium leading-5 text-custom-text-200 outline-hidden"
           />
         </div>
       </form>

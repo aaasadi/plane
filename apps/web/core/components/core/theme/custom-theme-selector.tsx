@@ -133,7 +133,7 @@ export const CustomThemeSelector: React.FC<TCustomThemeSelector> = observer((pro
         <div className="space-y-4">
           <div className="grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2 md:grid-cols-3">
             <div className="flex flex-col items-start gap-2">
-              <h3 className="text-left text-sm font-medium text-custom-text-200">{t("background_color")}</h3>
+              <h3 className="text-start text-sm font-medium text-custom-text-200">{t("background_color")}</h3>
               <div className="w-full">
                 <Controller
                   control={control}
@@ -159,7 +159,7 @@ export const CustomThemeSelector: React.FC<TCustomThemeSelector> = observer((pro
             </div>
 
             <div className="flex flex-col items-start gap-2">
-              <h3 className="text-left text-sm font-medium text-custom-text-200">{t("text_color")}</h3>
+              <h3 className="text-start text-sm font-medium text-custom-text-200">{t("text_color")}</h3>
               <div className="w-full">
                 <Controller
                   control={control}
@@ -185,7 +185,7 @@ export const CustomThemeSelector: React.FC<TCustomThemeSelector> = observer((pro
             </div>
 
             <div className="flex flex-col items-start gap-2">
-              <h3 className="text-left text-sm font-medium text-custom-text-200">{t("primary_color")}</h3>
+              <h3 className="text-start text-sm font-medium text-custom-text-200">{t("primary_color")}</h3>
               <div className="w-full">
                 <Controller
                   control={control}
@@ -211,7 +211,7 @@ export const CustomThemeSelector: React.FC<TCustomThemeSelector> = observer((pro
             </div>
 
             <div className="flex flex-col items-start gap-2">
-              <h3 className="text-left text-sm font-medium text-custom-text-200">{t("sidebar_background_color")}</h3>
+              <h3 className="text-start text-sm font-medium text-custom-text-200">{t("sidebar_background_color")}</h3>
               <div className="w-full">
                 <Controller
                   control={control}
@@ -239,7 +239,7 @@ export const CustomThemeSelector: React.FC<TCustomThemeSelector> = observer((pro
             </div>
 
             <div className="flex flex-col items-start gap-2">
-              <h3 className="text-left text-sm font-medium text-custom-text-200">{t("sidebar_text_color")}</h3>
+              <h3 className="text-start text-sm font-medium text-custom-text-200">{t("sidebar_text_color")}</h3>
               <div className="w-full">
                 <Controller
                   control={control}

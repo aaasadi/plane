@@ -53,7 +53,7 @@ export const ImageUploadStatus: React.FC<Props> = (props) => {
   if (uploadStatus === undefined) return null;
 
   return (
-    <div className="absolute top-1 right-1 z-20 bg-black/60 rounded text-xs font-medium w-10 text-center">
+    <div className="absolute top-1 end-1 z-20 bg-black/60 rounded-sm text-xs font-medium w-10 text-center">
       {displayStatus}%
     </div>
   );

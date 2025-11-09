@@ -77,7 +77,7 @@ export const RecentIssue = observer((props: BlockProps) => {
             />
           ) : (
             <div className="flex gap-2 items-center justify-center">
-              <div className="flex-shrink-0 grid place-items-center rounded bg-custom-background-80 size-8">
+              <div className="flex-shrink-0 grid place-items-center rounded-sm bg-custom-background-80 size-8">
                 <WorkItemsIcon className="size-4 text-custom-text-350" />
               </div>
               <div className="font-medium text-custom-text-400 text-sm whitespace-nowrap">

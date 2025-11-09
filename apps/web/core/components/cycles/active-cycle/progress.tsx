@@ -51,7 +51,7 @@ export const ActiveCycleProgress: FC<ActiveCycleProgressProps> = observer((props
         <div className="flex items-center justify-between gap-4">
           <h3 className="text-base text-custom-text-300 font-semibold">{t("project_cycles.active_cycle.progress")}</h3>
           {cycle.total_issues > 0 && (
-            <span className="flex gap-1 text-sm text-custom-text-400 font-medium whitespace-nowrap rounded-sm px-3 py-1 ">
+            <span className="flex gap-1 text-sm text-custom-text-400 font-medium whitespace-nowrap rounded-xs px-3 py-1 ">
               {`${cycle.completed_issues + cycle.cancelled_issues}/${cycle.total_issues - cycle.cancelled_issues} ${
                 cycle.completed_issues + cycle.cancelled_issues > 1 ? "Work items" : "Work item"
               } closed`}

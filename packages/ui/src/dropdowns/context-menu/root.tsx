@@ -198,7 +198,7 @@ const ContextMenuWithoutPortal: React.FC<ContextMenuProps> = (props) => {
   return (
     <div
       className={cn(
-        "fixed h-screen w-screen top-0 left-0 cursor-default z-30 opacity-0 pointer-events-none transition-opacity",
+        "fixed h-screen w-screen top-0 start-0 cursor-default z-30 opacity-0 pointer-events-none transition-opacity",
         {
           "opacity-100 pointer-events-auto": isOpen,
         }
@@ -209,7 +209,7 @@ const ContextMenuWithoutPortal: React.FC<ContextMenuProps> = (props) => {
         className="fixed border-[0.5px] border-custom-border-300 bg-custom-background-100 shadow-custom-shadow-rg rounded-md px-2 py-2.5 max-h-72 min-w-[12rem] overflow-y-scroll vertical-scrollbar scrollbar-sm"
         style={{
           top: position.y,
-          left: position.x,
+          insetInlineStart: position.x,
         }}
         data-context-menu="true"
       >

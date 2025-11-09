@@ -1,6 +1,6 @@
 [cmdk-group] {
-  padding-left: 0.45rem;
-  padding-right: 0.45rem;
+  padding-inline-start: 0.45rem;
+  padding-inline-end: 0.45rem;
   margin-top: 0.5rem;
 }
 
@@ -9,8 +9,8 @@
   font-size: 0.75rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
-  padding-left: 0.45rem;
-  padding-right: 0.45rem;
+  padding-inline-start: 0.45rem;
+  padding-inline-end: 0.45rem;
 }
 
 [cmdk-item] {

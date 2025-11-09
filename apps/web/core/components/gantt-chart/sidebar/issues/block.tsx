@@ -47,7 +47,7 @@ export const IssuesSidebarBlock = observer((props: Props) => {
       onMouseLeave={() => updateActiveBlockId(null)}
     >
       <Row
-        className={cn("group w-full flex items-center gap-2 pr-4", {
+        className={cn("group w-full flex items-center gap-2 pe-4", {
           "bg-custom-background-90": isBlockHoveredOn,
           "bg-custom-primary-100/5 hover:bg-custom-primary-100/10": isIssueSelected,
           "bg-custom-primary-100/10": isIssueSelected && isBlockHoveredOn,
@@ -57,7 +57,7 @@ export const IssuesSidebarBlock = observer((props: Props) => {
         }}
       >
         {enableSelection && selectionHelpers && (
-          <div className="flex items-center gap-2 absolute left-1">
+          <div className="flex items-center gap-2 absolute start-1">
             <MultipleSelectEntityAction
               className={cn(
                 "opacity-0 pointer-events-none group-hover/list-block:opacity-100 group-hover/list-block:pointer-events-auto transition-opacity",

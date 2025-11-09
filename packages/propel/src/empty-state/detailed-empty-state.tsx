@@ -1,7 +1,7 @@
 import React from "react";
-import { Button } from "../button/button";
-import { cn } from "../utils/classname";
-import { getDetailedAsset } from "./assets/asset-registry";
+import { Button } from "../button";
+import { cn } from "../utils";
+import { getDetailedAsset } from "./assets";
 import type { DetailedAssetType } from "./assets/asset-types";
 import type { BaseEmptyStateCommonProps } from "./types";
 
@@ -21,7 +21,7 @@ export const EmptyStateDetailed: React.FC<BaseEmptyStateCommonProps> = ({
 
   return (
     <div className={cn("flex size-full items-center justify-center", rootClassName)}>
-      <div className={cn("flex max-w-[25rem] size-full flex-col justify-center gap-6 text-left", className)}>
+      <div className={cn("flex max-w-[25rem] size-full flex-col justify-center gap-6 text-start", className)}>
         {resolvedAsset && <div className="flex max-w-40 items-center">{resolvedAsset}</div>}
 
         <div className="flex flex-col gap-4">

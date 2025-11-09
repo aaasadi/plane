@@ -142,7 +142,7 @@ export const CustomButton: Story = {
     return (
       <Menu
         customButton={
-          <button className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-600">Custom Button</button>
+          <button className="rounded-sm bg-blue-500 px-4 py-2 text-white hover:bg-blue-600">Custom Button</button>
         }
       >
         <Menu.MenuItem onClick={() => alert("Option 1")}>Option 1</Menu.MenuItem>
@@ -209,7 +209,7 @@ export const ComplexMenu: Story = {
           <div className="flex items-center gap-2">
             <Bell className="h-4 w-4" />
             <span>Notifications</span>
-            <span className="ml-auto rounded bg-red-500 px-2 py-0.5 text-xs text-white">3</span>
+            <span className="ms-auto rounded-sm bg-red-500 px-2 py-0.5 text-xs text-white">3</span>
           </div>
         </Menu.MenuItem>
         <Menu.MenuItem onClick={() => alert("Help")}>

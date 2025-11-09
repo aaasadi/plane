@@ -72,7 +72,7 @@ export function DataTable<TData, TValue>({ columns, data, searchPlaceholder, act
           {!isSearchOpen && (
             <button
               type="button"
-              className="-mr-5 grid place-items-center rounded p-2 text-custom-text-400 hover:bg-custom-background-80"
+              className="-me-5 grid place-items-center rounded p-2 text-custom-text-400 hover:bg-custom-background-80"
               onClick={() => {
                 setIsSearchOpen(true);
                 inputRef.current?.focus();
@@ -83,7 +83,7 @@ export function DataTable<TData, TValue>({ columns, data, searchPlaceholder, act
           )}
           <div
             className={cn(
-              "mr-auto flex w-0 items-center justify-start gap-1 overflow-hidden rounded-md border border-transparent bg-custom-background-100 text-custom-text-400 opacity-0 transition-[width] ease-linear",
+              "me-auto flex w-0 items-center justify-start gap-1 overflow-hidden rounded-md border border-transparent bg-custom-background-100 text-custom-text-400 opacity-0 transition-[width] ease-linear",
               {
                 "w-64 border-custom-border-200 px-2.5 py-1.5 opacity-100": isSearchOpen,
               }

@@ -82,7 +82,7 @@ export const FavoriteFolder: React.FC<Props> = (props) => {
             render: ({ container }) => {
               const root = createRoot(container);
               root.render(
-                <div className="rounded flex gap-1 bg-custom-background-100 text-sm p-1 pr-2">
+                <div className="rounded flex gap-1 bg-custom-background-100 text-sm p-1 pe-2">
                   <div className="size-5 grid place-items-center flex-shrink-0">
                     <FavoriteFolderIcon />
                   </div>
@@ -164,17 +164,17 @@ export const FavoriteFolder: React.FC<Props> = (props) => {
             >
               {/* draggable indicator */}
 
-              <div className="flex-shrink-0 w-3 h-3 rounded-sm absolute left-0 hidden group-hover:flex justify-center items-center transition-colors bg-custom-background-90 cursor-pointer text-custom-text-200 hover:text-custom-text-100">
+              <div className="flex-shrink-0 w-3 h-3 rounded-xs absolute start-0 hidden group-hover:flex justify-center items-center transition-colors bg-custom-background-90 cursor-pointer text-custom-text-200 hover:text-custom-text-100">
                 <GripVertical className="w-3 h-3" />
               </div>
 
               <>
-                <Tooltip tooltipContent={`${favorite.name}`} position="right" className="ml-8" isMobile={isMobile}>
+                <Tooltip tooltipContent={`${favorite.name}`} position="right" className="ms-8" isMobile={isMobile}>
                   <div className="flex-grow flex truncate">
                     <Disclosure.Button
                       as="button"
                       type="button"
-                      className="flex-grow flex items-center gap-1.5 text-left select-none w-full"
+                      className="flex-grow flex items-center gap-1.5 text-start select-none w-full"
                     >
                       <Tooltip
                         isMobile={isMobile}
@@ -187,7 +187,7 @@ export const FavoriteFolder: React.FC<Props> = (props) => {
                         <button
                           type="button"
                           className={cn(
-                            "hidden group-hover/project-item:flex items-center justify-center absolute top-1/2 -left-3 -translate-y-1/2 rounded text-custom-sidebar-text-400 cursor-grab",
+                            "hidden group-hover/project-item:flex items-center justify-center absolute top-1/2 -start-3 -translate-y-1/2 rounded text-custom-sidebar-text-400 cursor-grab",
                             {
                               "cursor-not-allowed opacity-60": favorite.sort_order === null,
                               "cursor-grabbing": isDragging,

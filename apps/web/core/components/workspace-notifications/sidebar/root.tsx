@@ -55,7 +55,7 @@ export const NotificationsSidebarRoot: FC = observer(() => {
   return (
     <div
       className={cn(
-        "relative border-0 md:border-r border-custom-border-200 z-[10] flex-shrink-0 bg-custom-background-100 h-full transition-all max-md:overflow-hidden",
+        "relative border-0 md:border-e border-custom-border-200 z-[10] flex-shrink-0 bg-custom-background-100 h-full transition-all max-md:overflow-hidden",
         currentSelectedNotificationId ? "w-0 md:w-2/6" : "w-full md:w-2/6"
       )}
     >
@@ -85,7 +85,7 @@ export const NotificationsSidebarRoot: FC = observer(() => {
                 )}
               </div>
               {currentNotificationTab === tab.value && (
-                <div className="border absolute bottom-0 right-0 left-0 rounded-t-md border-custom-primary-100" />
+                <div className="border absolute bottom-0 end-0 start-0 rounded-t-md border-custom-primary-100" />
               )}
             </div>
           ))}

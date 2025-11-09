@@ -47,7 +47,7 @@ export const GlobalViewListItem: React.FC<Props> = observer((props) => {
                   {view?.description && <p className="text-xs text-custom-text-200">{view.description}</p>}
                 </div>
               </div>
-              <div className="ml-2 flex flex-shrink-0">
+              <div className="ms-2 flex flex-shrink-0">
                 <div className="flex items-center gap-4">
                   <CustomMenu ellipsis>
                     <CustomMenu.MenuItem

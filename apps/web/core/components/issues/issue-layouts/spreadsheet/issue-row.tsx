@@ -261,12 +261,12 @@ const IssueRowDetails = observer((props: IssueRowDetailsProps) => {
         id={`issue-${issueId}`}
         ref={cellRef}
         tabIndex={0}
-        className="relative md:sticky left-0 z-10 group/list-block bg-custom-background-100 min-w-60 max-w-[30vw]"
+        className="relative md:sticky start-0 z-10 group/list-block bg-custom-background-100 min-w-60 max-w-[30vw]"
       >
         <ControlLink
           href={workItemLink}
           onClick={() => handleIssuePeekOverview(issueDetail)}
-          className="outline-none"
+          className="outline-hidden"
           disabled={!!issueDetail?.tempId}
         >
           <Row
@@ -293,7 +293,7 @@ const IssueRowDetails = observer((props: IssueRowDetailsProps) => {
                   }
                   disabled={issueDetail.project_id === projectId}
                 >
-                  <div className="flex-shrink-0 grid place-items-center w-3.5 mr-1 absolute left-1">
+                  <div className="flex-shrink-0 grid place-items-center w-3.5 me-1 absolute start-1">
                     <MultipleSelectEntityAction
                       className={cn(
                         "opacity-0 pointer-events-none group-hover/list-block:opacity-100 group-hover/list-block:pointer-events-auto transition-opacity",
@@ -333,7 +333,7 @@ const IssueRowDetails = observer((props: IssueRowDetailsProps) => {
                 {subIssuesCount > 0 && !isEpic && (
                   <button
                     type="button"
-                    className="grid place-items-center size-4 rounded-sm text-custom-text-400 hover:text-custom-text-300"
+                    className="grid place-items-center size-4 rounded-xs text-custom-text-400 hover:text-custom-text-300"
                     onClick={handleToggleExpand}
                   >
                     <ChevronRightIcon
@@ -352,7 +352,7 @@ const IssueRowDetails = observer((props: IssueRowDetailsProps) => {
                 <div className="w-full overflow-hidden">
                   <Tooltip tooltipContent={issueDetail.name} isMobile={isMobile}>
                     <div
-                      className="h-full w-full cursor-pointer truncate pr-4 text-left text-[0.825rem] text-custom-text-100 focus:outline-none"
+                      className="h-full w-full cursor-pointer truncate pe-4 text-start text-[0.825rem] text-custom-text-100 focus:outline-hidden"
                       tabIndex={-1}
                     >
                       {issueDetail.name}

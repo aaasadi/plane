@@ -28,7 +28,7 @@ export const HeaderSubGroupByCard: React.FC<IHeaderSubGroupByCard> = observer((p
 
       <div className="flex flex-shrink-0 items-center gap-1 text-sm">
         <div className="line-clamp-1 text-custom-text-100">{title}</div>
-        <div className="pl-2 text-sm font-medium text-custom-text-300">{count || 0}</div>
+        <div className="ps-2 text-sm font-medium text-custom-text-300">{count || 0}</div>
       </div>
     </div>
   );

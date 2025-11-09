@@ -12,7 +12,7 @@ type BreadcrumbsProps = {
 
 export const BreadcrumbItemLoader = () => (
   <div className="flex items-center gap-2 h-7 animate-pulse">
-    <div className="group h-full flex items-center gap-2 rounded px-2 py-1 text-sm font-medium">
+    <div className="group h-full flex items-center gap-2 rounded-sm px-2 py-1 text-sm font-medium">
       <span className="h-full w-5 bg-custom-background-80 rounded" />
       <span className="h-full w-16 bg-custom-background-80 rounded" />
     </div>
@@ -139,10 +139,10 @@ const BreadcrumbSeparator: React.FC<BreadcrumbSeparatorProps> = (props) => {
   const { className, containerClassName, iconClassName, showDivider = false } = props;
   return (
     <div className={cn("relative flex items-center justify-center h-full px-1.5 py-1", className)}>
-      {showDivider && <span className="absolute -left-0.5 top-0 h-full w-[1.8px] bg-custom-background-100" />}
+      {showDivider && <span className="absolute -start-0.5 top-0 h-full w-[1.8px] bg-custom-background-100" />}
       <div
         className={cn(
-          "flex items-center justify-center flex-shrink-0 rounded text-custom-text-400 transition-all",
+          "flex items-center justify-center flex-shrink-0 rounded-sm text-custom-text-400 transition-all",
           containerClassName
         )}
       >
@@ -168,7 +168,7 @@ const BreadcrumbItemWrapper: React.FC<BreadcrumbItemWrapperProps> = (props) => {
     <Tooltip tooltipContent={label} position="bottom" disabled={!label || label === "" || disableTooltip}>
       <div
         className={cn(
-          "group h-full flex items-center gap-2 rounded px-1.5 py-1 text-sm font-medium text-custom-text-300 cursor-default",
+          "group h-full flex items-center gap-2 rounded-sm px-1.5 py-1 text-sm font-medium text-custom-text-300 cursor-default",
           {
             "hover:text-custom-text-100 hover:bg-custom-background-90 cursor-pointer": type === "link" && !isLast,
           },

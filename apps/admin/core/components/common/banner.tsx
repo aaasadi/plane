@@ -23,7 +23,7 @@ export const Banner: FC<TBanner> = (props) => {
             <CheckCircle2 className="h-5 w-5 text-green-600" aria-hidden="true" />
           )}
         </div>
-        <div className="ml-1">
+        <div className="ms-1">
           <p className={`text-sm font-medium ${type === "error" ? "text-red-600" : "text-green-600"}`}>{message}</p>
         </div>
       </div>

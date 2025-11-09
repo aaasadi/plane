@@ -73,7 +73,7 @@ export const CircularProgressIndicator: React.FC<ICircularProgressIndicator> = (
         className="absolute"
         style={{
           top: "50%",
-          left: "50%",
+          insetInlineStart: "50%",
           transform: "translate(-50%, -50%)",
         }}
       >

@@ -56,7 +56,7 @@ export const PageEditorToolbarRoot: React.FC<Props> = observer((props) => {
               {!isNavigationPaneOpen && (
                 <button
                   type="button"
-                  className="flex-shrink-0 size-6 grid place-items-center rounded text-custom-text-200 hover:text-custom-text-100 hover:bg-custom-background-80 transition-colors"
+                  className="flex-shrink-0 size-6 grid place-items-center rounded-sm text-custom-text-200 hover:text-custom-text-100 hover:bg-custom-background-80 transition-colors"
                   onClick={handleOpenNavigationPane}
                 >
                   <PanelRight className="size-3.5" />
@@ -67,12 +67,12 @@ export const PageEditorToolbarRoot: React.FC<Props> = observer((props) => {
         </div>
       </div>
       {shouldHideToolbar && (
-        <div className="absolute z-10 top-0 right-0 h-[52px] px-page-x flex items-center">
+        <div className="absolute z-10 top-0 end-0 h-[52px] px-page-x flex items-center">
           {!isNavigationPaneOpen && (
             <Tooltip tooltipContent={t("page_navigation_pane.open_button")}>
               <button
                 type="button"
-                className="flex-shrink-0 size-6 grid place-items-center rounded text-custom-text-200 hover:text-custom-text-100 hover:bg-custom-background-80 transition-colors"
+                className="flex-shrink-0 size-6 grid place-items-center rounded-sm text-custom-text-200 hover:text-custom-text-100 hover:bg-custom-background-80 transition-colors"
                 onClick={handleOpenNavigationPane}
                 aria-label={t("page_navigation_pane.open_button")}
               >

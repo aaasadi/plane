@@ -125,11 +125,11 @@ export const IssueMainContent: React.FC<Props> = observer((props) => {
           issueOperations={issueOperations}
           disabled={isArchived || !isEditable}
           value={issue.name}
-          containerClassName="-ml-3"
+          containerClassName="-ms-3"
         />
 
         <DescriptionInput
-          containerClassName="-ml-3 border-none"
+          containerClassName="-ms-3 border-none"
           disabled={isArchived || !isEditable}
           editorRef={editorRef}
           entityId={issue.id}

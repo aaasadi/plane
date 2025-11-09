@@ -53,12 +53,12 @@ export const getCellBorderClasses = (cellStart: number, selectedCells: number[],
 
   // Add border-right if right cell is not selected or doesn't exist
   if (adjacent.right === undefined || !selectedCells.includes(adjacent.right)) {
-    classes.push("selectedCell-border-right");
+    classes.push("selectedCell-border-end");
   }
 
   // Add border-left if left cell is not selected or doesn't exist
   if (adjacent.left === undefined || !selectedCells.includes(adjacent.left)) {
-    classes.push("selectedCell-border-left");
+    classes.push("selectedCell-border-start");
   }
 
   // Add border-top if top cell is not selected or doesn't exist

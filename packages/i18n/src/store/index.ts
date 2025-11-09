@@ -261,6 +261,13 @@ export class TranslationStore {
       if (typeof window !== "undefined") {
         localStorage.setItem(LANGUAGE_STORAGE_KEY, lng);
         document.documentElement.lang = lng;
+        switch (lng) {
+          case "fa":
+            document.documentElement.dir = "rtl";
+            break;
+          default:
+            document.documentElement.dir = "ltr";
+        }
       }
 
       runInAction(() => {

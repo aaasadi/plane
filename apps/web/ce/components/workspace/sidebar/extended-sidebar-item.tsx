@@ -174,7 +174,7 @@ export const ExtendedSidebarItem: FC<TExtendedSidebarItemProps> = observer((prop
             <button
               type="button"
               className={cn(
-                "flex items-center justify-center absolute top-1/2 -left-3 -translate-y-1/2 rounded text-custom-sidebar-text-400 cursor-grab",
+                "flex items-center justify-center absolute top-1/2 -start-3 -translate-y-1/2 rounded-sm text-custom-sidebar-text-400 cursor-grab",
                 {
                   "cursor-grabbing": isDragging,
                 }
@@ -201,14 +201,14 @@ export const ExtendedSidebarItem: FC<TExtendedSidebarItemProps> = observer((prop
             {isPinned ? (
               <Tooltip tooltipContent="Unpin">
                 <PinOff
-                  className="size-3.5 flex-shrink-0 hover:text-custom-text-300 outline-none text-custom-text-400"
+                  className="size-3.5 flex-shrink-0 hover:text-custom-text-300 outline-hidden text-custom-text-400"
                   onClick={() => unPinNavigationItem(workspaceSlug.toString(), item.key)}
                 />
               </Tooltip>
             ) : (
               <Tooltip tooltipContent="Pin">
                 <Pin
-                  className="size-3.5 flex-shrink-0 hover:text-custom-text-300 outline-none text-custom-text-400"
+                  className="size-3.5 flex-shrink-0 hover:text-custom-text-300 outline-hidden text-custom-text-400"
                   onClick={() => pinNavigationItem(workspaceSlug.toString(), item.key)}
                 />
               </Tooltip>

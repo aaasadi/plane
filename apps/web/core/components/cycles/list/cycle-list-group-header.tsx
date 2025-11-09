@@ -23,13 +23,13 @@ export const CycleListGroupHeader: FC<Props> = (props) => {
   return (
     <Row className="flex items-center justify-between py-2.5">
       <div className="flex items-center gap-5 flex-shrink-0">
-        <div className="flex h-5 w-5 flex-shrink-0 items-center justify-center overflow-hidden rounded-sm">
+        <div className="flex h-5 w-5 flex-shrink-0 items-center justify-center overflow-hidden rounded-xs">
           <CycleGroupIcon cycleGroup={type} className="h-5 w-5" />
         </div>
 
         <div className="relative flex w-full flex-row items-center gap-1 overflow-hidden">
           <div className="inline-block line-clamp-1 truncate font-medium text-custom-text-100">{title}</div>
-          {showCount && <div className="pl-2 text-sm font-medium text-custom-text-300">{`${count ?? "0"}`}</div>}
+          {showCount && <div className="ps-2 text-sm font-medium text-custom-text-300">{`${count ?? "0"}`}</div>}
         </div>
       </div>
       <ChevronDownIcon

@@ -53,10 +53,11 @@ export const SideMenuExtension = (props: Props) => {
 
 const absoluteRect = (node: Element) => {
   const data = node.getBoundingClientRect();
+  const isRTL: boolean = document.dir === "rtl";
 
   return {
     top: data.top,
-    left: data.left,
+    start: isRTL ? data.right : data.left,
     width: data.width,
   };
 };
@@ -117,30 +118,30 @@ const SideMenu = (options: SideMenuPluginProps) => {
           rect.top += paddingTop;
 
           if (handlesConfig.ai) {
-            rect.left -= 20;
+            rect.start -= 20;
           }
 
           if (node.parentElement?.parentElement?.matches("td") || node.parentElement?.parentElement?.matches("th")) {
             if (node.matches("ul:not([data-type=taskList]) li, ol li")) {
-              rect.left -= 5;
+              rect.start -= 5;
             }
           } else {
             // Li markers
             if (node.matches("ul:not([data-type=taskList]) li, ol li")) {
-              rect.left -= 18;
+              rect.start -= 18;
             }
           }
 
           if (node.matches("table")) {
             rect.top += 8;
-            rect.left -= 8;
+            rect.start -= 8;
           }
 
           rect.width = options.dragHandleWidth;
 
           if (!editorSideMenu) return;
 
-          editorSideMenu.style.left = `${rect.left - rect.width}px`;
+          editorSideMenu.style.insetInlineStart = `${rect.start - rect.width}px`;
           editorSideMenu.style.top = `${rect.top}px`;
           showSideMenu();
           if (handlesConfig.dragDrop) {

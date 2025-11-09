@@ -129,7 +129,7 @@ export const ModuleProgressStats: FC<TModuleProgressStats> = observer((props) =>
           {PROGRESS_STATS.map((stat) => (
             <Tab
               className={cn(
-                `p-1 w-full text-custom-text-100 outline-none focus:outline-none cursor-pointer transition-all`,
+                `p-1 w-full text-custom-text-100 outline-hidden focus:outline-hidden cursor-pointer transition-all`,
                 roundedTab ? `rounded-3xl border border-custom-border-200` : `rounded`,
                 stat.key === currentTab
                   ? "bg-custom-background-100 text-custom-text-300"
