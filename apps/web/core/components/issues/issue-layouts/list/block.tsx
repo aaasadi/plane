@@ -247,7 +247,7 @@ export const IssueBlock = observer((props: IssueBlockProps) => {
                 {subIssuesCount > 0 && !isEpic && (
                   <button
                     type="button"
-                    className="size-4 grid place-items-center rounded-xs text-custom-text-400 hover:text-custom-text-300"
+                    className="size-4 grid place-items-center rounded-sm text-custom-text-400 hover:text-custom-text-300"
                     onClick={handleToggleExpand}
                   >
                     <ChevronRightIcon

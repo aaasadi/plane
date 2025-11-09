@@ -112,7 +112,7 @@ export const ExtendedProjectSidebar = observer(() => {
                 <button
                   type="button"
                   data-ph-element={PROJECT_TRACKER_ELEMENTS.EXTENDED_SIDEBAR_ADD_BUTTON}
-                  className="p-0.5 rounded-sm hover:bg-custom-sidebar-background-80 flex-shrink-0"
+                  className="p-0.5 rounded hover:bg-custom-sidebar-background-80 flex-shrink-0"
                   onClick={() => {
                     setIsProjectModalOpen(true);
                   }}
@@ -125,7 +125,7 @@ export const ExtendedProjectSidebar = observer(() => {
           <div className="ms-auto flex items-center gap-1.5 rounded-md border border-custom-border-200 bg-custom-background-100 px-2.5 py-1 w-full">
             <Search className="h-3.5 w-3.5 text-custom-text-400" />
             <input
-              className="w-full max-w-[234px] border-none bg-transparent text-sm outline-hidden placeholder:text-custom-text-400"
+              className="w-full max-w-[234px] border-none bg-transparent text-sm outline-none placeholder:text-custom-text-400"
               placeholder={t("search")}
               value={searchQuery}
               autoFocus

@@ -201,7 +201,7 @@ export const EstimatePointUpdate: FC<TEstimatePointUpdate> = observer((props) =>
       {estimateInputValue && estimateInputValue.length > 0 && (
         <button
           type="submit"
-          className="rounded-xs w-6 h-6 flex-shrink-0 relative flex justify-center items-center hover:bg-custom-background-80 transition-colors cursor-pointer text-green-500"
+          className="rounded-sm w-6 h-6 flex-shrink-0 relative flex justify-center items-center hover:bg-custom-background-80 transition-colors cursor-pointer text-green-500"
           disabled={loader}
         >
           {loader ? <Spinner className="w-4 h-4" /> : <Check size={14} />}
@@ -209,7 +209,7 @@ export const EstimatePointUpdate: FC<TEstimatePointUpdate> = observer((props) =>
       )}
       <button
         type="button"
-        className="rounded-xs w-6 h-6 flex-shrink-0 relative flex justify-center items-center hover:bg-custom-background-80 transition-colors cursor-pointer"
+        className="rounded-sm w-6 h-6 flex-shrink-0 relative flex justify-center items-center hover:bg-custom-background-80 transition-colors cursor-pointer"
         onClick={handleClose}
         disabled={loader}
       >

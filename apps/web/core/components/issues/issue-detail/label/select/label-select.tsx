@@ -141,7 +141,7 @@ export const IssueLabelSelect: React.FC<IIssueLabelSelect> = observer((props) =>
 
         <Combobox.Options className="fixed z-10">
           <div
-            className={`z-10 my-1 w-48 whitespace-nowrap rounded border border-custom-border-300 bg-custom-background-100 py-2.5 text-xs shadow-custom-shadow-rg focus:outline-hidden`}
+            className={`z-10 my-1 w-48 whitespace-nowrap rounded border border-custom-border-300 bg-custom-background-100 py-2.5 text-xs shadow-custom-shadow-rg focus:outline-none`}
             ref={setPopperElement}
             style={styles.popper}
             {...attributes.popper}
@@ -150,7 +150,7 @@ export const IssueLabelSelect: React.FC<IIssueLabelSelect> = observer((props) =>
               <div className="flex w-full items-center justify-start rounded border border-custom-border-200 bg-custom-background-90 px-2">
                 <Search className="h-3.5 w-3.5 text-custom-text-300" />
                 <Combobox.Input
-                  className="w-full bg-transparent px-2 py-1 text-xs text-custom-text-200 placeholder:text-custom-text-400 focus:outline-hidden"
+                  className="w-full bg-transparent px-2 py-1 text-xs text-custom-text-200 placeholder:text-custom-text-400 focus:outline-none"
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
                   placeholder={t("common.search.label")}

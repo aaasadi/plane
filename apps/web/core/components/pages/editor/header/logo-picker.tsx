@@ -32,7 +32,7 @@ export const PageEditorHeaderLogoPicker: React.FC<Props> = observer((props) => {
         buttonClassName="flex items-center justify-center"
         label={
           <div
-            className={cn("-ms-[8px] size-[56px] grid place-items-center rounded-sm transition-colors", {
+            className={cn("-ms-[8px] size-[56px] grid place-items-center rounded transition-colors", {
               "hover:bg-custom-background-80": isContentEditable,
             })}
           >

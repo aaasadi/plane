@@ -223,7 +223,7 @@ export const DateRangeDropdown: React.FC<Props> = observer((props) => {
           <>
             <span
               className={cn(
-                "h-full flex items-center justify-center gap-1 rounded-sm flex-grow",
+                "h-full flex items-center justify-center gap-1 rounded flex-grow",
                 buttonFromDateClassName
               )}
             >
@@ -233,7 +233,7 @@ export const DateRangeDropdown: React.FC<Props> = observer((props) => {
             <ArrowRight className="h-3 w-3 flex-shrink-0" />
             <span
               className={cn(
-                "h-full flex items-center justify-center gap-1 rounded-sm flex-grow",
+                "h-full flex items-center justify-center gap-1 rounded flex-grow",
                 buttonToDateClassName
               )}
             >

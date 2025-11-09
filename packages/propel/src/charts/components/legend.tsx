@@ -63,7 +63,7 @@ const CustomLegend = React.forwardRef<
           onMouseLeave={(e) => onMouseLeave?.(item, index, e)}
         >
           <div
-            className="flex-shrink-0 size-2 rounded-xs"
+            className="flex-shrink-0 size-2 rounded-sm"
             style={{
               backgroundColor: item.color,
             }}

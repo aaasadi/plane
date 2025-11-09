@@ -164,7 +164,7 @@ export const FavoriteFolder: React.FC<Props> = (props) => {
             >
               {/* draggable indicator */}
 
-              <div className="flex-shrink-0 w-3 h-3 rounded-xs absolute start-0 hidden group-hover:flex justify-center items-center transition-colors bg-custom-background-90 cursor-pointer text-custom-text-200 hover:text-custom-text-100">
+              <div className="flex-shrink-0 w-3 h-3 rounded-sm absolute start-0 hidden group-hover:flex justify-center items-center transition-colors bg-custom-background-90 cursor-pointer text-custom-text-200 hover:text-custom-text-100">
                 <GripVertical className="w-3 h-3" />
               </div>
 

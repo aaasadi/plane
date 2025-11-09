@@ -22,7 +22,7 @@ const RenderCustomPopoverComponent = (
       {["option1", "option2", "option3"].map((option) => (
         <div
           key={option}
-          className="text-sm text-gray-600 hover:text-gray-700 rounded-xs cursor-pointer hover:bg-gray-200 transition-all px-1.5 py-0.5 capitalize"
+          className="text-sm text-gray-600 hover:text-gray-700 rounded-sm cursor-pointer hover:bg-gray-200 transition-all px-1.5 py-0.5 capitalize"
         >
           {option}
         </div>

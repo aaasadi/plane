@@ -42,14 +42,14 @@ export const LinearProgressIndicator: React.FC<Props> = ({
 
   return (
     <div
-      className={cn("flex w-full items-center justify-between gap-[1px] rounded-xs", {
+      className={cn("flex w-full items-center justify-between gap-[1px] rounded-sm", {
         "h-2": size === "sm",
         "h-3": size === "md",
         "h-3.5": size === "lg",
         "h-[14px]": size === "xl",
       })}
     >
-      <div className={cn("flex h-full w-full gap-[1.5px] p-[2px] bg-custom-background-90 rounded-xs", className)}>
+      <div className={cn("flex h-full w-full gap-[1.5px] p-[2px] bg-custom-background-90 rounded-sm", className)}>
         {bars}
       </div>
     </div>

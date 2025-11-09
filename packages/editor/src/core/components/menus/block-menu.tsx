@@ -222,7 +222,7 @@ export const BlockMenu = (props: Props) => {
             <button
               key={item.key}
               type="button"
-              className="flex w-full items-center gap-1.5 truncate rounded-sm px-1 py-1.5 text-xs text-custom-text-200 hover:bg-custom-background-90"
+              className="flex w-full items-center gap-1.5 truncate rounded px-1 py-1.5 text-xs text-custom-text-200 hover:bg-custom-background-90"
               onClick={(e) => {
                 item.onClick(e);
                 e.preventDefault();

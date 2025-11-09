@@ -78,7 +78,7 @@ export const TalkToSalesCard: FC<TalkToSalesCardProps> = observer((props) => {
               target="_blank"
               className={cn(
                 upgradeButtonStyle,
-                "relative inline-flex items-center justify-center w-56 px-4 py-2 text-sm font-medium rounded-lg focus:outline-hidden"
+                "relative inline-flex items-center justify-center w-56 px-4 py-2 text-sm font-medium rounded-lg focus:outline-none"
               )}
             >
               Talk to Sales

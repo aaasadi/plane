@@ -46,7 +46,7 @@ export const Logo: FC<Props> = (props) => {
           height: size,
           width: size,
         }}
-        className="rounded-sm animate-pulse bg-custom-background-80"
+        className="rounded animate-pulse bg-custom-background-80"
       />
     );
   }

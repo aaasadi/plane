@@ -53,7 +53,7 @@ export const SpreadsheetHeader = observer((props: Props) => {
               <div className="flex-shrink-0 flex items-center w-3.5 me-1 absolute start-1 py-[11px]">
                 <MultipleSelectGroupAction
                   className={cn(
-                    "size-3.5 opacity-0 pointer-events-none group-hover/list-header:opacity-100 group-hover/list-header:pointer-events-auto !outline-hidden",
+                    "size-3.5 opacity-0 pointer-events-none group-hover/list-header:opacity-100 group-hover/list-header:pointer-events-auto !outline-none",
                     {
                       "opacity-100 pointer-events-auto": !isGroupSelectionEmpty,
                     }

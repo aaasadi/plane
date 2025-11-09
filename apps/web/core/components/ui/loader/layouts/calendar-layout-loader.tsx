@@ -4,7 +4,7 @@ import { getRandomInt } from "../utils";
 const CalendarDay = () => {
   const dataCount = getRandomInt(0, 1);
   const dataBlocks = range(dataCount).map((index) => (
-    <span key={index} className="h-8 w-full bg-custom-background-80 rounded-sm mb-2" />
+    <span key={index} className="h-8 w-full bg-custom-background-80 rounded mb-2" />
   ));
 
   return (

@@ -42,7 +42,7 @@ export const TabList: FC<TTabListProps> = ({
           cn(
             "flex items-center justify-center p-1 min-w-fit w-full font-medium text-custom-text-100 outline-none focus:outline-none cursor-pointer transition-all rounded",
             (selectedTab ? selectedTab === tab.key : selected)
-              ? "bg-custom-background-100 text-custom-text-100 shadow-xs"
+              ? "bg-custom-background-100 text-custom-text-100 shadow-sm"
               : tab.disabled
                 ? "text-custom-text-400 cursor-not-allowed"
                 : "text-custom-text-400 hover:text-custom-text-300 hover:bg-custom-background-80/60",

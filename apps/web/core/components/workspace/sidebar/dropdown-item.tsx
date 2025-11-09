@@ -89,7 +89,7 @@ const SidebarDropdownItem = observer((props: TProps) => {
                 <Link
                   href={`/${workspace.slug}/settings`}
                   onClick={handleClose}
-                  className="flex border border-custom-border-200 rounded-md py-1 px-2 gap-1 bg-custom-sidebar-background-100 hover:shadow-xs hover:text-custom-text-200 text-custom-text-300 hover:border-custom-border-300 "
+                  className="flex border border-custom-border-200 rounded-md py-1 px-2 gap-1 bg-custom-sidebar-background-100 hover:shadow-sm hover:text-custom-text-200 text-custom-text-300 hover:border-custom-border-300 "
                 >
                   <Settings className="h-4 w-4 my-auto" />
                   <span className="text-sm font-medium my-auto">{t("settings")}</span>
@@ -99,7 +99,7 @@ const SidebarDropdownItem = observer((props: TProps) => {
                 <Link
                   href={`/${workspace.slug}/settings/members`}
                   onClick={handleClose}
-                  className="flex border border-custom-border-200 rounded-md py-1 px-2 gap-1 bg-custom-sidebar-background-100 hover:shadow-xs hover:text-custom-text-200 text-custom-text-300 hover:border-custom-border-300 "
+                  className="flex border border-custom-border-200 rounded-md py-1 px-2 gap-1 bg-custom-sidebar-background-100 hover:shadow-sm hover:text-custom-text-200 text-custom-text-300 hover:border-custom-border-300 "
                 >
                   <UserPlus className="h-4 w-4 my-auto" />
                   <span className="text-sm font-medium my-auto">

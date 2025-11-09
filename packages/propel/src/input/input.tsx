@@ -32,9 +32,9 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
         "block rounded-md bg-transparent text-sm placeholder-custom-text-400 focus:outline-none",
         {
           "rounded-md border-[0.5px] border-custom-border-200": mode === "primary",
-          "rounded-sm border-none bg-transparent ring-0 transition-all focus:ring-1 focus:ring-custom-primary":
+          "rounded border-none bg-transparent ring-0 transition-all focus:ring-1 focus:ring-custom-primary":
             mode === "transparent",
-          "rounded-sm border-none bg-transparent ring-0": mode === "true-transparent",
+          "rounded border-none bg-transparent ring-0": mode === "true-transparent",
           "border-red-500": hasError,
           "px-1.5 py-1": inputSize === "xs",
           "px-3 py-2": inputSize === "sm",

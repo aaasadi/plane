@@ -59,7 +59,7 @@ export const SubIssueFilters: FC<TSubIssueFiltersProps> = observer((props) => {
               <Search className="text-custom-text-400" size={12} strokeWidth={2} />
               <input
                 type="text"
-                className="w-full bg-custom-background-90 outline-hidden placeholder:text-custom-text-400"
+                className="w-full bg-custom-background-90 outline-none placeholder:text-custom-text-400"
                 placeholder={t("common.search.label")}
                 value={filtersSearchQuery}
                 onChange={(e) => setFiltersSearchQuery(e.target.value)}

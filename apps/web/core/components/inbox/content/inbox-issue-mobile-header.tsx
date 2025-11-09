@@ -103,14 +103,14 @@ export const InboxIssueActionsMobileHeader: React.FC<Props> = observer((props) =
         <div className="flex items-center gap-x-2">
           <button
             type="button"
-            className="rounded-sm border border-custom-border-200 p-1.5"
+            className="rounded border border-custom-border-200 p-1.5"
             onClick={() => handleInboxIssueNavigation("prev")}
           >
             <ChevronUpIcon height={14} width={14} strokeWidth={2} />
           </button>
           <button
             type="button"
-            className="rounded-sm border border-custom-border-200 p-1.5"
+            className="rounded border border-custom-border-200 p-1.5"
             onClick={() => handleInboxIssueNavigation("next")}
           >
             <ChevronDownIcon height={14} width={14} strokeWidth={2} />

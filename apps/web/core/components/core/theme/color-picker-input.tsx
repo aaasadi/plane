@@ -89,13 +89,13 @@ export const ColorPickerInput: FC<Props> = (props) => {
             <>
               <Popover.Button
                 type="button"
-                className={`group inline-flex items-center outline-hidden ${
+                className={`group inline-flex items-center outline-none ${
                   open ? "text-custom-text-100" : "text-custom-text-200"
                 }`}
               >
                 {watch(name) && watch(name) !== "" ? (
                   <span
-                    className="h-4 w-4 rounded-sm border border-custom-border-200"
+                    className="h-4 w-4 rounded border border-custom-border-200"
                     style={{
                       backgroundColor: `${watch(name)}`,
                     }}

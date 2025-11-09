@@ -126,7 +126,7 @@ export const ParentIssuesListModal: React.FC<Props> = ({
                       aria-hidden="true"
                     />
                     <Combobox.Input
-                      className="h-12 w-full border-0 bg-transparent ps-11 pe-4 text-custom-text-100 outline-hidden placeholder:text-custom-text-400 focus:ring-0 sm:text-sm"
+                      className="h-12 w-full border-0 bg-transparent ps-11 pe-4 text-custom-text-100 outline-none placeholder:text-custom-text-400 focus:ring-0 sm:text-sm"
                       placeholder={t("common.search.placeholder")}
                       value={searchTerm}
                       onChange={(e) => setSearchTerm(e.target.value)}

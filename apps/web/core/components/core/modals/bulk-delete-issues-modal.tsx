@@ -185,7 +185,7 @@ export const BulkDeleteIssuesModal: React.FC<Props> = observer((props) => {
                       />
                       <input
                         type="text"
-                        className="h-12 w-full border-0 bg-transparent ps-11 pe-4 text-custom-text-100 outline-hidden focus:ring-0 sm:text-sm"
+                        className="h-12 w-full border-0 bg-transparent ps-11 pe-4 text-custom-text-100 outline-none focus:ring-0 sm:text-sm"
                         placeholder="Search..."
                         onChange={(event) => setQuery(event.target.value)}
                       />

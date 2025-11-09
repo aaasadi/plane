@@ -95,7 +95,7 @@ export const DescriptionVersionsModal: React.FC<Props> = observer((props) => {
               type="button"
               onClick={() => handleNavigation("prev")}
               className={cn(
-                "size-6 text-custom-text-200 grid place-items-center rounded-sm outline-hidden transition-colors",
+                "size-6 text-custom-text-200 grid place-items-center rounded outline-none transition-colors",
                 {
                   "hover:bg-custom-background-80": !isPrevDisabled,
                   "opacity-50": isPrevDisabled,
@@ -109,7 +109,7 @@ export const DescriptionVersionsModal: React.FC<Props> = observer((props) => {
               type="button"
               onClick={() => handleNavigation("next")}
               className={cn(
-                "size-6 text-custom-text-200 grid place-items-center rounded-sm outline-hidden transition-colors",
+                "size-6 text-custom-text-200 grid place-items-center rounded outline-none transition-colors",
                 {
                   "hover:bg-custom-background-80": !isNextDisabled,
                   "opacity-50": isNextDisabled,

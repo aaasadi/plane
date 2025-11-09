@@ -97,7 +97,7 @@ export const IssueCommentToolbar: React.FC<Props> = (props) => {
   return (
     <div className="flex h-9 w-full items-stretch gap-1.5 bg-custom-background-90 overflow-x-scroll">
       {showAccessSpecifier && (
-        <div className="flex flex-shrink-0 items-stretch gap-0.5 rounded-sm border-[0.5px] border-custom-border-200 p-1">
+        <div className="flex flex-shrink-0 items-stretch gap-0.5 rounded border-[0.5px] border-custom-border-200 p-1">
           {COMMENT_ACCESS_SPECIFIERS.map((access) => {
             const isAccessActive = accessSpecifier === access.key;
 
@@ -106,7 +106,7 @@ export const IssueCommentToolbar: React.FC<Props> = (props) => {
                 <button
                   type="button"
                   onClick={() => handleAccessChange?.(access.key)}
-                  className={cn("grid place-items-center aspect-square rounded-xs p-1 hover:bg-custom-background-80", {
+                  className={cn("grid place-items-center aspect-square rounded-sm p-1 hover:bg-custom-background-80", {
                     "bg-custom-background-80": isAccessActive,
                   })}
                 >
@@ -122,7 +122,7 @@ export const IssueCommentToolbar: React.FC<Props> = (props) => {
           })}
         </div>
       )}
-      <div className="flex w-full items-stretch justify-between gap-2 rounded-sm border-[0.5px] border-custom-border-200 p-1">
+      <div className="flex w-full items-stretch justify-between gap-2 rounded border-[0.5px] border-custom-border-200 p-1">
         <div className="flex items-stretch">
           {Object.keys(toolbarItems).map((key, index) => (
             <div
@@ -148,7 +148,7 @@ export const IssueCommentToolbar: React.FC<Props> = (props) => {
                       type="button"
                       onClick={() => executeCommand(item)}
                       className={cn(
-                        "grid place-items-center aspect-square rounded-xs p-0.5 text-custom-text-400 hover:bg-custom-background-80",
+                        "grid place-items-center aspect-square rounded-sm p-0.5 text-custom-text-400 hover:bg-custom-background-80",
                         {
                           "bg-custom-background-80 text-custom-text-100": isItemActive,
                         }

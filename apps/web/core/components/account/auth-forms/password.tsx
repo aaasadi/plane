@@ -132,7 +132,7 @@ export const AuthPasswordForm: React.FC<Props> = observer((props: Props) => {
           </div>
           <div className="w-full text-sm font-medium text-red-500">{t("auth.sign_up.errors.password.strength")}</div>
           <div
-            className="relative ms-auto w-6 h-6 rounded-xs flex justify-center items-center transition-all cursor-pointer hover:bg-red-500/20 text-custom-primary-100/80"
+            className="relative ms-auto w-6 h-6 rounded-sm flex justify-center items-center transition-all cursor-pointer hover:bg-red-500/20 text-custom-primary-100/80"
             onClick={() => setBannerMessage(false)}
           >
             <CloseIcon className="w-4 h-4 flex-shrink-0 text-red-500" />

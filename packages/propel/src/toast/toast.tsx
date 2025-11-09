@@ -113,7 +113,7 @@ const ToastRender = ({ id, toast }: { id: React.Key; toast: BaseToast.Root.Toast
       key={id}
       className={cn(
         // Base layout and positioning
-        "flex group items-center rounded-lg border shadow-xs p-2 w-[350px]",
+        "flex group items-center rounded-lg border shadow-sm p-2 w-[350px]",
         "absolute end-3 bottom-3 z-[calc(1000-var(--toast-index))]",
         "select-none transition-[opacity,transform] duration-500 ease-&lsqb;cubic-bezier(0.22,1,0.36,1)&rsqb;",
 

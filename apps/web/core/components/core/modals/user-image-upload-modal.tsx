@@ -124,7 +124,7 @@ export const UserImageUploadModal: React.FC<Props> = observer((props) => {
                     <div className="flex items-center justify-center gap-3">
                       <div
                         {...getRootProps()}
-                        className={`relative grid h-80 w-80 cursor-pointer place-items-center rounded-lg p-12 text-center focus:outline-hidden focus:ring-2 focus:ring-custom-primary focus:ring-offset-2 ${
+                        className={`relative grid h-80 w-80 cursor-pointer place-items-center rounded-lg p-12 text-center focus:outline-none focus:ring-2 focus:ring-custom-primary focus:ring-offset-2 ${
                           (image === null && isDragActive) || !value
                             ? "border-2 border-dashed border-custom-border-200 hover:bg-custom-background-90"
                             : ""
@@ -134,7 +134,7 @@ export const UserImageUploadModal: React.FC<Props> = observer((props) => {
                           <>
                             <button
                               type="button"
-                              className="absolute end-0 top-0 z-40 -translate-y-1/2 translate-x-1/2 rounded-sm bg-custom-background-90 px-2 py-0.5 text-xs font-medium text-custom-text-200"
+                              className="absolute end-0 top-0 z-40 -translate-y-1/2 translate-x-1/2 rounded bg-custom-background-90 px-2 py-0.5 text-xs font-medium text-custom-text-200"
                             >
                               Edit
                             </button>

@@ -487,7 +487,7 @@ export const IssueFormRoot: FC<IssueFormProps> = observer((props) => {
             <div
               className={cn(
                 "px-4 py-3 border-t-[0.5px] border-custom-border-200 rounded-b-lg bg-custom-background-100",
-                activeAdditionalPropertiesLength > 0 && "shadow-custom-shadow-xs"
+                activeAdditionalPropertiesLength > 0 && "shadow-custom-shadow-sm"
               )}
             >
               <div className="pb-3">

@@ -65,7 +65,7 @@ export const CycleSidebarDetails: FC<Props> = observer((props) => {
     <div className="flex flex-col gap-5 w-full">
       {cycleDetails?.description && (
         <TextArea
-          className="outline-hidden ring-none w-full max-h-max bg-transparent !p-0 !m-0 !border-0 resize-none text-sm leading-5 text-custom-text-200"
+          className="outline-none ring-none w-full max-h-max bg-transparent !p-0 !m-0 !border-0 resize-none text-sm leading-5 text-custom-text-200"
           value={cycleDetails.description}
           disabled
         />
@@ -77,7 +77,7 @@ export const CycleSidebarDetails: FC<Props> = observer((props) => {
             <SquareUser className="h-4 w-4" />
             <span className="text-base">{t("lead")}</span>
           </div>
-          <div className="flex w-3/5 items-center rounded-xs">
+          <div className="flex w-3/5 items-center rounded-sm">
             <div className="flex items-center gap-2.5">
               <Avatar name={cycleOwnerDetails?.display_name} src={getFileURL(cycleOwnerDetails?.avatar_url ?? "")} />
               <span className="text-sm text-custom-text-200">{cycleOwnerDetails?.display_name}</span>
@@ -90,7 +90,7 @@ export const CycleSidebarDetails: FC<Props> = observer((props) => {
             <MembersPropertyIcon className="h-4 w-4" />
             <span className="text-base">{t("members")}</span>
           </div>
-          <div className="flex w-3/5 items-center rounded-xs">
+          <div className="flex w-3/5 items-center rounded-sm">
             <div className="flex items-center gap-2.5">
               {cycleDetails?.assignee_ids && cycleDetails.assignee_ids.length > 0 ? (
                 <>

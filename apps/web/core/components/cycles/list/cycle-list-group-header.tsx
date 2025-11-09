@@ -23,7 +23,7 @@ export const CycleListGroupHeader: FC<Props> = (props) => {
   return (
     <Row className="flex items-center justify-between py-2.5">
       <div className="flex items-center gap-5 flex-shrink-0">
-        <div className="flex h-5 w-5 flex-shrink-0 items-center justify-center overflow-hidden rounded-xs">
+        <div className="flex h-5 w-5 flex-shrink-0 items-center justify-center overflow-hidden rounded-sm">
           <CycleGroupIcon cycleGroup={type} className="h-5 w-5" />
         </div>
 

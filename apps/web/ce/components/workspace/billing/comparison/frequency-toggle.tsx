@@ -30,7 +30,7 @@ export const PlanFrequencyToggle: FC<TPlanFrequencyToggleProps> = observer((prop
           key="month"
           onClick={() => setSelectedFrequency("month")}
           className={cn(
-            "w-full rounded-sm px-1 py-0.5 text-xs font-medium leading-5 text-center",
+            "w-full rounded px-1 py-0.5 text-xs font-medium leading-5 text-center",
             selectedFrequency === "month"
               ? "bg-custom-background-100 text-custom-text-100 shadow-sm"
               : "text-custom-text-300 hover:text-custom-text-200"
@@ -42,7 +42,7 @@ export const PlanFrequencyToggle: FC<TPlanFrequencyToggleProps> = observer((prop
           key="year"
           onClick={() => setSelectedFrequency("year")}
           className={cn(
-            "w-full rounded-sm px-1 py-0.5 text-xs font-medium leading-5 text-center",
+            "w-full rounded px-1 py-0.5 text-xs font-medium leading-5 text-center",
             selectedFrequency === "year"
               ? "bg-custom-background-100 text-custom-text-100 shadow-sm"
               : "text-custom-text-300 hover:text-custom-text-200"

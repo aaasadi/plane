@@ -52,7 +52,7 @@ export const EditorUserMention: React.FC<Props> = observer((props) => {
 
   if (!userDetails) {
     return (
-      <div className="not-prose inline px-1 py-0.5 rounded-sm bg-custom-background-80 text-custom-text-300 no-underline">
+      <div className="not-prose inline px-1 py-0.5 rounded bg-custom-background-80 text-custom-text-300 no-underline">
         @deactivated user
       </div>
     );
@@ -61,7 +61,7 @@ export const EditorUserMention: React.FC<Props> = observer((props) => {
   return (
     <div
       className={cn(
-        "not-prose group/user-mention inline px-1 py-0.5 rounded-sm bg-custom-primary-100/20 text-custom-primary-100 no-underline",
+        "not-prose group/user-mention inline px-1 py-0.5 rounded bg-custom-primary-100/20 text-custom-primary-100 no-underline",
         {
           "bg-yellow-500/20 text-yellow-500": id === currentUser?.id,
         }

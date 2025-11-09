@@ -188,7 +188,7 @@ export const ColumnDragHandle: React.FC<ColumnDragHandleProps> = (props) => {
           type="button"
           onMouseDown={handleMouseDown}
           className={cn(
-            "px-1 bg-custom-background-90 border border-custom-border-400 rounded-sm outline-none transition-all duration-200",
+            "px-1 bg-custom-background-90 border border-custom-border-400 rounded outline-none transition-all duration-200",
             {
               "!opacity-100 bg-custom-primary-100 border-custom-primary-100": isDropdownOpen,
               "hover:bg-custom-background-80": !isDropdownOpen,

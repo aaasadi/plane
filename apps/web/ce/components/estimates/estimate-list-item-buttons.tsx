@@ -31,14 +31,14 @@ export const EstimateListItemButtons: FC<TEstimateListItem> = observer((props) =
         position="top"
       >
         <button
-          className="relative flex-shrink-0 w-6 h-6 flex justify-center items-center rounded-sm cursor-pointer transition-colors overflow-hidden hover:bg-custom-background-80"
+          className="relative flex-shrink-0 w-6 h-6 flex justify-center items-center rounded cursor-pointer transition-colors overflow-hidden hover:bg-custom-background-80"
           data-ph-element={PROJECT_SETTINGS_TRACKER_ELEMENTS.ESTIMATES_LIST_ITEM}
         >
           <Pen size={12} />
         </button>
       </Tooltip>
       <button
-        className="relative flex-shrink-0 w-6 h-6 flex justify-center items-center rounded-sm cursor-pointer transition-colors overflow-hidden hover:bg-custom-background-80"
+        className="relative flex-shrink-0 w-6 h-6 flex justify-center items-center rounded cursor-pointer transition-colors overflow-hidden hover:bg-custom-background-80"
         onClick={() => onDeleteClick && onDeleteClick(estimateId)}
         data-ph-element={PROJECT_SETTINGS_TRACKER_ELEMENTS.ESTIMATES_LIST_ITEM}
       >

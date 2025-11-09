@@ -123,7 +123,7 @@ export const InboxIssueContentProperties: React.FC<Props> = observer((props) => 
                 }
                 disabled={!isEditable}
                 buttonVariant="border-with-text"
-                className="w-3/5 flex-grow rounded-sm px-2 hover:bg-custom-background-80"
+                className="w-3/5 flex-grow rounded px-2 hover:bg-custom-background-80"
                 buttonContainerClassName="w-full text-start"
                 buttonClassName="w-min h-auto whitespace-nowrap"
               />
@@ -195,7 +195,7 @@ export const InboxIssueContentProperties: React.FC<Props> = observer((props) => 
                   target="_self"
                 >
                   <Tooltip tooltipContent={`${duplicateIssueDetails?.name}`}>
-                    <span className="flex items-center gap-1 cursor-pointer text-xs rounded-sm px-1.5 py-1 pb-0.5 bg-custom-background-80 text-custom-text-200">
+                    <span className="flex items-center gap-1 cursor-pointer text-xs rounded px-1.5 py-1 pb-0.5 bg-custom-background-80 text-custom-text-200">
                       {`${currentProjectDetails?.identifier}-${duplicateIssueDetails?.sequence_id}`}
                     </span>
                   </Tooltip>

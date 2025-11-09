@@ -17,7 +17,7 @@ export const WidgetItemDragHandle: FC<Props> = observer((props) => {
 
   return (
     <div
-      className={cn("flex items-center justify-center rounded-sm text-custom-sidebar-text-400 cursor-grab me-2", {
+      className={cn("flex items-center justify-center rounded text-custom-sidebar-text-400 cursor-grab me-2", {
         "cursor-grabbing": isDragging,
       })}
     >

@@ -160,7 +160,7 @@ export const EditorAIMenu: React.FC<Props> = (props) => {
                 key={item.key}
                 type="button"
                 className={cn(
-                  "w-full flex items-center justify-between gap-2 truncate rounded-sm px-1 py-1.5 text-xs text-custom-text-200 hover:bg-custom-background-80 transition-colors",
+                  "w-full flex items-center justify-between gap-2 truncate rounded px-1 py-1.5 text-xs text-custom-text-200 hover:bg-custom-background-80 transition-colors",
                   {
                     "bg-custom-background-80": isActiveTask,
                   }
@@ -225,7 +225,7 @@ export const EditorAIMenu: React.FC<Props> = (props) => {
                     <div className="mt-3 flex items-center gap-4">
                       <button
                         type="button"
-                        className="p-1 text-custom-text-300 text-sm font-medium rounded-sm hover:bg-custom-background-80 outline-hidden"
+                        className="p-1 text-custom-text-300 text-sm font-medium rounded hover:bg-custom-background-80 outline-none"
                         onClick={() => handleInsertText(false)}
                       >
                         Replace selection
@@ -233,7 +233,7 @@ export const EditorAIMenu: React.FC<Props> = (props) => {
                       <Tooltip tooltipContent="Add to next line">
                         <button
                           type="button"
-                          className="flex-shrink-0 size-6 grid place-items-center rounded-sm hover:bg-custom-background-80 outline-hidden"
+                          className="flex-shrink-0 size-6 grid place-items-center rounded hover:bg-custom-background-80 outline-none"
                           onClick={() => handleInsertText(true)}
                         >
                           <CornerDownRight className="text-custom-text-300 size-4" />
@@ -242,7 +242,7 @@ export const EditorAIMenu: React.FC<Props> = (props) => {
                       <Tooltip tooltipContent="Re-generate response">
                         <button
                           type="button"
-                          className="flex-shrink-0 size-6 grid place-items-center rounded-sm hover:bg-custom-background-80 outline-hidden"
+                          className="flex-shrink-0 size-6 grid place-items-center rounded hover:bg-custom-background-80 outline-none"
                           onClick={(e) => {
                             e.preventDefault();
                             e.stopPropagation();
@@ -271,7 +271,7 @@ export const EditorAIMenu: React.FC<Props> = (props) => {
                     key={tone.key}
                     type="button"
                     className={cn(
-                      "p-1 text-xs text-custom-text-200 font-medium bg-custom-background-80 rounded-sm transition-colors outline-hidden",
+                      "p-1 text-xs text-custom-text-200 font-medium bg-custom-background-80 rounded transition-colors outline-none",
                       {
                         "bg-custom-primary-100/20 text-custom-primary-100": tone.key === "default",
                       }

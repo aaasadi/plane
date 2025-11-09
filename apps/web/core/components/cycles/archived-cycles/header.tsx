@@ -75,7 +75,7 @@ export const ArchivedCyclesHeader: FC = observer(() => {
         {!isSearchOpen && (
           <button
             type="button"
-            className="-me-5 p-2 hover:bg-custom-background-80 rounded-sm text-custom-text-400 grid place-items-center"
+            className="-me-5 p-2 hover:bg-custom-background-80 rounded text-custom-text-400 grid place-items-center"
             onClick={() => {
               setIsSearchOpen(true);
               inputRef.current?.focus();
@@ -95,7 +95,7 @@ export const ArchivedCyclesHeader: FC = observer(() => {
           <Search className="h-3.5 w-3.5" />
           <input
             ref={inputRef}
-            className="w-full max-w-[234px] border-none bg-transparent text-sm text-custom-text-100 placeholder:text-custom-text-400 focus:outline-hidden"
+            className="w-full max-w-[234px] border-none bg-transparent text-sm text-custom-text-100 placeholder:text-custom-text-400 focus:outline-none"
             placeholder="Search"
             value={archivedCyclesSearchQuery}
             onChange={(e) => updateArchivedCyclesSearchQuery(e.target.value)}

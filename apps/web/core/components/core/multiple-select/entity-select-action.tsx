@@ -25,7 +25,7 @@ export const MultipleSelectEntityAction: React.FC<Props> = observer((props) => {
 
   return (
     <Checkbox
-      className={cn("!outline-hidden size-3.5", className)}
+      className={cn("!outline-none size-3.5", className)}
       iconClassName="size-3"
       onClick={(e) => {
         e.stopPropagation();

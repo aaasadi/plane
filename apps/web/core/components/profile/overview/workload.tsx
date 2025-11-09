@@ -22,7 +22,7 @@ export const ProfileWorkload: React.FC<Props> = ({ stateDistribution }) => {
             <a>
               <Card direction={ECardDirection.ROW} spacing={ECardSpacing.SM}>
                 <div
-                  className="h-3 w-3 rounded-xs my-2"
+                  className="h-3 w-3 rounded-sm my-2"
                   style={{
                     backgroundColor: STATE_GROUPS[group.state_group].color,
                   }}

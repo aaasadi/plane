@@ -53,7 +53,7 @@ export const AskPiMenu: React.FC<Props> = (props) => {
             <div className="mt-3 flex items-center gap-4">
               <button
                 type="button"
-                className="p-1 text-custom-text-300 text-sm font-medium rounded-sm hover:bg-custom-background-80 outline-hidden"
+                className="p-1 text-custom-text-300 text-sm font-medium rounded hover:bg-custom-background-80 outline-none"
                 onClick={() => handleInsertText(false)}
               >
                 Replace selection
@@ -61,7 +61,7 @@ export const AskPiMenu: React.FC<Props> = (props) => {
               <Tooltip tooltipContent="Add to next line">
                 <button
                   type="button"
-                  className="flex-shrink-0 size-6 grid place-items-center rounded-sm hover:bg-custom-background-80 outline-hidden"
+                  className="flex-shrink-0 size-6 grid place-items-center rounded hover:bg-custom-background-80 outline-none"
                   onClick={() => handleInsertText(true)}
                 >
                   <CornerDownRight className="text-custom-text-300 size-4" />
@@ -70,7 +70,7 @@ export const AskPiMenu: React.FC<Props> = (props) => {
               <Tooltip tooltipContent="Re-generate response">
                 <button
                   type="button"
-                  className="flex-shrink-0 size-6 grid place-items-center rounded-sm hover:bg-custom-background-80 outline-hidden"
+                  className="flex-shrink-0 size-6 grid place-items-center rounded hover:bg-custom-background-80 outline-none"
                   onClick={(e) => {
                     e.preventDefault();
                     e.stopPropagation();
@@ -98,7 +98,7 @@ export const AskPiMenu: React.FC<Props> = (props) => {
           </span>
           <input
             type="text"
-            className="w-full bg-transparent border-none outline-hidden placeholder:text-custom-text-400 text-sm"
+            className="w-full bg-transparent border-none outline-none placeholder:text-custom-text-400 text-sm"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Tell Pi what to do..."

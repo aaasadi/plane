@@ -266,7 +266,7 @@ const IssueRowDetails = observer((props: IssueRowDetailsProps) => {
         <ControlLink
           href={workItemLink}
           onClick={() => handleIssuePeekOverview(issueDetail)}
-          className="outline-hidden"
+          className="outline-none"
           disabled={!!issueDetail?.tempId}
         >
           <Row
@@ -333,7 +333,7 @@ const IssueRowDetails = observer((props: IssueRowDetailsProps) => {
                 {subIssuesCount > 0 && !isEpic && (
                   <button
                     type="button"
-                    className="grid place-items-center size-4 rounded-xs text-custom-text-400 hover:text-custom-text-300"
+                    className="grid place-items-center size-4 rounded-sm text-custom-text-400 hover:text-custom-text-300"
                     onClick={handleToggleExpand}
                   >
                     <ChevronRightIcon
@@ -352,7 +352,7 @@ const IssueRowDetails = observer((props: IssueRowDetailsProps) => {
                 <div className="w-full overflow-hidden">
                   <Tooltip tooltipContent={issueDetail.name} isMobile={isMobile}>
                     <div
-                      className="h-full w-full cursor-pointer truncate pe-4 text-start text-[0.825rem] text-custom-text-100 focus:outline-hidden"
+                      className="h-full w-full cursor-pointer truncate pe-4 text-start text-[0.825rem] text-custom-text-100 focus:outline-none"
                       tabIndex={-1}
                     >
                       {issueDetail.name}

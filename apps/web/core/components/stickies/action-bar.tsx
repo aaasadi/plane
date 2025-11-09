@@ -57,7 +57,7 @@ export const StickyActionBar = observer(() => {
       >
         <Tooltip tooltipContent="All stickies" isMobile={false} position="left">
           <button
-            className="btn btn--icon rounded-full w-10 h-10 flex items-center justify-center shadow-xs bg-custom-background-100"
+            className="btn btn--icon rounded-full w-10 h-10 flex items-center justify-center shadow-sm bg-custom-background-100"
             onClick={() => toggleAllStickiesModal(true)}
           >
             <RecentStickyIcon className="size-5 rotate-90 text-custom-text-350" />
@@ -86,7 +86,7 @@ export const StickyActionBar = observer(() => {
             disabled={showRecentSticky}
           >
             <button
-              className="btn btn--icon rounded-full w-10 h-10 flex items-center justify-center shadow-xs bg-custom-background-100"
+              className="btn btn--icon rounded-full w-10 h-10 flex items-center justify-center shadow-sm bg-custom-background-100"
               onClick={() => setShowRecentSticky(true)}
               style={{ color: recentStickyBackgroundColor }}
             >
@@ -96,7 +96,7 @@ export const StickyActionBar = observer(() => {
         )}
         <Tooltip tooltipContent="Add sticky" isMobile={false} position="left">
           <button
-            className="btn btn--icon rounded-full w-10 h-10 flex items-center justify-center shadow-xs bg-custom-background-100"
+            className="btn btn--icon rounded-full w-10 h-10 flex items-center justify-center shadow-sm bg-custom-background-100"
             onClick={() => {
               updateActiveStickyId("");
               toggleShowNewSticky(true);
@@ -109,7 +109,7 @@ export const StickyActionBar = observer(() => {
       </div>
 
       <button
-        className={`btn btn--icon rounded-full w-10 h-10 flex items-center justify-center shadow-xs bg-custom-background-100 transition-transform duration-300 ${isExpanded ? "rotate-180" : ""}`}
+        className={`btn btn--icon rounded-full w-10 h-10 flex items-center justify-center shadow-sm bg-custom-background-100 transition-transform duration-300 ${isExpanded ? "rotate-180" : ""}`}
         onClick={() => setIsExpanded(!isExpanded)}
       >
         {isExpanded ? (

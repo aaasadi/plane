@@ -69,7 +69,7 @@ const ToolbarItem = React.forwardRef<HTMLButtonElement, ToolbarItemProps>(
         ref={ref}
         type="button"
         className={cn(
-          "grid place-items-center aspect-square rounded-xs p-0.5 text-custom-text-400 hover:bg-custom-background-80 transition-colors",
+          "grid place-items-center aspect-square rounded-sm p-0.5 text-custom-text-400 hover:bg-custom-background-80 transition-colors",
           {
             "bg-custom-background-80 text-custom-text-100": isActive,
           },

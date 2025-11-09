@@ -229,7 +229,7 @@ export const ProfileSidebar: FC<TProfileSidebar> = observer((props) => {
                             <div className="mt-7 space-y-5 text-sm text-custom-text-200">
                               <div className="flex items-center justify-between gap-2">
                                 <div className="flex items-center gap-2">
-                                  <div className="h-2.5 w-2.5 rounded-xs bg-[#203b80]" />
+                                  <div className="h-2.5 w-2.5 rounded-sm bg-[#203b80]" />
                                   Created
                                 </div>
                                 <div className="font-medium">
@@ -238,7 +238,7 @@ export const ProfileSidebar: FC<TProfileSidebar> = observer((props) => {
                               </div>
                               <div className="flex items-center justify-between gap-2">
                                 <div className="flex items-center gap-2">
-                                  <div className="h-2.5 w-2.5 rounded-xs bg-[#3f76ff]" />
+                                  <div className="h-2.5 w-2.5 rounded-sm bg-[#3f76ff]" />
                                   Assigned
                                 </div>
                                 <div className="font-medium">
@@ -247,7 +247,7 @@ export const ProfileSidebar: FC<TProfileSidebar> = observer((props) => {
                               </div>
                               <div className="flex items-center justify-between gap-2">
                                 <div className="flex items-center gap-2">
-                                  <div className="h-2.5 w-2.5 rounded-xs bg-[#f59e0b]" />
+                                  <div className="h-2.5 w-2.5 rounded-sm bg-[#f59e0b]" />
                                   Due
                                 </div>
                                 <div className="font-medium">
@@ -256,7 +256,7 @@ export const ProfileSidebar: FC<TProfileSidebar> = observer((props) => {
                               </div>
                               <div className="flex items-center justify-between gap-2">
                                 <div className="flex items-center gap-2">
-                                  <div className="h-2.5 w-2.5 rounded-xs bg-[#16a34a]" />
+                                  <div className="h-2.5 w-2.5 rounded-sm bg-[#16a34a]" />
                                   Completed
                                 </div>
                                 <div className="font-medium">

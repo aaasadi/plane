@@ -6,7 +6,7 @@ export const ProjectsLoader = () => (
       {range(3).map((i) => (
         <div
           key={i}
-          className="flex cursor-pointer flex-col rounded-sm border border-custom-border-200 bg-custom-background-100"
+          className="flex cursor-pointer flex-col rounded border border-custom-border-200 bg-custom-background-100"
         >
           <div className="relative min-h-[118px] w-full rounded-t border-b border-custom-border-200 ">
             <div className="absolute inset-0 z-[1] bg-gradient-to-t from-black/20 to-transparent">

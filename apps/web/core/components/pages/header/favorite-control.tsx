@@ -33,7 +33,7 @@ export const PageFavoriteControl = observer(({ page }: Props) => {
         });
         pageOperations.toggleFavorite();
       }}
-      buttonClassName="flex-shrink-0 size-6 group rounded-sm hover:bg-custom-background-80 transition-colors"
+      buttonClassName="flex-shrink-0 size-6 group rounded hover:bg-custom-background-80 transition-colors"
       iconClassName="size-3.5 text-custom-text-200 group-hover:text-custom-text-10"
     />
   );

@@ -147,7 +147,7 @@ export const IssueTitleInput: FC<IssueTitleInputProps> = observer((props) => {
         <TextArea
           id="title-input"
           className={cn(
-            "block w-full resize-none overflow-hidden rounded-sm border-none bg-transparent px-3 py-0 text-2xl font-medium outline-hidden ring-0",
+            "block w-full resize-none overflow-hidden rounded border-none bg-transparent px-3 py-0 text-2xl font-medium outline-none ring-0",
             {
               "ring-1 ring-red-400 mx-2.5": title?.length === 0,
             },

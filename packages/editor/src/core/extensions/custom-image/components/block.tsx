@@ -281,7 +281,7 @@ export const CustomImageBlock: React.FC<CustomImageBlockProps> = (props) => {
             // hide the image while the background calculations of the image loader are in progress (to avoid flickering) and show the loader until then
             hidden: showImageLoader,
             "read-only-image": !editor.isEditable,
-            "blur-xs opacity-80 loading-image": !resolvedImageSrc,
+            "blur opacity-80 loading-image": !resolvedImageSrc,
           })}
           style={{
             width: size.width,

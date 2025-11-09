@@ -167,7 +167,7 @@ export const CreateUpdateLabelInline = observer(
               {({ open }) => (
                 <>
                   <Popover.Button
-                    className={`group inline-flex items-center text-base font-medium focus:outline-hidden ${
+                    className={`group inline-flex items-center text-base font-medium focus:outline-none ${
                       open ? "text-custom-text-100" : "text-custom-text-200"
                     }`}
                   >

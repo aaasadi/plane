@@ -249,7 +249,7 @@ export const CycleIssuesHeader: React.FC = observer(() => {
             )}
             <button
               type="button"
-              className="p-1.5 rounded-sm outline-hidden hover:bg-custom-sidebar-background-80 bg-custom-background-80/70"
+              className="p-1.5 rounded outline-none hover:bg-custom-sidebar-background-80 bg-custom-background-80/70"
               onClick={toggleSidebar}
             >
               <PanelRight className={cn("h-4 w-4", !isSidebarCollapsed ? "text-[#3E63DD]" : "text-custom-text-200")} />

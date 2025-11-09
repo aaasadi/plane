@@ -21,7 +21,7 @@ export const SpreadsheetQuickAddIssueForm: FC<TQuickAddIssueForm> = observer((pr
           {...register("name", {
             required: isEpic ? t("epic.title.required") : t("issue.title.required"),
           })}
-          className="w-full rounded-md bg-transparent py-3 text-sm leading-5 text-custom-text-200 outline-hidden"
+          className="w-full rounded-md bg-transparent py-3 text-sm leading-5 text-custom-text-200 outline-none"
         />
       </form>
       <p className="ms-3 mt-3 text-xs italic text-custom-text-200">

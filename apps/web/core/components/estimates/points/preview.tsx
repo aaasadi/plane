@@ -57,7 +57,7 @@ export const EstimatePointItemPreview: FC<TEstimatePointItemPreview> = observer(
     <div>
       {!estimatePointEditToggle && !estimatePointDeleteToggle && (
         <div className="border border-custom-border-200 rounded relative flex items-center px-1 gap-2 text-base my-1">
-          <div className="rounded-xs w-6 h-6 flex-shrink-0 relative flex justify-center items-center hover:bg-custom-background-80 transition-colors cursor-pointer">
+          <div className="rounded-sm w-6 h-6 flex-shrink-0 relative flex justify-center items-center hover:bg-custom-background-80 transition-colors cursor-pointer">
             <GripVertical size={14} className="text-custom-text-200" />
           </div>
           <div ref={EstimatePointValueRef} className="py-2 w-full text-sm">
@@ -70,14 +70,14 @@ export const EstimatePointItemPreview: FC<TEstimatePointItemPreview> = observer(
             )}
           </div>
           <div
-            className="rounded-xs w-6 h-6 flex-shrink-0 relative flex justify-center items-center hover:bg-custom-background-80 transition-colors cursor-pointer"
+            className="rounded-sm w-6 h-6 flex-shrink-0 relative flex justify-center items-center hover:bg-custom-background-80 transition-colors cursor-pointer"
             onClick={() => setEstimatePointEditToggle(true)}
           >
             <Pencil size={14} className="text-custom-text-200" />
           </div>
           {estimatePoints.length > estimateCount.min && (
             <div
-              className="rounded-xs w-6 h-6 flex-shrink-0 relative flex justify-center items-center hover:bg-custom-background-80 transition-colors cursor-pointer"
+              className="rounded-sm w-6 h-6 flex-shrink-0 relative flex justify-center items-center hover:bg-custom-background-80 transition-colors cursor-pointer"
               onClick={() =>
                 estimateId && estimatePointId
                   ? setEstimatePointDeleteToggle(true)

@@ -243,7 +243,7 @@ export const ModuleIssuesHeader: React.FC = observer(() => {
           )}
           <button
             type="button"
-            className="p-1.5 rounded-sm outline-hidden hover:bg-custom-sidebar-background-80 bg-custom-background-80/70"
+            className="p-1.5 rounded outline-none hover:bg-custom-sidebar-background-80 bg-custom-background-80/70"
             onClick={toggleSidebar}
           >
             <PanelRight className={cn("h-4 w-4", !isSidebarCollapsed ? "text-[#3E63DD]" : "text-custom-text-200")} />
@@ -254,7 +254,7 @@ export const ModuleIssuesHeader: React.FC = observer(() => {
               moduleId={moduleId}
               projectId={projectId.toString()}
               workspaceSlug={workspaceSlug.toString()}
-              customClassName="flex-shrink-0 flex items-center justify-center bg-custom-background-80/70 rounded-sm size-[26px]"
+              customClassName="flex-shrink-0 flex items-center justify-center bg-custom-background-80/70 rounded size-[26px]"
             />
           )}
         </Header.RightItem>

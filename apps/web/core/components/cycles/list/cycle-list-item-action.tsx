@@ -268,7 +268,7 @@ export const CycleListItemAction: FC<Props> = observer((props) => {
           <>
             <DateRangeDropdown
               buttonVariant={"transparent-with-text"}
-              buttonContainerClassName={`h-6 w-full cursor-auto flex items-center gap-1.5 text-custom-text-300 rounded-sm text-xs [&>div]:hover:bg-transparent`}
+              buttonContainerClassName={`h-6 w-full cursor-auto flex items-center gap-1.5 text-custom-text-300 rounded text-xs [&>div]:hover:bg-transparent`}
               buttonClassName="p-0"
               minDate={new Date()}
               value={{

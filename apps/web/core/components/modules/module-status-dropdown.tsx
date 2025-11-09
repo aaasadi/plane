@@ -25,7 +25,7 @@ export const ModuleStatusDropdown: FC<Props> = observer((props: Props) => {
     <CustomSelect
       customButton={
         <span
-          className={`flex h-6 w-20 items-center justify-center rounded-xs text-center text-xs ${
+          className={`flex h-6 w-20 items-center justify-center rounded-sm text-center text-xs ${
             isDisabled ? "cursor-not-allowed" : "cursor-pointer"
           }`}
           style={{

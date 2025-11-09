@@ -97,7 +97,7 @@ export const InboxIssueListItem: FC<InboxIssueListItemProps> = observer((props) 
               )}
 
               {issue.label_ids && issue.label_ids.length > 3 ? (
-                <div className="relative !h-[17.5px] flex items-center gap-1 rounded-sm border border-custom-border-300 px-1 text-xs">
+                <div className="relative !h-[17.5px] flex items-center gap-1 rounded border border-custom-border-300 px-1 text-xs">
                   <span className="h-2 w-2 rounded-full bg-orange-400" />
                   <span className="normal-case max-w-28 truncate">{`${issue.label_ids.length} labels`}</span>
                 </div>
@@ -109,7 +109,7 @@ export const InboxIssueListItem: FC<InboxIssueListItemProps> = observer((props) 
                     return (
                       <div
                         key={labelId}
-                        className="relative !h-[17.5px] flex items-center gap-1 rounded-sm border border-custom-border-300 px-1 text-xs"
+                        className="relative !h-[17.5px] flex items-center gap-1 rounded border border-custom-border-300 px-1 text-xs"
                       >
                         <span
                           className="h-2 w-2 rounded-full"

@@ -29,7 +29,7 @@ type TPlanDetailProps = {
 };
 
 const COMMON_BUTTON_STYLE =
-  "relative inline-flex items-center justify-center w-full px-4 py-1.5 text-xs font-medium rounded-lg focus:outline-hidden transition-all duration-300 animate-slide-up";
+  "relative inline-flex items-center justify-center w-full px-4 py-1.5 text-xs font-medium rounded-lg focus:outline-none transition-all duration-300 animate-slide-up";
 
 export const PlanDetail: FC<TPlanDetailProps> = observer((props) => {
   const { subscriptionType, planDetail, billingFrequency, setBillingFrequency } = props;
@@ -69,7 +69,7 @@ export const PlanDetail: FC<TPlanDetailProps> = observer((props) => {
         <div className="flex w-full gap-2 items-center text-xl font-medium">
           <span className="transition-all duration-300">{subscriptionName}</span>
           {subscriptionType === EProductSubscriptionEnum.PRO && (
-            <span className="px-2 rounded-sm text-custom-primary-200 bg-custom-primary-100/20 text-xs">Popular</span>
+            <span className="px-2 rounded text-custom-primary-200 bg-custom-primary-100/20 text-xs">Popular</span>
           )}
         </div>
         <div className="flex gap-x-2 items-start text-custom-text-300 pb-1 transition-all duration-300 animate-slide-up">

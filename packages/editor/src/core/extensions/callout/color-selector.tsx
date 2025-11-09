@@ -36,7 +36,7 @@ export const CalloutBlockColorSelector: React.FC<Props> = (props) => {
             e.stopPropagation();
           }}
           className={cn(
-            "flex items-center gap-1 h-full whitespace-nowrap py-1 px-2.5 text-sm font-medium text-custom-text-300 hover:bg-white/10 active:bg-custom-background-80 rounded-sm transition-colors",
+            "flex items-center gap-1 h-full whitespace-nowrap py-1 px-2.5 text-sm font-medium text-custom-text-300 hover:bg-white/10 active:bg-custom-background-80 rounded transition-colors",
             {
               "bg-white/10": isOpen,
             }
@@ -53,7 +53,7 @@ export const CalloutBlockColorSelector: React.FC<Props> = (props) => {
                 <button
                   key={color.key}
                   type="button"
-                  className="flex-shrink-0 size-6 rounded-sm border-[0.5px] border-custom-border-400 hover:opacity-60 transition-opacity"
+                  className="flex-shrink-0 size-6 rounded border-[0.5px] border-custom-border-400 hover:opacity-60 transition-opacity"
                   style={{
                     backgroundColor: color.backgroundColor,
                   }}
@@ -62,7 +62,7 @@ export const CalloutBlockColorSelector: React.FC<Props> = (props) => {
               ))}
               <button
                 type="button"
-                className="flex-shrink-0 size-6 grid place-items-center rounded-sm text-custom-text-300 border-[0.5px] border-custom-border-400 hover:bg-custom-background-80 transition-colors"
+                className="flex-shrink-0 size-6 grid place-items-center rounded text-custom-text-300 border-[0.5px] border-custom-border-400 hover:bg-custom-background-80 transition-colors"
                 onClick={() => handleColorSelect(null)}
               >
                 <Ban className="size-4" />

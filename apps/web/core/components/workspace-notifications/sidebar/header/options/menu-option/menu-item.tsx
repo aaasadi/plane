@@ -13,7 +13,7 @@ export const NotificationMenuOptionItem: FC<TPopoverMenuOptions> = observer((pro
   if (type === "menu-item")
     return (
       <div
-        className="flex items-center gap-2 cursor-pointer mx-2 px-2 p-1 transition-all hover:bg-custom-background-80 rounded-xs"
+        className="flex items-center gap-2 cursor-pointer mx-2 px-2 p-1 transition-all hover:bg-custom-background-80 rounded-sm"
         onClick={() => onClick && onClick()}
       >
         {prependIcon && prependIcon}

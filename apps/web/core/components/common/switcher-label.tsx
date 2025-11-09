@@ -28,7 +28,7 @@ export const SwitcherIcon: FC<TSwitcherIconProps> = ({
       <img
         src={getFileURL(logo_url)}
         alt="logo"
-        className="rounded-xs object-cover"
+        className="rounded-sm object-cover"
         style={{ height: size, width: size }}
       />
     );

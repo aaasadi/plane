@@ -122,7 +122,7 @@ export const TransferIssuesModal: React.FC<Props> = observer((props) => {
                   <div className="flex items-center gap-2 border-b border-custom-border-200 px-5 pb-3">
                     <Search className="h-4 w-4 text-custom-text-200" />
                     <input
-                      className="outline-hidden text-sm"
+                      className="outline-none text-sm"
                       placeholder="Search for a cycle..."
                       onChange={(e) => setQuery(e.target.value)}
                       value={query}
@@ -139,7 +139,7 @@ export const TransferIssuesModal: React.FC<Props> = observer((props) => {
                           return (
                             <button
                               key={optionId}
-                              className="flex w-full items-center gap-4 rounded-sm px-4 py-3 text-sm text-custom-text-200 hover:bg-custom-background-90"
+                              className="flex w-full items-center gap-4 rounded px-4 py-3 text-sm text-custom-text-200 hover:bg-custom-background-90"
                               onClick={() => {
                                 transferIssue({
                                   new_cycle_id: optionId,

@@ -152,7 +152,7 @@ export const MentionsListDropdown = forwardRef((props: MentionsListDropdownProps
                     id={`mention-item-${sectionIndex}-${itemIndex}`}
                     type="button"
                     className={cn(
-                      "flex items-center gap-2 w-full rounded-sm px-1 py-1.5 text-xs text-start truncate text-custom-text-200",
+                      "flex items-center gap-2 w-full rounded px-1 py-1.5 text-xs text-start truncate text-custom-text-200",
                       {
                         "bg-custom-background-80": isSelected,
                       }

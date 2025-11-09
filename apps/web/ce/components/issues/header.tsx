@@ -84,7 +84,7 @@ export const IssuesHeader = observer(() => {
         {currentProjectDetails?.anchor ? (
           <a
             href={publishedURL}
-            className="group flex items-center gap-1.5 rounded-sm bg-custom-primary-100/10 px-2.5 py-1 text-xs font-medium text-custom-primary-100"
+            className="group flex items-center gap-1.5 rounded bg-custom-primary-100/10 px-2.5 py-1 text-xs font-medium text-custom-primary-100"
             target="_blank"
             rel="noopener noreferrer"
           >

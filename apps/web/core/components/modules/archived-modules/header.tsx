@@ -105,7 +105,7 @@ export const ArchivedModulesHeader: FC = observer(() => {
           <Search className="h-3.5 w-3.5" />
           <input
             ref={inputRef}
-            className="w-full max-w-[234px] border-none bg-transparent text-sm text-custom-text-100 placeholder:text-custom-text-400 focus:outline-hidden"
+            className="w-full max-w-[234px] border-none bg-transparent text-sm text-custom-text-100 placeholder:text-custom-text-400 focus:outline-none"
             placeholder="Search"
             value={archivedModulesSearchQuery}
             onChange={(e) => updateArchivedModulesSearchQuery(e.target.value)}

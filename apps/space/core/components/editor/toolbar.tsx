@@ -77,7 +77,7 @@ export const IssueCommentToolbar: React.FC<Props> = (props) => {
                       type="button"
                       onClick={() => executeCommand(item)}
                       className={cn(
-                        "grid place-items-center aspect-square rounded-xs p-0.5 text-custom-text-400 hover:bg-custom-background-80",
+                        "grid place-items-center aspect-square rounded-sm p-0.5 text-custom-text-400 hover:bg-custom-background-80",
                         {
                           "bg-custom-background-80 text-custom-text-100": isItemActive,
                         }

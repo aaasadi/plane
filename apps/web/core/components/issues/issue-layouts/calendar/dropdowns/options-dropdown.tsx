@@ -106,7 +106,7 @@ export const CalendarOptionsDropdown: React.FC<ICalendarHeader> = observer((prop
           <Popover.Button as={React.Fragment}>
             <button type="button" ref={setReferenceElement}>
               <div
-                className={`hidden md:flex items-center gap-1.5 rounded bg-custom-background-80 px-2.5 py-1 text-xs outline-hidden hover:bg-custom-background-80 ${
+                className={`hidden md:flex items-center gap-1.5 rounded bg-custom-background-80 px-2.5 py-1 text-xs outline-none hover:bg-custom-background-80 ${
                   open ? "text-custom-text-100" : "text-custom-text-200"
                 }`}
               >

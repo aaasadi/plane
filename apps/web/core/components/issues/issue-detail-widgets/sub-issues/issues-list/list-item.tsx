@@ -117,7 +117,7 @@ export const SubIssuesListItem: React.FC<Props> = observer((props) => {
               {subIssueCount > 0 && !isCurrentIssueRoot && (
                 <>
                   {subIssueHelpers.preview_loader.includes(issue.id) ? (
-                    <div className="flex h-full w-full cursor-not-allowed items-center justify-center rounded-xs bg-custom-background-80 transition-all">
+                    <div className="flex h-full w-full cursor-not-allowed items-center justify-center rounded-sm bg-custom-background-80 transition-all">
                       <Loader width={14} strokeWidth={2} className="animate-spin" />
                     </div>
                   ) : (

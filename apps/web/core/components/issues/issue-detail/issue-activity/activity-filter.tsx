@@ -23,7 +23,7 @@ export const ActivityFilter: FC<TActivityFilter> = observer((props) => {
 
   return (
     <PopoverMenu
-      buttonClassName="outline-hidden"
+      buttonClassName="outline-none"
       button={
         <Button
           variant="neutral-primary"
@@ -43,12 +43,12 @@ export const ActivityFilter: FC<TActivityFilter> = observer((props) => {
       render={(item) => (
         <div
           key={item.key}
-          className="flex items-center gap-2 text-sm cursor-pointer px-2 p-1 transition-all hover:bg-custom-background-80 rounded-xs"
+          className="flex items-center gap-2 text-sm cursor-pointer px-2 p-1 transition-all hover:bg-custom-background-80 rounded-sm"
           onClick={item.onClick}
         >
           <div
             className={cn(
-              "flex-shrink-0 w-3 h-3 flex justify-center items-center rounded-xs transition-all bg-custom-background-90",
+              "flex-shrink-0 w-3 h-3 flex justify-center items-center rounded-sm transition-all bg-custom-background-90",
               {
                 "bg-custom-primary text-white": item.isSelected,
                 "bg-custom-background-80 text-custom-text-400": item.isSelected && selectedFilters.length === 1,

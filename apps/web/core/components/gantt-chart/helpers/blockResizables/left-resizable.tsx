@@ -50,7 +50,7 @@ export const LeftResizable = observer((props: LeftResizableProps) => {
       />
       <div
         className={cn(
-          "absolute start-1 top-1/2 -translate-y-1/2 h-7 w-1 z-[5] rounded-xs bg-custom-background-100 transition-all duration-300 opacity-0 group-hover:opacity-100",
+          "absolute start-1 top-1/2 -translate-y-1/2 h-7 w-1 z-[5] rounded-sm bg-custom-background-100 transition-all duration-300 opacity-0 group-hover:opacity-100",
           {
             "-start-1.5 opacity-100": isLeftResizing,
           }

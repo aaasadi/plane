@@ -61,7 +61,7 @@ export const BreadcrumbNavigationSearchDropdown: React.FC<TBreadcrumbNavigationS
                 }
               }}
               className={cn(
-                "group h-full flex items-center gap-2 px-1.5 py-1 text-sm font-medium text-custom-text-300 cursor-pointer rounded-sm rounded-r-none",
+                "group h-full flex items-center gap-2 px-1.5 py-1 text-sm font-medium text-custom-text-300 cursor-pointer rounded rounded-e-none",
                 {
                   "hover:bg-custom-background-80 hover:text-custom-text-100": !isLast,
                 }
@@ -79,7 +79,7 @@ export const BreadcrumbNavigationSearchDropdown: React.FC<TBreadcrumbNavigationS
             </button>
           </Tooltip>
           <Breadcrumbs.Separator
-            className={cn("rounded-r", {
+            className={cn("rounded-e", {
               "bg-custom-background-80": isDropdownOpen && !isLast,
               "hover:bg-custom-background-80": !isLast,
             })}
@@ -95,7 +95,7 @@ export const BreadcrumbNavigationSearchDropdown: React.FC<TBreadcrumbNavigationS
       disabled={navigationDisabled}
       className="h-full rounded"
       customButtonClassName={cn(
-        "group flex items-center gap-0.5 rounded-sm hover:bg-custom-background-90 outline-none cursor-pointer h-full rounded",
+        "group flex items-center gap-0.5 rounded hover:bg-custom-background-90 outline-none cursor-pointer h-full rounded",
         {
           "bg-custom-background-90": isDropdownOpen,
         }

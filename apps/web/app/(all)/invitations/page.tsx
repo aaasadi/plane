@@ -154,7 +154,7 @@ function UserInvitationsPage() {
                     return (
                       <div
                         key={invitation.id}
-                        className={`flex cursor-pointer items-center gap-2 rounded-sm border px-3.5 py-5 ${
+                        className={`flex cursor-pointer items-center gap-2 rounded border px-3.5 py-5 ${
                           isSelected
                             ? "border-custom-primary-100"
                             : "border-custom-border-200 hover:bg-custom-background-80"
