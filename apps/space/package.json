@@ -48,7 +48,6 @@
     "react-popper": "^2.3.0",
     "sharp": "catalog:",
     "swr": "catalog:",
-    "tailwind-merge": "^3.3.1",
     "uuid": "catalog:"
   },
   "devDependencies": {

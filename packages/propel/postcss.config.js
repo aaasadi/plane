@@ -1,2 +1,2 @@
-import config from "@plane/tailwind-config/postcss.config.js";
-export default config;
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+module.exports = require("@plane/tailwind-config/postcss.config.js");
