@@ -30,10 +30,11 @@ export const ProfileWorkload: React.FC<Props> = ({ stateDistribution }) => {
                 <div className="space-y-1 flex-col">
                   <span className="text-sm text-custom-text-400">
                     {group.state_group === "unstarted"
-                      ? "Not started"
+                      ? t("profile.stats.not_started")
                       : group.state_group === "started"
-                        ? "Working on"
-                        : STATE_GROUPS[group.state_group].label}
+                        ? t("profile.stats.working_on")
+                        : t(`profile.stats.${STATE_GROUPS[group.state_group].label.toLowerCase()}`)
+                    }
                   </span>
                   <p className="text-xl font-semibold">{group.state_count}</p>
                 </div>
