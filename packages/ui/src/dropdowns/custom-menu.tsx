@@ -4,7 +4,7 @@ import * as React from "react";
 import ReactDOM from "react-dom";
 import { usePopper } from "react-popper";
 import { useOutsideClickDetector } from "@plane/hooks";
-import { ChevronDownIcon, ChevronRightIcon } from "@plane/propel/icons";
+import { ChevronDownIcon, ChevronEndIcon } from "@plane/propel/icons";
 // plane helpers
 // helpers
 import { useDropdownKeyDown } from "../hooks/use-dropdown-key-down";
@@ -406,7 +406,7 @@ const SubMenu: React.FC<ICustomSubMenuProps> = (props) => {
               onClick={handleClick}
             >
               <span className="flex-1">{trigger}</span>
-              <ChevronRightIcon className="h-3.5 w-3.5 flex-shrink-0" />
+              <ChevronEndIcon className="h-3.5 w-3.5 flex-shrink-0" />
             </div>
           )}
         </Menu.Item>
@@ -500,7 +500,7 @@ const SubMenuTrigger: React.FC<ICustomSubMenuTriggerProps> = (props) => {
           )}
         >
           <span className="flex-1">{children}</span>
-          <ChevronRightIcon className="h-3.5 w-3.5 flex-shrink-0" />
+          <ChevronEndIcon className="h-3.5 w-3.5 flex-shrink-0" />
         </div>
       )}
     </Menu.Item>

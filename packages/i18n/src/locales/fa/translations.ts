@@ -255,8 +255,10 @@ export default {
   create_workspace: "ایجاد فضای کاری",
   invitations: "دعوت‌نامه‌ها",
   summary: "خلاصه",
-  assigned: "واگذار شده",
   created: "ایجاد شده",
+  assigned: "واگذار شده",
+  due: "در انتظار انجام",
+  completed: "تکمیل شده",
   subscribed: "دنبال‌شده",
   you_do_not_have_the_permission_to_access_this_page: "شما مجاز به دسترسی به این صفحه نیستید.",
   something_went_wrong_please_try_again: "خطایی رخ داده است. لطفاً دوباره تلاش کنید.",
@@ -1472,7 +1474,7 @@ export default {
       unstarted: "شروع نشده",
       started: "شروع شده",
       completed: "تکمیل شده",
-      cancelled: "لغو شده"
+      cancelled: "لغو شده",
     },
     sort: {
       manual: "دستی",
@@ -1816,8 +1818,7 @@ export default {
       preferences: "ترجیحات",
       notifications: "اعلان‌ها",
       "api-tokens": "توکن‌های دسترسی شخصی"
-    }
-    ,
+    },
     tabs: {
       summary: "خلاصه",
       assigned: "اختصاص داده شده",
@@ -1842,6 +1843,13 @@ export default {
         title: "هنوز مورد کاری مشترک وجود ندارد",
         description: "به موارد کاری که به آن‌ها علاقه‌مند هستید مشترک شوید و همه آن‌ها را از اینجا پیگیری کنید."
       }
+    },
+    state_distribution: {
+      backlog: "در انتظار",
+      unstarted: "شروع نشده",
+      started: "شروع شده",
+      completed: "تکمیل شده",
+      canceled: "لغو شده",
     }
   },
   project_settings: {

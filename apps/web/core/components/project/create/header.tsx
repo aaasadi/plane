@@ -45,7 +45,7 @@ const ProjectCreateHeader: React.FC<Props> = (props) => {
           <CloseIcon className="h-5 w-5 text-white" />
         </button>
       </div>
-      <div className="absolute bottom-2 right2">
+      <div className="absolute bottom-2 end-2">
         <Controller
           name="cover_image_url"
           control={control}

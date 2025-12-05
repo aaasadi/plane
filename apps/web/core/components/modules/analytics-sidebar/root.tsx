@@ -22,7 +22,7 @@ import {
   WorkItemsIcon,
   StartDatePropertyIcon,
   ChevronDownIcon,
-  ChevronRightIcon,
+  ChevronEndIcon,
 } from "@plane/propel/icons";
 import { TOAST_TYPE, setToast } from "@plane/propel/toast";
 import type { ILinkDetails, IModule, ModuleLink } from "@plane/types";
@@ -253,7 +253,7 @@ export const ModuleAnalyticsSidebar: React.FC<Props> = observer((props) => {
               className="flex h-5 w-5 items-center justify-center rounded-full bg-custom-border-300"
               onClick={() => handleClose()}
             >
-              <ChevronRightIcon className="h-3 w-3 stroke-2 text-white" />
+              <ChevronEndIcon className="h-3 w-3 stroke-2 text-white" />
             </button>
           </div>
         </div>

@@ -5,7 +5,7 @@ import { Copy } from "lucide-react";
 import type { EditorRefApi } from "@plane/editor";
 import { useTranslation } from "@plane/i18n";
 import { Button, getButtonStyling } from "@plane/propel/button";
-import { ChevronLeftIcon, ChevronRightIcon } from "@plane/propel/icons";
+import { ChevronStartIcon, ChevronEndIcon } from "@plane/propel/icons";
 import { setToast, TOAST_TYPE } from "@plane/propel/toast";
 import { Tooltip } from "@plane/propel/tooltip";
 import type { TDescriptionVersion } from "@plane/types";
@@ -103,7 +103,7 @@ export const DescriptionVersionsModal: React.FC<Props> = observer((props) => {
               )}
               disabled={isPrevDisabled}
             >
-              <ChevronLeftIcon className="size-4" />
+              <ChevronStartIcon className="size-4" />
             </button>
             <button
               type="button"
@@ -117,7 +117,7 @@ export const DescriptionVersionsModal: React.FC<Props> = observer((props) => {
               )}
               disabled={isNextDisabled}
             >
-              <ChevronRightIcon className="size-4" />
+              <ChevronEndIcon className="size-4" />
             </button>
           </div>
         </div>

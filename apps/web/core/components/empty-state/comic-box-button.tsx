@@ -69,7 +69,7 @@ export const ComicBoxButton: React.FC<Props> = (props) => {
             style={styles.popper}
             {...attributes.popper}
           >
-            <div className="absolute w-2 h-2 bg-custom-background-100 border rounded-lb-sm  border-custom-border-200 border-r-0 border-t-0 transform rotate-45 bottom-2 -start-[5px]" />
+            <div className="absolute w-2 h-2 bg-custom-background-100 border rounded-lb-sm  border-custom-border-200 border-e-0 border-t-0 transform rotate-45 bottom-2 -start-[5px]" />
             <h3 className="text-lg font-semibold w-full">{title}</h3>
             <h4 className="mt-1 text-sm">{description}</h4>
           </div>

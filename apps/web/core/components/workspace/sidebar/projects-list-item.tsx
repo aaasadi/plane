@@ -16,7 +16,7 @@ import { EUserPermissions, EUserPermissionsLevel, MEMBER_TRACKER_ELEMENTS } from
 import { useOutsideClickDetector } from "@plane/hooks";
 import { useTranslation } from "@plane/i18n";
 import { Logo } from "@plane/propel/emoji-icon-picker";
-import { ArchiveIcon, ChevronRightIcon } from "@plane/propel/icons";
+import { ArchiveIcon, ChevronEndIcon } from "@plane/propel/icons";
 import { Tooltip } from "@plane/propel/tooltip";
 import { CustomMenu, DropIndicator, DragHandle, ControlLink } from "@plane/ui";
 import { cn } from "@plane/utils";
@@ -384,7 +384,7 @@ export const SidebarProjectsListItem: React.FC<Props> = observer((props) => {
                     : "aria_labels.projects_sidebar.open_project_menu"
                 )}
               >
-                <ChevronRightIcon
+                <ChevronEndIcon
                   className={cn("size-4 flex-shrink-0 text-custom-sidebar-text-400 transition-transform", {
                     "rotate-90": isProjectListOpen,
                   })}

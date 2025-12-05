@@ -1,6 +1,6 @@
 import React, { useState, useRef, useContext } from "react";
 import { usePopper } from "react-popper";
-import { ChevronRightIcon } from "@plane/propel/icons";
+import { ChevronEndIcon } from "@plane/propel/icons";
 // helpers
 import { cn } from "../../utils";
 // types
@@ -177,7 +177,7 @@ export const ContextMenuItem: React.FC<ContextMenuItemProps> = (props) => {
                 </p>
               )}
             </div>
-            {hasNestedItems && <ChevronRightIcon className="h-3 w-3 flex-shrink-0" />}
+            {hasNestedItems && <ChevronEndIcon className="h-3 w-3 flex-shrink-0" />}
           </>
         )}
       </button>

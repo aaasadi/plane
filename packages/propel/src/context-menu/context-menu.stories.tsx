@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Copy, Download, Edit, Share, Trash, Star, Archive } from "lucide-react";
-import { ChevronRightIcon } from "../icons";
+import { ChevronEndIcon } from "../icons";
 import { ContextMenu } from "./context-menu";
 
 // cannot use satisfies here because base-ui does not have portable types.
@@ -114,7 +114,7 @@ export const WithSubmenus: Story = {
               <ContextMenu.SubmenuTrigger>
                 <Share className="me-2 h-4 w-4" />
                 Share
-                <ChevronRightIcon className="ms-auto h-4 w-4" />
+                <ChevronEndIcon className="ms-auto h-4 w-4" />
               </ContextMenu.SubmenuTrigger>
               <ContextMenu.Portal>
                 <ContextMenu.Content>
@@ -305,7 +305,7 @@ export const NestedSubmenus: Story = {
             <ContextMenu.Submenu>
               <ContextMenu.SubmenuTrigger>
                 Import
-                <ChevronRightIcon className="ms-auto h-4 w-4" />
+                <ChevronEndIcon className="ms-auto h-4 w-4" />
               </ContextMenu.SubmenuTrigger>
               <ContextMenu.Portal>
                 <ContextMenu.Content>
@@ -314,7 +314,7 @@ export const NestedSubmenus: Story = {
                   <ContextMenu.Submenu>
                     <ContextMenu.SubmenuTrigger>
                       From Cloud
-                      <ChevronRightIcon className="ms-auto h-4 w-4" />
+                      <ChevronEndIcon className="ms-auto h-4 w-4" />
                     </ContextMenu.SubmenuTrigger>
                     <ContextMenu.Portal>
                       <ContextMenu.Content>

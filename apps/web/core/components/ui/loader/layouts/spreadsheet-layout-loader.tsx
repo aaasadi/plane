@@ -4,7 +4,7 @@ import { getRandomLength } from "../utils";
 
 export const SpreadsheetIssueRowLoader = (props: { columnCount: number }) => (
   <tr className="border-b border-custom-border-200 bg-custom-background-100">
-    <td className="h-11 min-w-[28rem] z-[10] sticky start-0 flex items-center border-r-[0.5px] border-custom-border-200 bg-custom-background-100">
+    <td className="h-11 min-w-[28rem] z-[10] sticky start-0 flex items-center border-e-[0.5px] border-custom-border-200 bg-custom-background-100">
       <Row className="flex items-center gap-3">
         <span className="h-5 w-10 bg-custom-background-80 rounded animate-pulse" />
         <span

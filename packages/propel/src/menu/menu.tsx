@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Menu as BaseMenu } from "@base-ui-components/react/menu";
 import { MoreHorizontal } from "lucide-react";
-import { ChevronDownIcon, ChevronRightIcon } from "../icons";
+import { ChevronDownIcon, ChevronEndIcon } from "../icons";
 import { cn } from "../utils/classname";
 import { TMenuProps, TSubMenuProps, TMenuItemProps } from "./types";
 
@@ -25,7 +25,7 @@ const SubMenu: React.FC<TSubMenuProps> = (props) => {
     <BaseMenu.SubmenuRoot disabled={disabled}>
       <BaseMenu.SubmenuTrigger className={""}>
         <span className="flex-1">{trigger}</span>
-        <ChevronRightIcon />
+        <ChevronEndIcon />
       </BaseMenu.SubmenuTrigger>
       <BaseMenu.Portal>
         <BaseMenu.Positioner className={""} alignOffset={-4} sideOffset={-4}>

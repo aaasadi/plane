@@ -3,7 +3,7 @@ import { observer } from "mobx-react";
 import { Menu } from "lucide-react";
 import { useOutsideClickDetector } from "@plane/hooks";
 import { useTranslation } from "@plane/i18n";
-import { ChevronRightIcon } from "@plane/propel/icons";
+import { ChevronEndIcon } from "@plane/propel/icons";
 import { useUserSettings } from "@/hooks/store/user";
 
 type Props = {
@@ -38,7 +38,7 @@ export const SettingsMobileNav = observer((props: Props) => {
         </div>
         {/* path */}
         <div className="flex items-center gap-2">
-          <ChevronRightIcon className="size-4 text-custom-text-300" />
+          <ChevronEndIcon className="size-4 text-custom-text-300" />
           <span className="text-sm font-medium text-custom-text-200">{t(activePath)}</span>
         </div>
       </div>

@@ -9,6 +9,8 @@ export const ArrowsIconsMap = [
   { icon: <Icon name="arrow.chevron-down" />, title: "ChevronDownIcon" },
   { icon: <Icon name="arrow.chevron-left" />, title: "ChevronLeftIcon" },
   { icon: <Icon name="arrow.chevron-right" />, title: "ChevronRightIcon" },
+  { icon: <Icon name="arrow.chevron-start" />, title: "ChevronStartIcon" },
+  { icon: <Icon name="arrow.chevron-end" />, title: "ChevronEndIcon" },
   { icon: <Icon name="arrow.chevron-up" />, title: "ChevronUpIcon" },
 ];
 

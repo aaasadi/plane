@@ -3,10 +3,10 @@
 import { observer } from "mobx-react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
-import { ChevronLeftIcon } from "lucide-react";
 // plane imports
 import { useTranslation } from "@plane/i18n";
 import { getButtonStyling } from "@plane/propel/button";
+import { ChevronStartIcon } from "@plane/propel/icons";
 import { cn } from "@plane/utils";
 // hooks
 import { useWorkspace } from "@/hooks/store/use-workspace";
@@ -18,6 +18,7 @@ import SettingsTabs from "./tabs";
 export const SettingsHeader = observer(() => {
   // hooks
   const { t } = useTranslation();
+  const isRTL: boolean = document.dir === "rtl";
   const { currentWorkspace } = useWorkspace();
   const { isScrolled } = useUserSettings();
   // resolved theme
@@ -40,7 +41,7 @@ export const SettingsHeader = observer(() => {
           isScrolled ? "-mt-2 " : "hidden p-0 overflow-hidden items-center pe-2 border-none"
         )}
       >
-        <ChevronLeftIcon className={cn("h-4 w-4", !isScrolled ? "my-auto h-0" : "")} />
+        <ChevronStartIcon className={cn("h-4 w-4", !isScrolled ? "my-auto h-0" : "")} />
       </Link>
       {/* Breadcrumb */}
       <Link
@@ -58,7 +59,7 @@ export const SettingsHeader = observer(() => {
             { "h-0 hidden": isScrolled }
           )}
         >
-          <ChevronLeftIcon className={cn("h-4 w-4", !isScrolled ? "my-auto" : "")} />
+          <ChevronStartIcon className={cn("h-4 w-4", !isScrolled ? "my-auto" : "")} />
         </button>
         <div
           className={cn("flex gap-2 h-full w-full transition-[height] duration-300  ease-in-out", {

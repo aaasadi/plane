@@ -50,7 +50,7 @@ export const GanttChartSidebar: React.FC<Props> = observer((props) => {
     <Row
       // DO NOT REMOVE THE ID
       id="gantt-sidebar"
-      className="sticky start-0 z-10 min-h-full h-max flex-shrink-0 border-r-[0.5px] border-custom-border-200 bg-custom-background-100"
+      className="sticky start-0 z-10 min-h-full h-max flex-shrink-0 border-e-[0.5px] border-custom-border-200 bg-custom-background-100"
       style={{
         width: `${SIDEBAR_WIDTH}px`,
       }}

@@ -11,7 +11,7 @@ import { Disclosure, Transition } from "@headlessui/react";
 // plane imports
 import { EUserPermissions, EUserPermissionsLevel, PROJECT_TRACKER_ELEMENTS } from "@plane/constants";
 import { useTranslation } from "@plane/i18n";
-import { ChevronRightIcon } from "@plane/propel/icons";
+import { ChevronEndIcon } from "@plane/propel/icons";
 import { TOAST_TYPE, setToast } from "@plane/propel/toast";
 import { Tooltip } from "@plane/propel/tooltip";
 import { Loader } from "@plane/ui";
@@ -194,7 +194,7 @@ export const SidebarProjectsList: FC = observer(() => {
                       : "aria_labels.projects_sidebar.open_projects_menu"
                   )}
                 >
-                  <ChevronRightIcon
+                  <ChevronEndIcon
                     className={cn("flex-shrink-0 size-3 transition-all", {
                       "rotate-90": isAllProjectsListOpen,
                     })}

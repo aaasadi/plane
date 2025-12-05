@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { DayPicker } from "react-day-picker";
-import { ChevronLeftIcon } from "../icons";
+import { ChevronStartIcon } from "../icons";
 
 import { cn } from "../utils";
 
@@ -20,7 +20,7 @@ export const Calendar = ({ className, showOutsideDays = true, ...props }: Calend
       weekStartsOn={props.weekStartsOn}
       components={{
         Chevron: ({ className, ...props }) => (
-          <ChevronLeftIcon
+          <ChevronStartIcon
             className={cn(
               "size-4",
               { "rotate-180": props.orientation === "right", "-rotate-90": props.orientation === "down" },

@@ -53,8 +53,10 @@ export default {
   create_workspace: "Create workspace",
   invitations: "Invitations",
   summary: "Summary",
-  assigned: "Assigned",
   created: "Created",
+  assigned: "Assigned",
+  due: "Due",
+  completed: "Completed",
   subscribed: "Subscribed",
   you_do_not_have_the_permission_to_access_this_page: "You do not have the permission to access this page.",
   something_went_wrong_please_try_again: "Something went wrong. Please try again.",
@@ -1643,6 +1645,13 @@ export default {
         description: "Subscribe to work items you are interested in, track all of them here.",
       },
     },
+    state_distribution: {
+      backlog: "Backlog",
+      unstarted: "Unstarted",
+      started: "Started",
+      completed: "Completed",
+      canceled: "Canceled",
+    }
   },
   project_settings: {
     general: {

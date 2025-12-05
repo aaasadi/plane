@@ -5,7 +5,7 @@ import { Disclosure, Transition } from "@headlessui/react";
 // types
 import { PROJECT_TRACKER_ELEMENTS } from "@plane/constants";
 import { Button } from "@plane/propel/button";
-import { ChevronRightIcon, ChevronUpIcon } from "@plane/propel/icons";
+import { ChevronEndIcon, ChevronUpIcon } from "@plane/propel/icons";
 import type { IProject } from "@plane/types";
 // ui
 import { Loader } from "@plane/ui";
@@ -24,7 +24,7 @@ export const DeleteProjectSection: React.FC<IDeleteProjectSection> = (props) => 
         <div className="w-full">
           <Disclosure.Button as="button" type="button" className="flex w-full items-center justify-between">
             <span className="text-xl tracking-tight">Delete project</span>
-            {open ? <ChevronUpIcon className="h-5 w-5" /> : <ChevronRightIcon className="h-5 w-5" />}
+            {open ? <ChevronUpIcon className="h-5 w-5" /> : <ChevronEndIcon className="h-5 w-5" />}
           </Disclosure.Button>
 
           <Transition

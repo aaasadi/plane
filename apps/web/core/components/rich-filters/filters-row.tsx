@@ -128,7 +128,7 @@ export const FiltersRow = observer(
         <div className="w-full flex flex-wrap items-center gap-2">{leftContent}</div>
         <div
           className={cn("flex items-center gap-2 border-s border-custom-border-200 ps-4", {
-            "border-l-transparent ps-0": !hasAvailableOperations,
+            "border-s-transparent ps-0": !hasAvailableOperations,
           })}
         >
           {rightContent}

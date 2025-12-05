@@ -4,6 +4,8 @@ import { CloseIcon } from "./actions/close-icon";
 import { ChevronDownIcon } from "./arrows/chevron-down";
 import { ChevronLeftIcon } from "./arrows/chevron-left";
 import { ChevronRightIcon } from "./arrows/chevron-right";
+import { ChevronStartIcon } from "./arrows/chevron-start";
+import { ChevronEndIcon } from "./arrows/chevron-end";
 import { ChevronUpIcon } from "./arrows/chevron-up";
 import { DefaultIcon } from "./default-icon";
 import { BoardLayoutIcon } from "./layouts/board-icon";
@@ -120,6 +122,8 @@ export const ICON_REGISTRY = {
   "arrow.chevron-down": ChevronDownIcon,
   "arrow.chevron-left": ChevronLeftIcon,
   "arrow.chevron-right": ChevronRightIcon,
+  "arrow.chevron-start": ChevronStartIcon,
+  "arrow.chevron-end": ChevronEndIcon,
   "arrow.chevron-up": ChevronUpIcon,
 
   // Default fallback

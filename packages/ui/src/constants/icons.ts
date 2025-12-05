@@ -151,7 +151,7 @@ import {
   Search,
   User,
 } from "lucide-react";
-import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon } from "@plane/propel/icons";
+import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronStartIcon, ChevronEndIcon, ChevronUpIcon } from "@plane/propel/icons";
 
 export const MATERIAL_ICONS_LIST = [
   {
@@ -800,6 +800,8 @@ export const LUCIDE_ICONS_LIST = [
   { name: "ChevronDown", element: ChevronDownIcon },
   { name: "ChevronLeft", element: ChevronLeftIcon },
   { name: "ChevronRight", element: ChevronRightIcon },
+  { name: "ChevronStart", element: ChevronStartIcon },
+  { name: "ChevronEnd", element: ChevronEndIcon },
   { name: "ChevronUp", element: ChevronUpIcon },
   { name: "Clipboard", element: Clipboard },
   { name: "Clock", element: Clock },

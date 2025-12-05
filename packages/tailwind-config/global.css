@@ -490,7 +490,7 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-left: 0.5em;
+    margin-inline-start: 0.5em;
     font-size: 18px;
     cursor: pointer;
 }
@@ -561,8 +561,8 @@ div.web-view-spinner {
     width: 54px;
     height: 54px;
     display: inline-block;
-    margin-left: 50%;
-    margin-right: 50%;
+    margin-inline-start: 50%;
+    margin-inline-end: 50%;
     padding: 10px;
     border-radius: 10px;
 }
@@ -766,7 +766,7 @@ div.web-view-spinner div.bar12 {
     border: 1px solid rgb(var(--color-primary-100)) !important;
 }
 .highlight-with-line {
-    border-left: 5px solid rgb(var(--color-primary-100)) !important;
+    border-inline-start: 5px solid rgb(var(--color-primary-100)) !important;
     background: rgb(var(--color-background-80));
 }
 

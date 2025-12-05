@@ -120,7 +120,7 @@ export const EmailNotificationForm: FC<IEmailNotificationFormProps> = (props) =>
             />
           </div>
         </div>
-        <div className="flex gap-2 items-center border-0 border-l-[3px] border-custom-border-300 ps-3">
+        <div className="flex gap-2 items-center border-0 border-s-[3px] border-custom-border-300 ps-3">
           <div className="grow">
             <div className="pb-1 text-base font-medium text-custom-text-100">{t("issue_completed")}</div>
             <div className="text-sm font-normal text-custom-text-300">{t("issue_completed_description")}</div>

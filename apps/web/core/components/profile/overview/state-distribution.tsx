@@ -62,7 +62,7 @@ export const ProfileStateDistribution: React.FC<Props> = ({ stateDistribution, u
                           backgroundColor: STATE_GROUPS[group.state_group]?.color ?? "rgb(var(--color-primary-100))",
                         }}
                       />
-                      <div className="whitespace-nowrap">{STATE_GROUPS[group.state_group].label}</div>
+                      <div className="whitespace-nowrap">{t(`profile.state_distribution.${STATE_GROUPS[group.state_group].label.toLowerCase()}`)}</div>
                     </div>
                     <div>{group.state_count}</div>
                   </div>

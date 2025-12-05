@@ -4,6 +4,7 @@ import type { FC } from "react";
 import { observer } from "mobx-react";
 // plane imports
 import { EProjectFeatureKey } from "@plane/constants";
+import { useTranslation } from "@plane/i18n";
 import type { ISvgIcons } from "@plane/propel/icons";
 import { BreadcrumbNavigationDropdown, Breadcrumbs } from "@plane/ui";
 // components
@@ -24,6 +25,7 @@ type TProjectFeatureBreadcrumbProps = {
 };
 
 export const ProjectFeatureBreadcrumb = observer((props: TProjectFeatureBreadcrumbProps) => {
+  const {t} = useTranslation();
   const { workspaceSlug, projectId, featureKey, isLast = false, additionalNavigationItems } = props;
   // router
   const router = useAppRouter();
@@ -49,7 +51,7 @@ export const ProjectFeatureBreadcrumb = observer((props: TProjectFeatureBreadcru
               .filter((item) => item.shouldRender)
               .map((item) => ({
                 key: item.key,
-                title: item.name,
+                title: t(item.i18n_key),
                 customContent: <SwitcherLabel name={item.name} LabelIcon={item.icon as FC<ISvgIcons>} />,
                 action: () => router.push(item.href),
                 icon: item.icon as FC<ISvgIcons>,

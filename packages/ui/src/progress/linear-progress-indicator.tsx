@@ -35,7 +35,7 @@ export const LinearProgressIndicator: React.FC<Props> = ({
     else
       return (
         <Tooltip key={item.id} tooltipContent={`${item.name} ${Math.round(item.value)}${inPercentage ? "%" : ""}`}>
-          <div style={style} className={cn("first:rounded-l-sm last:rounded-r-sm", barClassName)} />
+          <div style={style} className={cn("first:rounded-s-sm last:rounded-e-sm", barClassName)} />
         </Tooltip>
       );
   });

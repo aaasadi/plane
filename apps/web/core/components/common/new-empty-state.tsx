@@ -83,8 +83,8 @@ export const NewEmptyState: React.FC<Props> = ({
                     comicBox?.extraPadding ? "ms-[125px]" : "ms-[90px]"
                   } pb-5`}
                 >
-                  <div className="relative mt-5 h-0 w-0 border-b-[11px] border-r-[11px] border-t-[11px] border-custom-border-200 border-y-transparent">
-                    <div className="absolute end-[-12px] top-[-10px] h-0 w-0 border-b-[10px] border-r-[10px] border-t-[10px] border-custom-background-100 border-y-transparent" />
+                  <div className="relative mt-5 h-0 w-0 border-b-[11px] border-e-[11px] border-t-[11px] border-custom-border-200 border-y-transparent">
+                    <div className="absolute end-[-12px] top-[-10px] h-0 w-0 border-b-[10px] border-e-[10px] border-t-[10px] border-custom-background-100 border-y-transparent" />
                   </div>
                   <div className="rounded-md border border-custom-border-200 bg-custom-background-100">
                     <h1 className="p-5">
@@ -95,8 +95,8 @@ export const NewEmptyState: React.FC<Props> = ({
                 </div>
               ) : (
                 <div className="absolute end-1/2 top-0 me-[90px] flex max-w-sm flex-row-reverse pb-5">
-                  <div className="relative mt-5 h-0 w-0 border-b-[11px] border-l-[11px] border-t-[11px] border-custom-border-200 border-y-transparent">
-                    <div className="absolute start-[-12px] top-[-10px] h-0 w-0 border-b-[10px] border-l-[10px] border-t-[10px] border-custom-background-100 border-y-transparent" />
+                  <div className="relative mt-5 h-0 w-0 border-b-[11px] border-s-[11px] border-t-[11px] border-custom-border-200 border-y-transparent">
+                    <div className="absolute start-[-12px] top-[-10px] h-0 w-0 border-b-[10px] border-s-[10px] border-t-[10px] border-custom-background-100 border-y-transparent" />
                   </div>
                   <div className="rounded-md border border-custom-border-200 bg-custom-background-100">
                     <h1 className="p-5">

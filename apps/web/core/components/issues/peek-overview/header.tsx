@@ -4,7 +4,7 @@ import type { FC } from "react";
 import { useRef } from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
-import { Link2, MoveDiagonal, MoveRight } from "lucide-react";
+import { Link2, MoveDiagonal, MoveRight, MoveLeft } from "lucide-react";
 // plane imports
 import { WORK_ITEM_TRACKER_EVENTS } from "@plane/constants";
 import { useTranslation } from "@plane/i18n";
@@ -87,6 +87,7 @@ export const IssuePeekOverviewHeader: FC<PeekOverviewHeaderProps> = observer((pr
   // ref
   const parentRef = useRef<HTMLDivElement>(null);
   const { t } = useTranslation();
+  const isRTL: boolean = document.dir === "rtl";
   // store hooks
   const { data: currentUser } = useUser();
   const {
@@ -181,7 +182,11 @@ export const IssuePeekOverviewHeader: FC<PeekOverviewHeaderProps> = observer((pr
       <div className="flex items-center gap-4">
         <Tooltip tooltipContent={t("common.close_peek_view")} isMobile={isMobile}>
           <button onClick={removeRoutePeekId}>
-            <MoveRight className="h-4 w-4 text-custom-text-300 hover:text-custom-text-200" />
+            {isRTL ? (
+              <MoveLeft className="h-4 w-4 text-custom-text-300 hover:text-custom-text-200" />
+            ) : (
+              <MoveRight className="h-4 w-4 text-custom-text-300 hover:text-custom-text-200" />
+            )}
           </button>
         </Tooltip>
 

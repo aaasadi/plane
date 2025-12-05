@@ -38,6 +38,22 @@
         margin-inline-end: calc(.675rem * var(--tw-space-x-reverse));
         margin-inline-start: calc(.675rem * calc(1 - var(--tw-space-x-reverse)));
     }
+    [dir="rtl"] .-rotate-90 {
+        --tw-rotate: 90deg;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    }
+    [dir="rtl"] .rotate-90 {
+        --tw-rotate: -90deg;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    }
+    [dir="rtl"] .translate-x-0\.5 {
+        --tw-translate-x: -0.125rem;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    }
+    [dir="rtl"] .translate-x-3 {
+        --tw-translate-x: -0.75rem;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    }
 }
 
 @layer base {
@@ -554,7 +570,7 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-left: 0.5em;
+    margin-inline-start: 0.5em;
     font-size: 18px;
     cursor: pointer;
 }
@@ -626,8 +642,8 @@ div.web-view-spinner {
     width: 54px;
     height: 54px;
     display: inline-block;
-    margin-left: 50%;
-    margin-right: 50%;
+    margin-inline-start: 50%;
+    margin-inline-end: 50%;
     padding: 10px;
     border-radius: 10px;
 }
@@ -875,7 +891,7 @@ div.web-view-spinner div.bar12 {
 }
 
 .highlight-with-line {
-    border-left: 5px solid rgb(var(--color-primary-100)) !important;
+    border-inline-start: 5px solid rgb(var(--color-primary-100)) !important;
     background: rgb(var(--color-background-80));
 }
 

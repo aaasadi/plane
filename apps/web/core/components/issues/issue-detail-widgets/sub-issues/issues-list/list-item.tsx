@@ -3,7 +3,7 @@
 import { observer } from "mobx-react";
 import { Pencil, Trash, Link as LinkIcon, Loader } from "lucide-react";
 import { useTranslation } from "@plane/i18n";
-import { CloseIcon, ChevronRightIcon } from "@plane/propel/icons";
+import { CloseIcon, ChevronEndIcon } from "@plane/propel/icons";
 // plane imports
 import { Tooltip } from "@plane/propel/tooltip";
 import type { TIssue, TIssueServiceType, TSubIssueOperations } from "@plane/types";
@@ -134,7 +134,7 @@ export const SubIssuesListItem: React.FC<Props> = observer((props) => {
                         setSubIssueHelpers(parentIssueId, "issue_visibility", issueId);
                       }}
                     >
-                      <ChevronRightIcon
+                      <ChevronEndIcon
                         className={cn("size-3.5 transition-all", {
                           "rotate-90": subIssueHelpers.issue_visibility.includes(issue.id),
                         })}

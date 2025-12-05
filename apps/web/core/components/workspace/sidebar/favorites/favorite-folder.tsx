@@ -20,7 +20,7 @@ import { Disclosure, Transition } from "@headlessui/react";
 // plane imports
 import { useOutsideClickDetector } from "@plane/hooks";
 import { useTranslation } from "@plane/i18n";
-import { DraftIcon, FavoriteFolderIcon, ChevronRightIcon } from "@plane/propel/icons";
+import { DraftIcon, FavoriteFolderIcon, ChevronEndIcon } from "@plane/propel/icons";
 import { Tooltip } from "@plane/propel/tooltip";
 import type { IFavorite, InstructionType } from "@plane/types";
 import { CustomMenu, DropIndicator, DragHandle } from "@plane/ui";
@@ -250,7 +250,7 @@ export const FavoriteFolder: React.FC<Props> = (props) => {
                     open ? "aria_labels.projects_sidebar.close_folder" : "aria_labels.projects_sidebar.open_folder"
                   )}
                 >
-                  <ChevronRightIcon
+                  <ChevronEndIcon
                     className={cn("size-3 flex-shrink-0 text-custom-sidebar-text-400 transition-transform", {
                       "rotate-90": open,
                     })}
